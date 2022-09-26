@@ -27,11 +27,12 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           
       - name: SCP Files
-        uses: srueda99/scp-action@v12
+        uses: betanzos/scp-upload@v1
         with:
-          origin: "./public/*"
+          source: "./public/*"
           host: ${{ secrets.DEPLOY_HOST }}
-          destination: ${{ secrets.DEPLOY_DIRECTORY }}/
+          remote_dir: ${{ secrets.DEPLOY_DIRECTORY }}/
           port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          recursive: 'true'
