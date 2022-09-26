@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tips on Garcia&#39;s Guide to the Galaxy</title>
+    <link>https://static.rakhama.com/tags/tips/</link>
+    <description>Recent content in tips on Garcia&#39;s Guide to the Galaxy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Aug 2022 21:11:26 +1000</lastBuildDate>
+    
+	<atom:link href="https://static.rakhama.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slight Delay With Bluetooth Mouse in Linux</title>
+      <link>https://static.rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</link>
+      <pubDate>Thu, 18 Aug 2022 21:11:26 +1000</pubDate>
+      
+      <guid>https://static.rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</guid>
+      <description>&lt;p&gt;A quick tip here for when a bluetooth mouse takes a moment to react after not being used for a few seconds. Bluetooth autosuspend can be disabled with a negligible power consumption penalty by setting a kernel parameter on boot.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SQLite.NET in Godot</title>
+      <link>https://static.rakhama.com/posts/sqlite-net-in-godot/</link>
+      <pubDate>Tue, 26 Jul 2022 20:02:53 +1000</pubDate>
+      
+      <guid>https://static.rakhama.com/posts/sqlite-net-in-godot/</guid>
+      <description>I&amp;rsquo;ll talk more about why I think the Godot game engine is a good alternative to Unity as part of my alternatives series of posts, but for now I want to share for posterity&amp;rsquo;s sake how to use SQLite.NET in Godot. Skip to the end to add the one package necessary to get SQLite.NET working in Godot.
+For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framework. SQLite is a good fit for games and I&amp;rsquo;m fond of using an ORM where possible.</description>
+    </item>
+    
+    <item>
+      <title>Post #1: A Git Trick</title>
+      <link>https://static.rakhama.com/posts/a-git-trick/</link>
+      <pubDate>Tue, 02 Nov 2021 19:37:16 +1000</pubDate>
+      
+      <guid>https://static.rakhama.com/posts/a-git-trick/</guid>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;ve started a new blog. For my first post I&amp;rsquo;m going to share a Git configuration trick that I often use to work around this dang ol&amp;rsquo; error message when trying to push a locally created branch to a remote repository:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3 @@
+[submodule "themes/mako"]
+	path = themes/mako
+	url = https://github.com/Eraph/hugo-theme-mako.git

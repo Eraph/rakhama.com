@@ -1,0 +1,106 @@
+baseURL = "https://static.rakhama.com/"
+languageCode = "en-us"
+title = "Garcia's Guide to the Galaxy"
+theme = "mako"
+
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+
+[params]
+  author = "Phil Watson"
+  description = "A Cool Guy"
+  profilePicture = "images/pw.jpg"
+  dateFormat = "Monday, 02/Jan/2006 15:04 MST"
+  sections = ["Projects"]
+  navigationTaxonomies = [ "series", "categories" ]
+  taglines = [
+    "A cool guy",
+    "Not wholly terrible",
+    "A good sort",
+    "Not a geek",
+    "Great bunch of lad",
+    "An employable human",
+    "A working man",
+    "Definitely not a robot",
+    "There are worse",
+    "An alright fellow",
+    "Certainly a person",
+    "They call him \"Garcia\"",
+    "Just this guy",
+    "He's alright",
+    "A swell neighbour",
+    "Quite a gent",
+    "He likes cheese",
+    "Mostly harmless",
+    "He's Phil Watson",
+    "He has thumbs",
+    "A computery type",
+    "My favourite customer",
+    "A fine bloke",
+    "A developer character",
+    "A sentient being",
+    "A respectable dude",
+    "so professionalism, wow",
+    "Packed with vitamin D",
+    "Wholesome",
+    "A braw loon",
+    "A skeleton in disguise",
+    "Slightly better than average",
+    "He's online!",
+    "Dapper from his napper to his feet",
+    "Doesn't know how he gets this reputation",
+    "Powered by tea",
+    "Fun's za cookin'"
+  ]
+
+  [params.theme]
+  titleBackgroundImage = "saturn.jpg"
+  # font = "Jura"
+
+  # Gold
+  # primary = "#fc0"
+  # # secondary = "#960"
+  # background = "#090909"
+
+  # Bronze
+  primary = "#aa9e6b"
+  background = "#111"
+
+  # Nier
+  # primary = "#4e4b42"
+  # background = "#dad4bb"
+
+  # Ragnarok
+  # primary = "#f90"
+  # secondary = "#c00"
+  # background = "#000"
+
+  # Grey Light
+  # primary = "#000"
+  # background = "#fff"
+
+  # Grey Dark
+  # primary = "#fff"
+  # background = "#000"
+
+  # Mako
+  # primary = "#0f9"
+  # secondary = "#099"
+  # background = "#090909"
+
+  # Toothpaste
+  # primary = "#0fc"
+  # secondary = "#099"
+  # background = "#f7f7f7"
+
+  # Hacker
+  # primary = "#0f0"
+  # secondary = "#033"
+  # background = "#000"
+
+  # Cyberpunk
+  # primary = "#f09"
+  # secondary = "#036"
+  # background = "#000"
