@@ -29,7 +29,7 @@ jobs:
       - name: SCP Files
         uses: betanzos/scp-upload@v1
         with:
-          source: "./public/*"
+          source: "./public"
           host: ${{ secrets.DEPLOY_HOST }}
           remote_dir: ${{ secrets.DEPLOY_DIRECTORY }}/
           port: ${{ secrets.DEPLOY_PORT }}
