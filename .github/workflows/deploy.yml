@@ -3,7 +3,7 @@ name: Deploy Hugo Site
 on:
   push:
     branches: [main]
-    
+
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: Clear destination directory
         uses: fifsky/ssh-action@v0.0.6
         with:
-          command: "rm -rf ${{ secrets.DEPLOY_DIRECTORY }}/*"
+          command: "rm -rf ${{ secrets.DEPLOY_DIRECTORY }}/"
           host: ${{ secrets.DEPLOY_HOST }}
           user: ${{ secrets.DEPLOY_USER }}
           port: ${{ secrets.DEPLOY_PORT }}
@@ -35,6 +35,6 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: ${{ secrets.DEPLOY_PORT }}
-          source: ${{ env.DEPLOY_SOURCE }}/*
+          source: ${{ env.DEPLOY_SOURCE }}/**/*
           target: ${{ secrets.DEPLOY_DIRECTORY }}
           strip_components: 3
