@@ -11,9 +11,11 @@ jobs:
       name: Rakhama.com
       url: https://rakhama.com
     env:
-      DEPLOY_SOURCE: "${{ github.workspace }}/public"
+      DEPLOY_SOURCE: "public/"
 
     steps:
+      - uses: actions/checkout@v2
+
       - name: Clear destination directory
         uses: fifsky/ssh-action@v0.0.6
         with:
