@@ -36,4 +36,4 @@ jobs:
           remote: ${{ secrets.DEPLOY_DIRECTORY }}
           port: ${{ secrets.DEPLOY_PORT }}
           user: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
