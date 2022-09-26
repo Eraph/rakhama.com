@@ -17,10 +17,15 @@ hugo new pages/<page-name>.md
 
 ### Compile
 ``` bash
-hugo
+hugo --cleanDestinationDir
+```
+
+### Watch
+``` bash
+hugo w --cleanDestinationDir
 ```
 
 ### Compile with drafts
 ``` bash
-hugo -D
+hugo -D --cleanDestinationDir
 ```
