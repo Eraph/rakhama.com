@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://static.rakhama.com/categories/</link>
+    <link>https://rakhama.com/categories/</link>
     <description>Recent content in Categories on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Aug 2022 21:11:26 +1000</lastBuildDate>
     
-	<atom:link href="https://static.rakhama.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Computing</title>
-      <link>https://static.rakhama.com/categories/computing/</link>
+      <link>https://rakhama.com/categories/computing/</link>
       <pubDate>Thu, 18 Aug 2022 21:11:26 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/categories/computing/</guid>
+      <guid>https://rakhama.com/categories/computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game Development</title>
-      <link>https://static.rakhama.com/categories/game-development/</link>
+      <link>https://rakhama.com/categories/game-development/</link>
       <pubDate>Tue, 26 Jul 2022 20:02:53 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/categories/game-development/</guid>
+      <guid>https://rakhama.com/categories/game-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software</title>
-      <link>https://static.rakhama.com/categories/software/</link>
+      <link>https://rakhama.com/categories/software/</link>
       <pubDate>Sun, 03 Jul 2022 15:07:33 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/categories/software/</guid>
+      <guid>https://rakhama.com/categories/software/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Retro Computing</title>
-      <link>https://static.rakhama.com/categories/retro-computing/</link>
+      <link>https://rakhama.com/categories/retro-computing/</link>
       <pubDate>Fri, 07 Jan 2022 12:03:49 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/categories/retro-computing/</guid>
+      <guid>https://rakhama.com/categories/retro-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://static.rakhama.com/categories/programming/</link>
+      <link>https://rakhama.com/categories/programming/</link>
       <pubDate>Tue, 02 Nov 2021 19:37:16 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/categories/programming/</guid>
+      <guid>https://rakhama.com/categories/programming/</guid>
       <description></description>
     </item>
     

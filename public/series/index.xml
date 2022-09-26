@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://static.rakhama.com/series/</link>
+    <link>https://rakhama.com/series/</link>
     <description>Recent content in Series on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Jul 2022 20:02:53 +1000</lastBuildDate>
     
-	<atom:link href="https://static.rakhama.com/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Godot</title>
-      <link>https://static.rakhama.com/series/godot/</link>
+      <link>https://rakhama.com/series/godot/</link>
       <pubDate>Tue, 26 Jul 2022 20:02:53 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/series/godot/</guid>
+      <guid>https://rakhama.com/series/godot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alternatives</title>
-      <link>https://static.rakhama.com/series/alternatives/</link>
+      <link>https://rakhama.com/series/alternatives/</link>
       <pubDate>Sun, 03 Jul 2022 15:07:33 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/series/alternatives/</guid>
+      <guid>https://rakhama.com/series/alternatives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Atari</title>
-      <link>https://static.rakhama.com/series/atari/</link>
+      <link>https://rakhama.com/series/atari/</link>
       <pubDate>Fri, 07 Jan 2022 12:03:49 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/series/atari/</guid>
+      <guid>https://rakhama.com/series/atari/</guid>
       <description></description>
     </item>
     

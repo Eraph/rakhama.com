@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computing on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://static.rakhama.com/categories/computing/</link>
+    <link>https://rakhama.com/categories/computing/</link>
     <description>Recent content in Computing on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Aug 2022 21:11:26 +1000</lastBuildDate>
     
-	<atom:link href="https://static.rakhama.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/categories/computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Slight Delay With Bluetooth Mouse in Linux</title>
-      <link>https://static.rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</link>
+      <link>https://rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</link>
       <pubDate>Thu, 18 Aug 2022 21:11:26 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</guid>
+      <guid>https://rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</guid>
       <description>&lt;p&gt;A quick tip here for when a bluetooth mouse takes a moment to react after not being used for a few seconds. Bluetooth autosuspend can be disabled with a negligible power consumption penalty by setting a kernel parameter on boot.&lt;/p&gt;</description>
     </item>
     

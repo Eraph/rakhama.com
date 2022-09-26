@@ -1,4 +1,4 @@
-baseURL = "https://static.rakhama.com/"
+baseURL = "https://rakhama.com/"
 languageCode = "en-us"
 title = "Garcia's Guide to the Galaxy"
 theme = "mako"

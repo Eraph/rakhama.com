@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://static.rakhama.com/categories/software/</link>
+    <link>https://rakhama.com/categories/software/</link>
     <description>Recent content in Software on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jul 2022 15:07:33 +1000</lastBuildDate>
     
-	<atom:link href="https://static.rakhama.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Alternatives Series: Spotify</title>
-      <link>https://static.rakhama.com/posts/alternatives-series-spotify/</link>
+      <link>https://rakhama.com/posts/alternatives-series-spotify/</link>
       <pubDate>Sun, 03 Jul 2022 15:07:33 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/posts/alternatives-series-spotify/</guid>
+      <guid>https://rakhama.com/posts/alternatives-series-spotify/</guid>
       <description>There are a lot of questionable ethical behaviours going on with big technology companies these days. Hearing horror stories from Meta (formerly Facebook,) Alphabet (Google,) Amazon, Microsoft and Apple has left me with a rather sour taste in my mouth. I&amp;rsquo;ve personally been stung by bait-and-switch campaigns like when OneDrive revoked large amounts of free storage and LastPass nerfed their free tier subscription. The former was ultimately reversed with a workaround but I was shook; these big companies can make drastic changes to these services I rely on at a whim.</description>
     </item>
     

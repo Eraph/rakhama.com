@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Game Development on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://static.rakhama.com/categories/game-development/</link>
+    <link>https://rakhama.com/categories/game-development/</link>
     <description>Recent content in Game Development on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 26 Jul 2022 20:02:53 +1000</lastBuildDate>
     
-	<atom:link href="https://static.rakhama.com/categories/game-development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/categories/game-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SQLite.NET in Godot</title>
-      <link>https://static.rakhama.com/posts/sqlite-net-in-godot/</link>
+      <link>https://rakhama.com/posts/sqlite-net-in-godot/</link>
       <pubDate>Tue, 26 Jul 2022 20:02:53 +1000</pubDate>
       
-      <guid>https://static.rakhama.com/posts/sqlite-net-in-godot/</guid>
+      <guid>https://rakhama.com/posts/sqlite-net-in-godot/</guid>
       <description>I&amp;rsquo;ll talk more about why I think the Godot game engine is a good alternative to Unity as part of my alternatives series of posts, but for now I want to share for posterity&amp;rsquo;s sake how to use SQLite.NET in Godot. Skip to the end to add the one package necessary to get SQLite.NET working in Godot.
 For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framework. SQLite is a good fit for games and I&amp;rsquo;m fond of using an ORM where possible.</description>
     </item>
