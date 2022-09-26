@@ -13,8 +13,6 @@ jobs:
     environment:
       name: Rakhama.com
       url: https://rakhama.com
-    env:
-      DEPLOY_SOURCE: "public"
 
     steps:
       - uses: actions/checkout@v2
@@ -31,7 +29,7 @@ jobs:
       - name: SCP Files
         uses: nogsantos/scp-deploy@master
         with:
-          src: ${{ env.DEPLOY_SOURCE }}/*
+          src: ./public/*
           host: ${{ secrets.DEPLOY_HOST }}
           remote: ${{ secrets.DEPLOY_DIRECTORY }}
           port: ${{ secrets.DEPLOY_PORT }}
