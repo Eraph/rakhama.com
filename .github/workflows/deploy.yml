@@ -27,11 +27,11 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           
       - name: SCP Files
-        uses: nogsantos/scp-deploy@master
+        uses: srueda99/scp-action@v12
         with:
-          src: ./public/*
+          origin: "./public/*"
           host: ${{ secrets.DEPLOY_HOST }}
-          remote: ${{ secrets.DEPLOY_DIRECTORY }}/
+          destination: ${{ secrets.DEPLOY_DIRECTORY }}/
           port: ${{ secrets.DEPLOY_PORT }}
-          user: ${{ secrets.DEPLOY_USER }}
+          username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
