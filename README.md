@@ -22,7 +22,7 @@ hugo --cleanDestinationDir
 
 ### Watch
 ``` bash
-hugo w --cleanDestinationDir
+hugo -w --cleanDestinationDir
 ```
 
 ### Compile with drafts
