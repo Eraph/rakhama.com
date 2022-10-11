@@ -10,11 +10,3 @@ A Cool Theme! More info coming soon. For now you can check out the [Github page]
 <!--more-->
 
 ![Mako Theme with a Mako theme](mako.jpg)
-
-I need to update the readme:
-
-- Secondary colours
-- Colour examples (mit previews)
-- Custom fonts
-- Tagline collections
-- Anything else?
