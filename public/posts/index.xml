@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Nov 2022 16:12:24 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Dec 2022 16:49:55 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Solid Principles: A Cheat Sheet</title>
+      <link>https://rakhama.com/posts/solid-principles-cheat-sheet/</link>
+      <pubDate>Thu, 08 Dec 2022 16:49:55 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/solid-principles-cheat-sheet/</guid>
+      <description>&lt;p&gt;I couldn&amp;rsquo;t find a single-page cheat sheet that summarised SOLID software development principles, so I made one. For each of the letters in SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) there are a couple of bullet points explaining the benefits of adopting them and the smells that betray their violation.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Asp.NET Self-Signed Certificates and Fedora</title>
