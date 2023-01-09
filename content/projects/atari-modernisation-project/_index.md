@@ -3,13 +3,14 @@ title: "Atari Modernisation Project"
 date: 2022-09-29T10:07:01+10:00
 draft: true
 categories:
-  - One
+  - Retro Computing
 tags:
-  - One
+  - atari st
+  - retro computing
 series:
-  - One
+  - Atari
 image: "something.jpg"
 ---
-Looky here, an Atari ST thang!
+Thirty years since first owning an Atari ST and I can't shake my love for it. I recently acquired an STE and wanted to see how far I can push it. This project is all about that.
 
 <!--more-->

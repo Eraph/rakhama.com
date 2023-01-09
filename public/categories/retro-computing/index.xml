@@ -6,10 +6,20 @@
     <description>Recent content in Retro Computing on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jan 2022 12:03:49 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/categories/retro-computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TOS Is Rubbish</title>
+      <link>https://rakhama.com/posts/tos-is-rubbish/</link>
+      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/tos-is-rubbish/</guid>
+      <description>&lt;p&gt;I never noticed it growing up but I see it now, TOS is profoundly flakey. My ST has a TOS 1.62 ROM built in and it does not play nice with hard drives.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s a simple solution to this, use the wonderful open source &lt;a href=&#34;https://github.com/emutos/emutos&#34;&gt;EmuTOS&lt;/a&gt; instead. Now I&amp;rsquo;m not resourceful enough to go writing EmuTOS to a flash ROM but my ST does have enough RAM that I can easily get away with loading it up from the hard drive.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>I Finally Got an ST Again</title>

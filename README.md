@@ -1,18 +1,14 @@
 # Rakhama.com
 
 ## [Hugo](https://gohugo.io/)
-### Create new site
-``` bash
-hugo new site <sitename>
-```
 ### Create new post
 ``` bash
-hugo new posts/<post-name>.md
+hugo new posts/<post-name>/index.md
 ```
 
 ### Create new page
 ``` bash
-hugo new pages/<page-name>.md
+hugo new pages/<page-name>/index.md
 ```
 
 ### Compile
@@ -29,3 +25,13 @@ hugo -w --cleanDestinationDir
 ``` bash
 hugo -D --cleanDestinationDir
 ```
+
+### Watch with drafts
+``` bash
+hugo -Dw --cleanDestinationDir
+```
+
+### Debug
+{{ range .Pages }}
+    {{ printf "%#v" . }}
+{{ end }}

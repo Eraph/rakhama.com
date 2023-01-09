@@ -6,10 +6,19 @@
     <description>Recent content in Series on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Jul 2022 20:02:53 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atari</title>
+      <link>https://rakhama.com/series/atari/</link>
+      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/series/atari/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Godot</title>
@@ -26,15 +35,6 @@
       <pubDate>Sun, 03 Jul 2022 15:07:33 +1000</pubDate>
       
       <guid>https://rakhama.com/series/alternatives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atari</title>
-      <link>https://rakhama.com/series/atari/</link>
-      <pubDate>Fri, 07 Jan 2022 12:03:49 +1000</pubDate>
-      
-      <guid>https://rakhama.com/series/atari/</guid>
       <description></description>
     </item>
     
