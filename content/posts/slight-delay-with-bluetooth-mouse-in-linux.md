@@ -1,5 +1,6 @@
 ---
 title: "Slight Delay With Bluetooth Mouse in Linux"
+description: "How to fix a small but nagging delay with bluetooth mice in Linux."
 date: 2022-08-18T21:11:26+10:00
 draft: false
 categories:

@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Phil Watson" />
     <meta name="description"
-        content="" />
+        content="How to get SQLite.NET to play nice with Godot." />
     <link href='https://fonts.googleapis.com/css2?family=Jura&display=swap'
         rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.7652897ddc155544ea432f225bb72a1b44ef594d4adbc22608e9fecb837aa652.css" integrity="sha256-dlKJfdwVVUTqQy8iW7cqG0TvWU1K28ImCOn&#43;y4N6plI="
         crossorigin="anonymous" type="text/css" />
     
-    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SQLite.NET in Godot"/>
+<meta name="twitter:description" content="How to get SQLite.NET to play nice with Godot."/>
+
     <meta property="og:title" content="SQLite.NET in Godot" />
-<meta property="og:description" content="I&rsquo;ll talk more about why I think the Godot game engine is a good alternative to Unity as part of my alternatives series of posts, but for now I want to share for posterity&rsquo;s sake how to use SQLite.NET in Godot. Skip to the end to add the one package necessary to get SQLite.NET working in Godot.
-For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framework. SQLite is a good fit for games and I&rsquo;m fond of using an ORM where possible." />
+<meta property="og:description" content="How to get SQLite.NET to play nice with Godot." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rakhama.com/posts/sqlite-net-in-godot/" />
 <meta property="article:published_time" content="2022-07-26T20:02:53+10:00" />
@@ -303,6 +305,11 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
 						<span class="uk-badge">1</span>
 					</a>
 					
+					<a href="/tags/open-source/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>open-source</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
 					<a href="/tags/software/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>software</span>
 						<span class="uk-badge">1</span>
@@ -375,7 +382,7 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Not a geek
+          Mostly harmless
         </p>
       </div>
     </div>
@@ -442,6 +449,7 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
 </div>
 
     <div class="uk-card-body">
+      
       <p>I&rsquo;ll talk more about why I think the <a href="https://godotengine.org/">Godot game engine</a> is a good alternative to <a href="https://unity.com/">Unity</a> as part of my alternatives series of posts, but for now I want to share for posterity&rsquo;s sake how to use SQLite.NET in Godot. Skip to the end to add the one package necessary to get SQLite.NET working in Godot.</p>
 <p>For the uninitiated, <a href="https://github.com/praeclarum/sqlite-net">SQLite.NET</a> is an ORM for SQLite, similar to Entity Framework. SQLite is a good fit for games and I&rsquo;m fond of using an ORM where possible. The PCL version is cross-platform, so it&rsquo;ll run on Android and all sorts.</p>
 <p>As of now the latest version of <a href="https://www.nuget.org/packages/sqlite-net-pcl">sqlite-net-pcl</a> on Nuget is 1.8.116, but this seems to be incompatible with Godot or .NET 4.7.2, resulting in the following error:</p>
@@ -764,6 +772,11 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
 						<span class="uk-badge">1</span>
 					</a>
 					
+					<a href="/tags/open-source/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>open-source</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
 					<a href="/tags/software/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>software</span>
 						<span class="uk-badge">1</span>
@@ -836,7 +849,7 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          He&#39;s Phil Watson
+          so professionalism, wow
         </p>
       </div>
     </div>

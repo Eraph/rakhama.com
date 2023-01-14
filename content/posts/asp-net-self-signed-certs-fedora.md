@@ -1,5 +1,6 @@
 ---
 title: "Asp.NET Self-Signed Certificates and Fedora"
+description: "Fixing certificate errors in Fedora Linux."
 date: 2022-11-02T16:12:24+10:00
 draft: false
 categories:

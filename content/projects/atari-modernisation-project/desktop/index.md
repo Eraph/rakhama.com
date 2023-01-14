@@ -1,5 +1,6 @@
 ---
 title: "Desktop"
+description: "How to modernise the Atari ST desktop environment, from upgrading to a more modern GEM environment to applying custom wallpapers."
 date: 2022-09-29T11:01:31+10:00
 draft: true
 categories:
@@ -11,7 +12,8 @@ tags:
   - retro-computing
 series:
   - Atari
-image: "st-desktop.gif"
+images:
+  - "projects/atari-modernisation-project/desktop/st-desktop.gif"
 ---
 How to modernise the Atari ST desktop environment, from upgrading to a more modern GEM environment to applying custom wallpapers.
 

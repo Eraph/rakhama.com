@@ -17,6 +17,7 @@ theme = "mako"
   sections = ["Projects"]
   navigationTaxonomies = [ "series", "categories" ]
   location = "Brisbane, Australia"
+  twitter_cards = true
   taglines = [
     "A cool guy",
     "Not wholly terrible",

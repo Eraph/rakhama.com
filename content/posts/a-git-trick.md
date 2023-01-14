@@ -1,5 +1,6 @@
 ---
 title: "Post #1: A Git Trick"
+description: "Configure Git to always create a remote branch on push if it doesn't already exist."
 date: 2021-11-02T19:37:16+10:00
 draft: false
 categories: 

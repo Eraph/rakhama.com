@@ -1,5 +1,6 @@
 ---
 title: "TOS Is Rubbish"
+description: "How to use EmuTOS instead."
 date: 2023-01-09T08:12:26+10:00
 draft: false
 categories:
@@ -12,7 +13,8 @@ tags:
   - open source
 series:
   - Atari
-image: "emutos.gif"
+images:
+  - "posts/tos-is-rubbish/emutos.gif"
 ---
 
 I never noticed it growing up but I see it now, TOS is profoundly flakey. My ST has a TOS 1.62 ROM built in and it does not play nice with hard drives.
@@ -20,8 +22,6 @@ I never noticed it growing up but I see it now, TOS is profoundly flakey. My ST 
 There's a simple solution to this, use the wonderful open source [EmuTOS](https://github.com/emutos/emutos) instead. Now I'm not resourceful enough to go writing EmuTOS to a flash ROM but my ST does have enough RAM that I can easily get away with loading it up from the hard drive.
 
 <!--more-->
-
-![Looks familiar, feels familiar](emutos.gif)
 
 ### What's so great about this so-called EmuTOS?
 - It's free, open source software and still under [very active development](https://github.com/emutos/emutos/commits/master).

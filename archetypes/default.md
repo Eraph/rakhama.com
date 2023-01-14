@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+description: "About this page"
 date: {{ .Date }}
 draft: true
 categories:
@@ -8,7 +9,8 @@ tags:
   - One
 series:
   - One
-image: "something.jpg"
+images:
+  - "path/to/something.jpg"
 ---
 
 <!--more-->

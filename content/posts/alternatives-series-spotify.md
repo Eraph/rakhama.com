@@ -1,5 +1,6 @@
 ---
 title: "Alternatives Series: Spotify"
+description: "Why I ditched Spotify and my search for a good alternative."
 date: 2022-07-03T15:07:33+10:00
 draft: false
 categories:

@@ -1,5 +1,6 @@
 ---
 title: "Hdd"
+description: "bleh"
 date: 2022-09-29T10:11:01+10:00
 draft: true
 categories:
@@ -8,7 +9,8 @@ tags:
   - One
 series:
   - One
-image: "something.jpg"
+images:
+  - "path/to/something.jpg"
 ---
 heck! Bork!
 

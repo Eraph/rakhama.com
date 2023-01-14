@@ -1,5 +1,6 @@
 ---
 title: "SQLite.NET in Godot"
+description: "How to get SQLite.NET to play nice with Godot."
 date: 2022-07-26T20:02:53+10:00
 draft: false
 categories:

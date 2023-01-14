@@ -1,5 +1,6 @@
 ---
 title: "Gotek"
+description: "bleh"
 date: 2022-12-28T18:01:59+10:00
 draft: true
 categories:
@@ -8,7 +9,8 @@ tags:
   - One
 series:
   - One
-image: "something.jpg"
+images:
+  - "path/to/something.jpg"
 ---
 
 <!--more-->

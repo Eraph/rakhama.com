@@ -1,5 +1,6 @@
 ---
 title: "I Finally Got an ST Again"
+description: "I should not have gone so long without one."
 date: 2022-01-07T12:03:49+10:00
 draft: false
 categories:
@@ -9,9 +10,9 @@ tags:
   - atari-st
 series:
   - Atari
-image: "st_sc.jpg"
+images:
+  - "posts/i-finally-got-an-st-again/st_sc.jpg"
 ---
-![Kicking it back old skool with some Sim City on the STE](st_sc.jpg)
 
 It's been a whole number of years since I owned an Atari ST. Well over 20. In my youth I (and by _"I"_ I mean _"my family"_) had two, both of which packed in after some time, the last kicking the bucket in the mid to late 90s. Ever since then I've longed to have another, even as I moved briefly to the Amiga before joining the PC train in 1999. Every now and then I'd look on eBay or Gumtree to see what was available. For some reason I was reluctant to splash out on one, until now.
 

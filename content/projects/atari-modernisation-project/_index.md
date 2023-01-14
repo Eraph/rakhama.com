@@ -1,5 +1,6 @@
 ---
 title: "Atari Modernisation Project"
+description: "How to bring your Atari ST into the 21st century."
 date: 2022-09-29T10:07:01+10:00
 draft: true
 categories:
@@ -9,7 +10,8 @@ tags:
   - retro computing
 series:
   - Atari
-image: "something.jpg"
+images:
+  - "path/to/something.jpg"
 ---
 Thirty years since first owning an Atari ST and I can't shake my love for it. I recently acquired an STE and wanted to see how far I can push it. This project is all about that.
 
