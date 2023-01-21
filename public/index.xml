@@ -6,10 +6,21 @@
     <description>Recent content on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Jan 2023 09:24:56 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://rakhama.com/pages/about/</link>
+      <pubDate>Sun, 22 Jan 2023 09:24:56 +1000</pubDate>
+      
+      <guid>https://rakhama.com/pages/about/</guid>
+      <description>Tea. Early Grey. Hot.
+Howdy! My name&amp;rsquo;s Phil, some of my friends call me Garcia. Still not wholly sure why. This is my guide to the galaxy. Well, it&amp;rsquo;s mostly a guide to Linux and Atari STs. Actually it&amp;rsquo;s hardly a guide, I barely know what I&amp;rsquo;m doing myself. Welcome to my inaccurately named website.
+As for me, well I grew up in Scotland and made the move to Australia back in 2014.</description>
+    </item>
     
     <item>
       <title>TOS Is Rubbish</title>
@@ -40,15 +51,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://rakhama.com/pages/about/</link>
-      <pubDate>Sun, 11 Sep 2022 16:10:56 +1000</pubDate>
-      
-      <guid>https://rakhama.com/pages/about/</guid>
-      <description>My name&amp;rsquo;s not Garcia, this isn&amp;rsquo;t a guide, and I haven&amp;rsquo;t seen that much of the galaxy.</description>
     </item>
     
     <item>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rakhama.com/pages/about/</loc>
+    <lastmod>2023-01-22T09:24:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/</loc>
+    <lastmod>2023-01-22T09:24:56+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/pages/</loc>
+    <lastmod>2023-01-22T09:24:56+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rakhama.com/series/atari/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
@@ -19,11 +34,6 @@
   
   <url>
     <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
   
@@ -120,16 +130,6 @@
   <url>
     <loc>https://rakhama.com/projects/</loc>
     <lastmod>2022-09-11T17:31:08+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/pages/about/</loc>
-    <lastmod>2022-09-11T16:10:56+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/pages/</loc>
-    <lastmod>2022-09-11T16:10:56+10:00</lastmod>
   </url>
   
   <url>
