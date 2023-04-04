@@ -3,12 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://rakhama.com/pages/about/</loc>
-    <lastmod>2023-01-22T09:24:56+10:00</lastmod>
+    <loc>https://rakhama.com/tags/.net/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/blazor/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/categories/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/posts/debug-server-hosted-blazor-wasm/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/future-reference/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/posts/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/categories/programming/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/programming/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/tips/</loc>
+    <lastmod>2023-04-04T16:20:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/pages/about/</loc>
     <lastmod>2023-01-22T09:24:56+10:00</lastmod>
   </url>
   
@@ -28,22 +78,7 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/tags/open-source/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/posts/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
   
@@ -63,16 +98,6 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/tags/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/tips/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/posts/tos-is-rubbish/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
@@ -83,23 +108,8 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/categories/programming/</loc>
-    <lastmod>2022-12-08T16:49:55+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/programming/</loc>
-    <lastmod>2022-12-08T16:49:55+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/posts/solid-principles-cheat-sheet/</loc>
     <lastmod>2022-12-08T16:49:55+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/.net/</loc>
-    <lastmod>2022-11-02T16:12:24+10:00</lastmod>
   </url>
   
   <url>

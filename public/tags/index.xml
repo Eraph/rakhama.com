@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Apr 2023 16:20:25 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.net</title>
+      <link>https://rakhama.com/tags/.net/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blazor</title>
+      <link>https://rakhama.com/tags/blazor/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/blazor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>future reference</title>
+      <link>https://rakhama.com/tags/future-reference/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/future-reference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://rakhama.com/tags/programming/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://rakhama.com/tags/tips/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/tips/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>atari-st</title>
@@ -17,15 +62,6 @@
       <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/atari-st/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>future reference</title>
-      <link>https://rakhama.com/tags/future-reference/</link>
-      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/future-reference/</guid>
       <description></description>
     </item>
     
@@ -48,38 +84,11 @@
     </item>
     
     <item>
-      <title>tips</title>
-      <link>https://rakhama.com/tags/tips/</link>
-      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/tips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cheat sheet</title>
       <link>https://rakhama.com/tags/cheat-sheet/</link>
       <pubDate>Thu, 08 Dec 2022 16:49:55 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/cheat-sheet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://rakhama.com/tags/programming/</link>
-      <pubDate>Thu, 08 Dec 2022 16:49:55 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.net</title>
-      <link>https://rakhama.com/tags/.net/</link>
-      <pubDate>Wed, 02 Nov 2022 16:12:24 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/.net/</guid>
       <description></description>
     </item>
     

@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <title>Garcia&#39;s Guide to the Galaxy :: Pages</title>
+    <title>Garcia&#39;s Guide to the Galaxy :: blazor</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Phil Watson" />
@@ -10,19 +10,19 @@
         content="" />
     <link href='https://fonts.googleapis.com/css2?family=Jura&display=swap'
         rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" href="https://rakhama.com/pages/index.xml" title="Garcia's Guide to the Galaxy" />
+    <link rel="alternate" type="application/rss+xml" href="https://rakhama.com/tags/blazor/index.xml" title="Garcia's Guide to the Galaxy" />
     <link rel="stylesheet" href="/scss/mako.min.ca0e88cabf496b5c05549231c6711d606913a86b3b670fa82470add02706ec53.css" integrity="sha256-yg6Iyr9Ja1wFVJIxxnEdYGkTqGs7Zw&#43;oJHCt0CcG7FM="
         crossorigin="anonymous" type="text/css" />
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Pages"/>
+<meta name="twitter:title" content="blazor"/>
 <meta name="twitter:description" content="A Cool Guy"/>
 
-    <meta property="og:title" content="Pages" />
+    <meta property="og:title" content="blazor" />
 <meta property="og:description" content="A Cool Guy" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://rakhama.com/pages/" />
-<meta property="og:updated_time" content="2023-01-22T09:24:56+10:00" />
+<meta property="og:url" content="https://rakhama.com/tags/blazor/" />
+<meta property="og:updated_time" content="2023-04-04T16:20:25+10:00" />
 
 </head>
 
@@ -48,6 +48,7 @@
                     <ul class="uk-list uk-list-collapse uk-margin-remove-vertical">
                         
 
+
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
@@ -58,7 +59,14 @@
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <span>Pages</span>
+    <a href="/tags/">Tags</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <span>blazor</span>
     
 </li>
                     </ul>
@@ -379,7 +387,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Not a geek
+          Just this guy
         </p>
       </div>
     </div>
@@ -397,6 +405,7 @@
       class="uk-breadcrumb uk-margin-remove-vertical uk-margin-small-left uk-margin-small-right uk-flex-auto uk-visible@m">
       
 
+
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
@@ -407,7 +416,14 @@
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <span>Pages</span>
+    <a href="/tags/">Tags</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <span>blazor</span>
     
 </li>
     </ul>
@@ -428,10 +444,6 @@
 
 
 
-
-<div uk-grid class="uk-grid-match uk-child-width-1-2@m uk-flex-row">
-    
-
     
     <div class="uk-margin-medium-bottom">
 	<div class="uk-card uk-card-default uk-card-small">
@@ -440,29 +452,17 @@
     <p class="title uk-flex">
         <span class="title-icon" uk-icon='file-text'
             title='Page' uk-tooltip></span>
-        <a class="uk-link-reset title-text" href="/pages/about/" title="About" uk-tooltip="pos: top-left">
-            About</a>
-        <a class="title-icon" uk-icon="link" href="/pages/about/" title="View page About"
+        <a class="uk-link-reset title-text" href="/posts/debug-server-hosted-blazor-wasm/" title="Debug Server Hosted Blazor Web Assembly in VS Code" uk-tooltip="pos: top-left">
+            Debug Server Hosted Blazor Web Assembly in VS Code</a>
+        <a class="title-icon" uk-icon="link" href="/posts/debug-server-hosted-blazor-wasm/" title="View page Debug Server Hosted Blazor Web Assembly in VS Code"
             uk-tooltip></a>
     </p>
 </div>
 
 			<div class="uk-card-body uk-flex uk-flex-1 uk-flex-top uk-flex-wrap">
 				
-				
-				
-				
-				<div class="uk-margin-right image summary-image uk-flex uk-flex-auto">
-					<a href="/pages/about/">
-						<img src="/pages/about/tea_hueee8b645622165c83db70974d33facf6_799192_500x0_resize_q75_box.jpg">
-					</a>
-				</div>
-				
-				
 				<div class="uk-flex uk-flex-1 uk-flex-column">
-					Tea. Early Grey. Hot.
-Howdy! My name&rsquo;s Phil, some of my friends call me Garcia. Still not wholly sure why. This is my guide to the galaxy. Well, it&rsquo;s mostly a guide to Linux and Atari STs. Actually it&rsquo;s hardly a guide, I barely know what I&rsquo;m doing myself. Welcome to my inaccurately named website.
-As for me, well I grew up in Scotland and made the move to Australia back in 2014.
+					<p>A published Blazor WebAssembly instance is just a collection of files that can be loaded into a browser. If these files are hosted on the API, running the API means the UI is running as well, probably from the same address. In this case it&rsquo;s a little different to debug compared to launching it standalone, but not any more complicated.</p>
 				</div>
 			</div>
 
@@ -476,16 +476,28 @@ As for me, well I grew up in Scotland and made the move to Australia back in 201
     <li>
         <span>
             <span uk-icon="calendar"></span>
-            <span class="uk-margin-small-left" title="Sunday, 22/Jan/2023 09:24 AEST" uk-tooltip>
-                Sunday, 22/Jan/2023 09:24 AEST
+            <span class="uk-margin-small-left" title="Tuesday, 04/Apr/2023 16:20 AEST" uk-tooltip>
+                Tuesday, 04/Apr/2023 16:20 AEST
             </span>
         </span>
     </li>
     
     
+    <li>
+        <span>
+            <span uk-icon="folder"></span>
+            <a href="/categories/programming"
+                class="uk-text-capitalize uk-link-muted uk-margin-small-left">
+                Programming
+            </a>
+        </span>
+    </li>
+    
+    
+    
 </ul>
 					<div class="window-footer-buttons uk-flex-auto uk-flex uk-flex-right">
-	<a href="/pages/about/" class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-width-auto@m">Read
+	<a href="/posts/debug-server-hosted-blazor-wasm/" class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-width-auto@m">Read
 		more &raquo;</a>
 </div>
 				</div>
@@ -496,8 +508,6 @@ As for me, well I grew up in Scotland and made the move to Australia back in 201
     
 
     
-</div>
-
 
 <div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
 	<article class="uk-article">
@@ -843,7 +853,7 @@ As for me, well I grew up in Scotland and made the move to Australia back in 201
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Not wholly terrible
+          A cool guy
         </p>
       </div>
     </div>

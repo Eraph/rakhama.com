@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Apr 2023 16:20:25 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Debug Server Hosted Blazor Web Assembly in VS Code</title>
+      <link>https://rakhama.com/posts/debug-server-hosted-blazor-wasm/</link>
+      <pubDate>Tue, 04 Apr 2023 16:20:25 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/debug-server-hosted-blazor-wasm/</guid>
+      <description>&lt;p&gt;A published Blazor WebAssembly instance is just a collection of files that can be loaded into a browser. If these files are hosted on the API, running the API means the UI is running as well, probably from the same address. In this case it&amp;rsquo;s a little different to debug compared to launching it standalone, but not any more complicated.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>TOS Is Rubbish</title>
