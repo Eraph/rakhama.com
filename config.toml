@@ -60,7 +60,7 @@ theme = "mako"
 
   [params.theme]
   titleBackgroundImage = "images/saturn.jpg"
-  # font = "Jura"
+  font = "Oxanium"
 
   # Gold
   # primary = "#fc0"

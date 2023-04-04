@@ -15,6 +15,14 @@ tags:
 A published Blazor WebAssembly instance is just a collection of files that can be loaded into a browser. If these files are hosted on the API, running the API means the UI is running as well, probably from the same address. In this case it's a little different to debug compared to launching it standalone, but not any more complicated.
 
 <!--more-->
+
+## Prerequisites
+You will need the following:
+* Chrome or Edge, no other browsers are supported, even other Chromium-based browsers such as Chromium or Brave.
+* The [C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for VS Code.
+
+## Setting up
+
 In our case, the API runs on a URL like `https://localhost:2200/api` and the Blazor WASM UI can be accessed from `https://localhost:2200`. To debug the UI, another debug session can be spun up in VS Code. To add a new launch profile, press `Ctrl+Shift+P` and select `Debug: Add Configuration...` or edit `launch.json` directly. Add the following configuration:
 
 ``` json
