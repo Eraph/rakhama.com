@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blazor on Garcia&#39;s Guide to the Galaxy</title>
-    <link>https://rakhama.com/tags/blazor/</link>
-    <description>Recent content in blazor on Garcia&#39;s Guide to the Galaxy</description>
+    <title>Professional Development on Garcia&#39;s Guide to the Galaxy</title>
+    <link>https://rakhama.com/series/professional-development/</link>
+    <description>Recent content in Professional Development on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Apr 2023 14:34:41 +1000</lastBuildDate>
     
-	<atom:link href="https://rakhama.com/tags/blazor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rakhama.com/series/professional-development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

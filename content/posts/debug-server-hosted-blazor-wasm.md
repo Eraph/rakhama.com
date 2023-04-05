@@ -11,6 +11,8 @@ tags:
   - programming
   - .net
   - tips
+series:
+  - Professional Development
 ---
 A published Blazor WebAssembly instance is just a collection of files that can be loaded into a browser. If these files are hosted on the API, running the API means the UI is running as well, probably from the same address. In this case it's a little different to debug compared to launching it standalone, but not any more complicated.
 

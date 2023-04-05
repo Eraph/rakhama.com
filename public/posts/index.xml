@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Apr 2023 16:20:25 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Apr 2023 14:34:41 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blazor With MVVM</title>
+      <link>https://rakhama.com/posts/blazor-with-mvvm/</link>
+      <pubDate>Wed, 05 Apr 2023 14:34:41 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/blazor-with-mvvm/</guid>
+      <description>&lt;p&gt;MVVM is a development pattern that has been around for a while now. It was designed to facilitate the development of WPF applications for Windows and is still used for the likes of &lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm&#34;&gt;Maui&lt;/a&gt; apps. I reckon it has a place in Blazor apps as a neat way to separate view from logic, and as a sort of volatile state management for when you don&amp;rsquo;t want state to persist between pages.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Debug Server Hosted Blazor Web Assembly in VS Code</title>

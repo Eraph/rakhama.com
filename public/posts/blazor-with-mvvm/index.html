@@ -2,27 +2,27 @@
 <html lang="en-us">
 
 <head>
-    <title>Garcia&#39;s Guide to the Galaxy :: Game Development</title>
+    <title>Garcia&#39;s Guide to the Galaxy :: Blazor With MVVM</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Phil Watson" />
     <meta name="description"
-        content="" />
+        content="A guide to setting up Blazor for MVVM" />
     <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
-        rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" href="https://rakhama.com/categories/game-development/index.xml" title="Garcia's Guide to the Galaxy" />
-    <link rel="stylesheet" href="/scss/mako.min.e8b44a8fcd47752bc949119007fe436f7b276eb6529a988b9a64499f2b2aeea9.css" integrity="sha256-6LRKj81HdSvJSRGQB/5Db3snbrZSmpiLmmRJnysq7qk="
+        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.e8b44a8fcd47752bc949119007fe436f7b276eb6529a988b9a64499f2b2aeea9.css" integrity="sha256-6LRKj81HdSvJSRGQB/5Db3snbrZSmpiLmmRJnysq7qk="
         crossorigin="anonymous" type="text/css" />
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Game Development"/>
-<meta name="twitter:description" content="A Cool Guy"/>
+<meta name="twitter:title" content="Blazor With MVVM"/>
+<meta name="twitter:description" content="A guide to setting up Blazor for MVVM"/>
 
-    <meta property="og:title" content="Game Development" />
-<meta property="og:description" content="A Cool Guy" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rakhama.com/categories/game-development/" />
-<meta property="og:updated_time" content="2022-07-26T20:02:53+10:00" />
+    <meta property="og:title" content="Blazor With MVVM" />
+<meta property="og:description" content="A guide to setting up Blazor for MVVM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rakhama.com/posts/blazor-with-mvvm/" />
+<meta property="article:published_time" content="2023-04-05T14:34:41+10:00" />
+<meta property="article:modified_time" content="2023-04-05T14:34:41+10:00" />
+
 
 </head>
 
@@ -59,14 +59,14 @@
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <a href="/categories/">Categories</a>
+    <a href="/posts/">Posts</a>
     
 </li>
 
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <span>Game Development</span>
+    <span>Blazor With MVVM</span>
     
 </li>
                     </ul>
@@ -201,7 +201,7 @@
 					</a>
 				</li>
 				
-				<li class='uk-active'>
+				<li class=''>
 					<a href="/categories/game-development/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Game development</span>
@@ -395,7 +395,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Great bunch of lad
+          There are worse
         </p>
       </div>
     </div>
@@ -424,14 +424,14 @@
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <a href="/categories/">Categories</a>
+    <a href="/posts/">Posts</a>
     
 </li>
 
 <li class="uk-text-small">
     <span uk-icon="triangle-right"></span>
     
-    <span>Game Development</span>
+    <span>Blazor With MVVM</span>
     
 </li>
     </ul>
@@ -448,36 +448,143 @@
         <div uk-grid class="uk-flex-row">
             <div class="uk-width-expand@m main">
                 
-
-
-
-
-    
-    <div class="uk-margin-medium-bottom">
-	<div class="uk-card uk-card-default uk-card-small">
-		<article class="uk-article uk-flex uk-flex-column uk-flex-stretch uk-height-1-1">
-			<div class="uk-card-header">
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+  <article class="uk-article">
+    <div class="uk-card-header">
     <p class="title uk-flex">
         <span class="title-icon" uk-icon='file-text'
             title='Page' uk-tooltip></span>
-        <a class="uk-link-reset title-text" href="/posts/sqlite-net-in-godot/" title="SQLite.NET in Godot" uk-tooltip="pos: top-left">
-            SQLite.NET in Godot</a>
-        <a class="title-icon" uk-icon="link" href="/posts/sqlite-net-in-godot/" title="View page SQLite.NET in Godot"
+        <a class="uk-link-reset title-text" href="/posts/blazor-with-mvvm/" title="Blazor With MVVM" uk-tooltip="pos: top-left">
+            Blazor With MVVM</a>
+        <a class="title-icon" uk-icon="link" href="/posts/blazor-with-mvvm/" title="View page Blazor With MVVM"
             uk-tooltip></a>
     </p>
 </div>
 
-			<div class="uk-card-body uk-flex uk-flex-1 uk-flex-top uk-flex-wrap">
-				
-				<div class="uk-flex uk-flex-1 uk-flex-column">
-					I&rsquo;ll talk more about why I think the Godot game engine is a good alternative to Unity as part of my alternatives series of posts, but for now I want to share for posterity&rsquo;s sake how to use SQLite.NET in Godot. Skip to the end to add the one package necessary to get SQLite.NET working in Godot.
-For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framework. SQLite is a good fit for games and I&rsquo;m fond of using an ORM where possible.
-				</div>
-			</div>
+    <div class="uk-card-body">
+      
+      <p>MVVM is a development pattern that has been around for a while now. It was designed to facilitate the development of WPF applications for Windows and is still used for the likes of <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">Maui</a> apps. I reckon it has a place in Blazor apps as a neat way to separate view from logic, and as a sort of volatile state management for when you don&rsquo;t want state to persist between pages.</p>
+<h2 id="goals">Goals</h2>
+<p>I won&rsquo;t go into detail of what MVVM is or what it can offer, that&rsquo;s <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">already been explained</a> better than I can elsewhere. This article also assumes you know what you&rsquo;re doing with your IDE and .NET in general, it also helps to have some familiarity with Blazor.</p>
+<p>In summary, MVVM is short for Model, View, ViewModel. From a Blazor application perspective:</p>
+<ul>
+<li>The <strong>Model</strong> would be a DTO, either stored in persistent state management or fetched fresh from a back-end API</li>
+<li>The <strong>View</strong> is the <code>.razor</code> file</li>
+<li>The <strong>ViewModel</strong> handles the state and logic of a view, be that a component or a page</li>
+</ul>
+<p>Some key benefits of MVVM with regards to a Blazor application:</p>
+<ul>
+<li>Negates (or minimises) the need for code-behind on components and pages</li>
+<li>Complete separation of views from logic; VMs are view agnostic and could, for example, be ported to a Maui app quite easily</li>
+<li>Light state management, e.g. for submission forms that are destroyed when submitted or navigating away</li>
+<li>Use of <code>INotifyPropertyChanged</code> and <code>INotifyCollectionChanged</code> interfaces streamline page refreshes</li>
+</ul>
+<p>For this example I will be using the default Blazor WASM template provided with .NET 6.0. Later versions of .NET should be able to follow the same principles outlined here. I will also be using the following packages:</p>
+<ul>
+<li><a href="https://www.nuget.org/packages/MvvmBlazor">MvvmBlazor</a> to easily set up Components and ViewModels</li>
+<li><a href="https://www.nuget.org/packages/CommunityToolkit.Mvvm">CommunityToolkit.Mvvm</a> to provide some useful MVVM functionality</li>
+<li><a href="https://www.nuget.org/packages/MudBlazor">MudBlazor</a>, a component framework with good MVVM integration.</li>
+</ul>
+<p>This demonstration won&rsquo;t do anything particularly fancy but should serve as a good introduction to how MVVM can work effectively in a Blazor app.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Start by creating a Blazor WASM project:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet new blazorwasm -n BlazorWithMvvm
+</code></pre></div><p>Go into the new directory and add the three packages mentioned previously:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet add package MvvmBlazor
+dotnet add package CommunityToolkit.Mvvm
+dotnet add package MudBlazor
+</code></pre></div><p>MvvmBlazor and MudBlazor both require additional setup.</p>
+<h3 id="setting-up-mvvmblazor">Setting up MvvmBlazor</h3>
+<p>MvvmBlazor&rsquo;s setup documentation can be found <a href="https://github.com/klemmchr/MvvmBlazor">here</a>.</p>
+<p>In <code>Program.cs</code>, register the MvvmBlazor service:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMvvm();
+</code></pre></div><p>Add the relevant MvvmBlazor namespaces to <code>_Imports.razor</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MvvmBlazor
+@using MvvmBlazor.Components
+</code></pre></div><h3 id="setting-up-mudblazor">Setting up MudBlazor</h3>
+<p>MudBlazor&rsquo;s setup documentation can be found <a href="https://www.mudblazor.com/getting-started/installation">here</a>.</p>
+<p>In <code>Program.cs</code>, register the MudBlazor service:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMudServices();
+</code></pre></div><p>Add the MudBlazor namespace to <code>_Imports.razor</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MudBlazor
+</code></pre></div><p>Add font and stylesheet references inside the <code>&lt;head&gt;</code> tag in <code>index.html</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
+&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_content/MudBlazor/MudBlazor.min.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
+</code></pre></div><p>Add a script reference alongside the existing Blazor script reference near the bottom of <code>&lt;body&gt;</code> in <code>index.html</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_content/MudBlazor/MudBlazor.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Add the components you need to <code>MainLayout.razor</code>; only <code>MudThemeProvider</code> is required. This can go underneath the <code>@inherits...</code> line.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MudThemeProvider</span>/&gt;
+&lt;<span style="color:#f92672">MudDialogProvider</span>/&gt;
+&lt;<span style="color:#f92672">MudSnackbarProvider</span>/&gt;
+</code></pre></div><h2 id="creating-an-mvvm-component">Creating an MVVM Component</h2>
+<h3 id="create-the-viewmodel">Create the ViewModel</h3>
+<p>MvvmBlazor relies on code generators to do a lot of the heavy lifting so VMs are pretty easy to put together. Here&rsquo;s an example (<code>using</code> statements and namespace removed for brevity):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">partial</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyButtonViewModel</span> : ViewModelBase
+{
+<span style="color:#a6e22e">    [Notify]</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span> _myMessage = <span style="color:#66d9ef">default</span>!;
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    [Parameter]</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> CurrentCount { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
 
-			<div class="uk-card-footer">
-				<div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap">
-					
+    <span style="color:#66d9ef">public</span> ICommand ButtonClick =&gt; <span style="color:#66d9ef">new</span> AsyncRelayCommand(SetCount, () =&gt; CurrentCount &gt; <span style="color:#ae81ff">3</span>);
+
+    <span style="color:#66d9ef">private</span> Task SetCount()
+    {
+        MyMessage = <span style="color:#e6db74">&#34;S&#39;cool!&#34;</span>;
+        <span style="color:#66d9ef">return</span> Task.CompletedTask;
+    }
+}
+</code></pre></div><p>Here&rsquo;s what you need to know about this ViewModel:</p>
+<ul>
+<li>Source generators require this class to have a namespace</li>
+<li>It must be declared as a <code>partial</code> for source generators to work</li>
+<li>It must inherit from <code>ViewModelBase</code></li>
+<li>The <code>[Notify]</code> attribute is applied to a member variable, source generators will handle the <code>INotify</code> goodies and expose it as a publicly accessible property</li>
+<li>The <code>[Parameter]</code> property will tie up with the component itself to pass parameters straight through to the ViewModel</li>
+<li><code>ButtonClick</code> is an <code>ICommand</code> which MudBlazor can use to plug into the <code>Command</code> property, <code>AsyncRelayCommand()</code> is a type provided by CommunityToolkit.Mvvm and in this case takes an action for the first parameter and a predicate for the second parameter; the action will not fire until the predicate is satisfied</li>
+<li>SetCount simply sets the source generated property, triggering notification updates automatically</li>
+</ul>
+<p>Add the ViewModel to the services registration in <code>Program.cs</code>. In this case I&rsquo;m using <code>AddTransient</code> so that it is disposed of when the component is destroyed; navigating away and back again will reset it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddTransient&lt;MyButtonViewModel&gt;();
+</code></pre></div><div uk-alert class='uk-alert-primary'>
+    
+You could set this up so that ViewModels can be picked up automatically by using reflection to find all classes with the suffix `ViewModel`, for example.
+
+</div>
+<h3 id="create-the-component">Create the Component</h3>
+<p>The following code demonstrates how to take advantage of the ViewModel for a component:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@inherits MvvmComponentBase&lt;<span style="color:#f92672">MyButtonViewModel</span>&gt;
+
+&lt;<span style="color:#f92672">MudButton</span> <span style="color:#a6e22e">Command</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@BindingContext.ButtonClick&#34;</span> <span style="color:#a6e22e">Disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@(!BindingContext.ButtonClick.CanExecute(null))&#34;</span>&gt;Is it cool?&lt;/<span style="color:#f92672">MudButton</span>&gt;
+
+&lt;<span style="color:#f92672">MudText</span>&gt;
+    @Bind(x =&gt; x.MyMessage)
+&lt;/<span style="color:#f92672">MudText</span>&gt;
+
+@code {
+    [Parameter]
+    public int CurrentCount { get; set; }
+}
+</code></pre></div><p>Here&rsquo;s what you need to know about this Component:</p>
+<ul>
+<li>It inherits from <code>MvvmComponentBase&lt;ComponentViewModel&gt;</code></li>
+<li>The concrete VM can be accessed with the <code>BindingContext</code> property</li>
+<li>In the case of <code>MudButton</code>, the <code>Command</code> property is not sufficient to disable it when <code>CanExecute()</code> is <code>false</code> so I&rsquo;ve set it up manually here</li>
+<li>Properties are bound with the pattern <code>@Bind(x =&gt; x.BindingPropertyName)</code></li>
+<li>Code-behind is unavoidable but minimal, other components still need to know what parameters this component can accept, hence the <code>@code</code> block</li>
+</ul>
+<h3 id="using-the-component">Using the Component</h3>
+<p>To demonstrate how this component works I plugged it in to the <code>Counter.razor</code> page by adding the following just above the <code>@code</code> block:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MyButton</span> <span style="color:#a6e22e">CurrentCount</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentCount&#34;</span> /&gt;
+</code></pre></div><p><code>currentCount</code> is a property on that component already and we&rsquo;re passing it down. The idea is that the user can increment that count, but we&rsquo;ll only see our button enable when the count is higher than 3 (see the predicate in the ViewModel).</p>
+<h3 id="try-it-out">Try it out!</h3>
+<p>Run the app, go to the <code>Counter</code> page and the button should be disabled. Increment the counter a few times and the button should be enabled, clicking it should show a wee message.</p>
+    </div>
+
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-column">
+        
 
 
 
@@ -485,8 +592,8 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <li>
         <span>
             <span uk-icon="calendar"></span>
-            <span class="uk-margin-small-left" title="Tuesday, 26/Jul/2022 20:02 AEST" uk-tooltip>
-                Tuesday, 26/Jul/2022 20:02 AEST
+            <span class="uk-margin-small-left" title="Wednesday, 05/Apr/2023 14:34 AEST" uk-tooltip>
+                Wednesday, 05/Apr/2023 14:34 AEST
             </span>
         </span>
     </li>
@@ -495,9 +602,9 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <li>
         <span>
             <span uk-icon="folder"></span>
-            <a href="/categories/game-development"
+            <a href="/categories/programming"
                 class="uk-text-capitalize uk-link-muted uk-margin-small-left">
-                Game Development
+                Programming
             </a>
         </span>
     </li>
@@ -508,52 +615,45 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <li>
         <span>
             <span uk-icon="album"></span>
-            <a href="/series/godot" class="uk-text-capitalize uk-margin-small-left">
-                Godot
+            <a href="/series/professional-development" class="uk-text-capitalize uk-margin-small-left">
+                Professional Development
             </a>
         </span>
     </li>
     
     
 </ul>
-					<div class="window-footer-buttons uk-flex-auto uk-flex uk-flex-right">
-	<a href="/posts/sqlite-net-in-godot/" class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-width-auto@m">Read
-		more &raquo;</a>
-</div>
-				</div>
-			</div>
-		</article>
-	</div>
-</div>
-    
+        
 
-    
-
-<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
-	<article class="uk-article">
-		<div class="uk-card-header">
-			<p class="title uk-flex">
-				<span class="title-icon" uk-icon="code" title="Pagination" uk-tooltip></span>
-				<span class="title-text">Pagination</span>
-				<a class="title-icon" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
-			</p>
-		</div>
-		<div class="uk-card-body">
-			<ul class="uk-pagination uk-flex-center" uk-margin>
-				
-				<li class="uk-disabled">
-					<span>
-						<span uk-pagination-previous></span>
-					</span>
-				</li>
-				
-				<li class="uk-active"><span>1</span></li>
-				
-				<li class="uk-disabled"><span><span uk-pagination-next></span></span></li>
-				
-			</ul>
-		</div>
-	</article>
+<p class="tags uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-1">
+	
+	<span uk-icon="tag"></span>
+	
+	<a href="/tags/blazor" class="uk-text-lowercase uk-margin-small-left">
+		blazor
+	</a>
+	
+	<a href="/tags/future-reference" class="uk-text-lowercase uk-margin-small-left">
+		future-reference
+	</a>
+	
+	<a href="/tags/programming" class="uk-text-lowercase uk-margin-small-left">
+		programming
+	</a>
+	
+	<a href="/tags/.net" class="uk-text-lowercase uk-margin-small-left">
+		.net
+	</a>
+	
+	<a href="/tags/tips" class="uk-text-lowercase uk-margin-small-left">
+		tips
+	</a>
+	
+	
+</p>
+      </div>
+    </div>
+  </article>
 </div>
 
 
@@ -687,7 +787,7 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
 					</a>
 				</li>
 				
-				<li class='uk-active'>
+				<li class=''>
 					<a href="/categories/game-development/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Game development</span>
@@ -881,7 +981,7 @@ For the uninitiated, SQLite.NET is an ORM for SQLite, similar to Entity Framewor
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          A cool guy
+          They call him &#34;Garcia&#34;
         </p>
       </div>
     </div>
