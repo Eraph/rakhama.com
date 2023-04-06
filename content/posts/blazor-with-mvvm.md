@@ -19,7 +19,7 @@ MVVM is a development pattern that has been around for a while now. It was desig
 <!--more-->
 
 ## Goals
-I won't go into detail of what MVVM is or what it can offer, that's [already been explained](https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm) better than I can elsewhere. This article also assumes you know what you're doing with your IDE and .NET in general, it also helps to have some familiarity with Blazor.
+I won't go into detail of what MVVM is or what it can offer, that's [already been explained](https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm) better than I could hope to. This article assumes you know what you're doing with your IDE and .NET in general, it also helps to have some familiarity with Blazor.
 
 In summary, MVVM is short for Model, View, ViewModel. From a Blazor application perspective:
 - The **Model** would be a DTO, either stored in persistent state management or fetched fresh from a back-end API
@@ -30,7 +30,7 @@ Some key benefits of MVVM with regards to a Blazor application:
 - Negates (or minimises) the need for code-behind on components and pages
 - Complete separation of views from logic; VMs are view agnostic and could, for example, be ported to a Maui app quite easily
 - Light state management, e.g. for submission forms that are destroyed when submitted or navigating away
-- Use of `INotifyPropertyChanged` and `INotifyCollectionChanged` interfaces streamline page refreshes
+- Use of `INotifyPropertyChanged` and `INotifyCollectionChanged` interfaces streamline component refreshes
 
 For this example I will be using the default Blazor WASM template provided with .NET 6.0. Later versions of .NET should be able to follow the same principles outlined here. I will also be using the following packages:
 - [MvvmBlazor](https://www.nuget.org/packages/MvvmBlazor) to easily set up Components and ViewModels

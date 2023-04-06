@@ -124,17 +124,17 @@
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">2</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">2</span>
 					</a>
 				</li>
@@ -181,7 +181,7 @@
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">5</span>
+						<span class="uk-badge uk-text-margin-small-left">6</span>
 					</a>
 				</li>
 				
@@ -245,31 +245,31 @@
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">8</span>
+						<span class="uk-badge">9</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">8</span>
+						<span class="uk-badge">9</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">6</span>
+						<span class="uk-badge">7</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">4</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">2</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">2</span>
 					</a>
 					
@@ -395,7 +395,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Fun&#39;s za cookin&#39;
+          Not wholly terrible
         </p>
       </div>
     </div>
@@ -465,7 +465,7 @@
       
       <p>MVVM is a development pattern that has been around for a while now. It was designed to facilitate the development of WPF applications for Windows and is still used for the likes of <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">Maui</a> apps. I reckon it has a place in Blazor apps as a neat way to separate view from logic, and as a sort of volatile state management for when you don&rsquo;t want state to persist between pages.</p>
 <h2 id="goals">Goals</h2>
-<p>I won&rsquo;t go into detail of what MVVM is or what it can offer, that&rsquo;s <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">already been explained</a> better than I can elsewhere. This article also assumes you know what you&rsquo;re doing with your IDE and .NET in general, it also helps to have some familiarity with Blazor.</p>
+<p>I won&rsquo;t go into detail of what MVVM is or what it can offer, that&rsquo;s <a href="https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm">already been explained</a> better than I could hope to. This article assumes you know what you&rsquo;re doing with your IDE and .NET in general, it also helps to have some familiarity with Blazor.</p>
 <p>In summary, MVVM is short for Model, View, ViewModel. From a Blazor application perspective:</p>
 <ul>
 <li>The <strong>Model</strong> would be a DTO, either stored in persistent state management or fetched fresh from a back-end API</li>
@@ -477,7 +477,7 @@
 <li>Negates (or minimises) the need for code-behind on components and pages</li>
 <li>Complete separation of views from logic; VMs are view agnostic and could, for example, be ported to a Maui app quite easily</li>
 <li>Light state management, e.g. for submission forms that are destroyed when submitted or navigating away</li>
-<li>Use of <code>INotifyPropertyChanged</code> and <code>INotifyCollectionChanged</code> interfaces streamline page refreshes</li>
+<li>Use of <code>INotifyPropertyChanged</code> and <code>INotifyCollectionChanged</code> interfaces streamline component refreshes</li>
 </ul>
 <p>For this example I will be using the default Blazor WASM template provided with .NET 6.0. Later versions of .NET should be able to follow the same principles outlined here. I will also be using the following packages:</p>
 <ul>
@@ -710,17 +710,17 @@ You could set this up so that ViewModels can be picked up automatically by using
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">2</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">2</span>
 					</a>
 				</li>
@@ -767,7 +767,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">5</span>
+						<span class="uk-badge uk-text-margin-small-left">6</span>
 					</a>
 				</li>
 				
@@ -831,31 +831,31 @@ You could set this up so that ViewModels can be picked up automatically by using
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">8</span>
+						<span class="uk-badge">9</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">8</span>
+						<span class="uk-badge">9</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">6</span>
+						<span class="uk-badge">7</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">4</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">2</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">2</span>
 					</a>
 					
@@ -981,7 +981,7 @@ You could set this up so that ViewModels can be picked up automatically by using
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          He has thumbs
+          A swell neighbour
         </p>
       </div>
     </div>
@@ -1004,7 +1004,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 				<span uk-icon="info"></span> &copy; Copyright 2023
 				Phil Watson<br>
 				<span uk-icon="calendar"></span> Last updated
-				Wednesday, 05/Apr/2023 14:34 AEST
+				Thursday, 06/Apr/2023 15:44 AEST
 			</p>
 			<p class="uk-margin-remove uk-text-right@s uk-flex-auto"><a href="https://github.com/Eraph/hugo-theme-mako"
 					target="_blank"><span uk-icon="github-alt"></span> Hugo

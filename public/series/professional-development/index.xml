@@ -6,10 +6,19 @@
     <description>Recent content in Professional Development on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2023 14:34:41 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Apr 2023 15:44:33 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/series/professional-development/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fluxor for Dummies</title>
+      <link>https://rakhama.com/posts/fluxor-for-dummies/</link>
+      <pubDate>Thu, 06 Apr 2023 15:44:33 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/fluxor-for-dummies/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/mrpmorris/Fluxor&#34;&gt;Fluxor&lt;/a&gt; is a Flux implementation for Blazor in the vein of Redux. It is a state management system designed for larger software systems that encourages immutability of state, pure functions and clean separation of code. Given my fairly basic understanding of the Flux pattern I thought it would be valuable to document what it is at a high level and what&amp;rsquo;s required when using Fluxor to implement the various concepts.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Blazor With MVVM</title>
