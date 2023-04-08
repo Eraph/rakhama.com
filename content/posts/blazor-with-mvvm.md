@@ -112,12 +112,12 @@ public partial class MyButtonViewModel : ViewModelBase
     [Parameter]
     public int CurrentCount { get; set; }
 
-    public ICommand ButtonClick => new AsyncRelayCommand(SetCount, () => CurrentCount > 3);
+    private bool _canSetCount => CurrentCount > 3;
 
-    private Task SetCount()
+    [RelayCommand(CanExecute = nameof(_canSetCount))]
+    private void SetCount()
     {
         MyMessage = "S'cool!";
-        return Task.CompletedTask;
     }
 }
 ```
@@ -127,8 +127,7 @@ Here's what you need to know about this ViewModel:
 - It must inherit from `ViewModelBase`
 - The `[Notify]` attribute is applied to a member variable, source generators will handle the `INotify` goodies and expose it as a publicly accessible property
 - The `[Parameter]` property will tie up with the component itself to pass parameters straight through to the ViewModel
-- `ButtonClick` is an `ICommand` which MudBlazor can use to plug into the `Command` property, `AsyncRelayCommand()` is a type provided by CommunityToolkit.Mvvm and in this case takes an action for the first parameter and a predicate for the second parameter; the action will not fire until the predicate is satisfied
-- SetCount simply sets the source generated property, triggering notification updates automatically
+- `SetCount` has a `RelayCommand` attribute from MVVM Toolkit which uses source generators to build an `IRelayCommand` object around the `SetCount()` method called `SetCountCommand`. It also references the `_canSetCount` variable to determine whether or not the command can be run with `CanExecute`. The method updates the source generated property `MyMessage` mentioned before, triggering notification updates automatically
 
 Add the ViewModel to the services registration in `Program.cs`. In this case I'm using `AddTransient` so that it is disposed of when the component is destroyed; navigating away and back again will reset it.
 ``` c#
@@ -144,7 +143,7 @@ The following code demonstrates how to take advantage of the ViewModel for a com
 ``` html
 @inherits MvvmComponentBase<MyButtonViewModel>
 
-<MudButton Command="@BindingContext.ButtonClick" Disabled="@(!BindingContext.ButtonClick.CanExecute(null))">Is it cool?</MudButton>
+<MudButton Command="@BindingContext.SetCountCommand" Disabled="@(!BindingContext.SetCountCommand.CanExecute(null))">Is it cool?</MudButton>
 
 <MudText>
     @Bind(x => x.MyMessage)

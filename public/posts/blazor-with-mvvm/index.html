@@ -395,7 +395,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Not wholly terrible
+          Dapper from his napper to his feet
         </p>
       </div>
     </div>
@@ -527,12 +527,12 @@ dotnet add package MudBlazor
 </span><span style="color:#a6e22e">    [Parameter]</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> CurrentCount { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
 
-    <span style="color:#66d9ef">public</span> ICommand ButtonClick =&gt; <span style="color:#66d9ef">new</span> AsyncRelayCommand(SetCount, () =&gt; CurrentCount &gt; <span style="color:#ae81ff">3</span>);
-
-    <span style="color:#66d9ef">private</span> Task SetCount()
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> _canSetCount =&gt; CurrentCount &gt; <span style="color:#ae81ff">3</span>;
+<span style="color:#a6e22e">
+</span><span style="color:#a6e22e">    [RelayCommand(CanExecute = nameof(_canSetCount))]</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> SetCount()
     {
         MyMessage = <span style="color:#e6db74">&#34;S&#39;cool!&#34;</span>;
-        <span style="color:#66d9ef">return</span> Task.CompletedTask;
     }
 }
 </code></pre></div><p>Here&rsquo;s what you need to know about this ViewModel:</p>
@@ -542,8 +542,7 @@ dotnet add package MudBlazor
 <li>It must inherit from <code>ViewModelBase</code></li>
 <li>The <code>[Notify]</code> attribute is applied to a member variable, source generators will handle the <code>INotify</code> goodies and expose it as a publicly accessible property</li>
 <li>The <code>[Parameter]</code> property will tie up with the component itself to pass parameters straight through to the ViewModel</li>
-<li><code>ButtonClick</code> is an <code>ICommand</code> which MudBlazor can use to plug into the <code>Command</code> property, <code>AsyncRelayCommand()</code> is a type provided by CommunityToolkit.Mvvm and in this case takes an action for the first parameter and a predicate for the second parameter; the action will not fire until the predicate is satisfied</li>
-<li>SetCount simply sets the source generated property, triggering notification updates automatically</li>
+<li><code>SetCount</code> has a <code>RelayCommand</code> attribute from MVVM Toolkit which uses source generators to build an <code>IRelayCommand</code> object around the <code>SetCount()</code> method called <code>SetCountCommand</code>. It also references the <code>_canSetCount</code> variable to determine whether or not the command can be run with <code>CanExecute</code>. The method updates the source generated property <code>MyMessage</code> mentioned before, triggering notification updates automatically</li>
 </ul>
 <p>Add the ViewModel to the services registration in <code>Program.cs</code>. In this case I&rsquo;m using <code>AddTransient</code> so that it is disposed of when the component is destroyed; navigating away and back again will reset it.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddTransient&lt;MyButtonViewModel&gt;();
@@ -556,7 +555,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 <p>The following code demonstrates how to take advantage of the ViewModel for a component:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@inherits MvvmComponentBase&lt;<span style="color:#f92672">MyButtonViewModel</span>&gt;
 
-&lt;<span style="color:#f92672">MudButton</span> <span style="color:#a6e22e">Command</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@BindingContext.ButtonClick&#34;</span> <span style="color:#a6e22e">Disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@(!BindingContext.ButtonClick.CanExecute(null))&#34;</span>&gt;Is it cool?&lt;/<span style="color:#f92672">MudButton</span>&gt;
+&lt;<span style="color:#f92672">MudButton</span> <span style="color:#a6e22e">Command</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@BindingContext.SetCountCommand&#34;</span> <span style="color:#a6e22e">Disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@(!BindingContext.SetCountCommand.CanExecute(null))&#34;</span>&gt;Is it cool?&lt;/<span style="color:#f92672">MudButton</span>&gt;
 
 &lt;<span style="color:#f92672">MudText</span>&gt;
     @Bind(x =&gt; x.MyMessage)
@@ -981,7 +980,7 @@ You could set this up so that ViewModels can be picked up automatically by using
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          A swell neighbour
+          Not a geek
         </p>
       </div>
     </div>

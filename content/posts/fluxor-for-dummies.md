@@ -28,7 +28,7 @@ Note that this is not a tutorial on Flux or Fluxor, both of those are covered qu
   - Reducer methods are typically `static` to encourage pure functions, and have the `[ReducerMethod]` attribute in Fluxor.
 - **Effect** - triggered by an action, typically performs an activity such as a service request and then could trigger another action. Does not affect state.
   - Effect methods can be static but will need to be part of a class instance if they depend on services which will be injected. Effect methods have the `[EffectMethod]` attribute in Fluxor.
-- **ActionSubscriber** - a service (`IActionSubscriber`) that intercepts actions but are independent of the store.
+- **ActionSubscriber** - a service (`IActionSubscriber`) that intercepts actions independent of the store.
 - Blazor components and pages should inherit `Fluxor.Blazor.Web.Components.FluxorComponent`.
   - If unable to inherit from that class, subcribe to the `StateChanged` event and execute `InvokeAsync(StateHasChanged)`. Don't forget to unsubscribe!
 

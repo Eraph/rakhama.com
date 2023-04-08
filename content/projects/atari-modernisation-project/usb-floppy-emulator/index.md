@@ -27,8 +27,14 @@ I purchased my Gotek through Ebay from a local seller, there doesn't seem to be 
 ## Installing the Gotek
 - Twisted cable?
 
-## Setting up <boot software name>
+## Using the Gotek
+With only two buttons and a 3-digit numeric display, there's not much to it! The right button increments the counter through the assigned slots, and the the left button predictably decrements the counter. Pressing both resets the counter to slot 0, which is one of two reserved slots:
 
-- What's that boot software again?
+- **Slot 0**: FlashFloppy configuration
+- **Slot 1**: Selecting a disk image from FlashFloppy with the F7 key puts the image in this slot and immediately boots
+
+## Setting up FlashFloppy
+[FlashFloppy](https://github.com/keirf/flashfloppy) is an open-source floppy disk emulator firmware for [Gotek drives](https://github.com/keirf/flashfloppy/wiki/Gotek-Models). It includes functionality to configure the Gotek and map floppy images to slots in the Gotek.
+- Intro to FlashFloppy
   - Setting up pages
   - Keeping track with ExCeL mofo
