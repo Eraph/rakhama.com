@@ -19,8 +19,6 @@ How to modernise the Atari ST desktop environment, from upgrading to a more mode
 
 <!--more-->
 
-![Moonlighting as an employee of the Shinra Corporation](st-desktop.gif)
-
 ## Friendship ended with TOS; Now EmuTOS is my best friend
 Forget about your stock TOS, [it's no good](/posts/tos-is-rubbish). Grab yourself a copy of [EmuTOS](https://github.com/emutos/emutos) instead. See my post on [TOS is Rubbish](/posts/tos-is-rubbish) for some help getting started.
 
