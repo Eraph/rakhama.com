@@ -3,6 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rakhama.com/posts/auto-unlock-fedora-drive/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/categories/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/categories/computing/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/future-reference/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/linux/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/posts/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/security/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/tips/</loc>
+    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/series/atari/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/atari-st/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/linked-article/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/categories/retro-computing/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/retro-computing/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/series/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/posts/atari-st-bad-dma-solved/</loc>
+    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rakhama.com/tags/.net/</loc>
     <lastmod>2023-04-06T15:44:33+10:00</lastmod>
   </url>
@@ -13,27 +98,7 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/posts/fluxor-for-dummies/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/posts/</loc>
     <lastmod>2023-04-06T15:44:33+10:00</lastmod>
   </url>
   
@@ -49,21 +114,6 @@
   
   <url>
     <loc>https://rakhama.com/tags/programming/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/series/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/</loc>
-    <lastmod>2023-04-06T15:44:33+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/tips/</loc>
     <lastmod>2023-04-06T15:44:33+10:00</lastmod>
   </url>
   
@@ -88,27 +138,7 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/series/atari/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/atari-st/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/tags/open-source/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/categories/retro-computing/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/retro-computing/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
   
@@ -138,11 +168,6 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/tags/linux/</loc>
-    <lastmod>2022-11-02T16:12:24+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/tags/ssl/</loc>
     <lastmod>2022-11-02T16:12:24+10:00</lastmod>
   </url>
@@ -155,11 +180,6 @@
   <url>
     <loc>https://rakhama.com/projects/</loc>
     <lastmod>2022-09-11T17:31:08+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/categories/computing/</loc>
-    <lastmod>2022-08-18T21:11:26+10:00</lastmod>
   </url>
   
   <url>

@@ -6,10 +6,20 @@
     <description>Recent content in Retro Computing on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 10 May 2023 19:14:39 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/categories/retro-computing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Mystery of the Atari ST&#39;s Bad DMA: Solved?</title>
+      <link>https://rakhama.com/posts/atari-st-bad-dma-solved/</link>
+      <pubDate>Wed, 10 May 2023 19:14:39 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/atari-st-bad-dma-solved/</guid>
+      <description>&lt;p&gt;When I set up my own SD-HDD solution based on the wonderful &lt;a href=&#34;https://github.com/retro16/acsi2stm&#34;&gt;ACSI2STM&lt;/a&gt; project, I found the hard drive was becoming corrupted pretty soon after setting it up. I thought it might have been my dodgy soldering or something funny about the way I had everything set up. Turns out I simply hadn&amp;rsquo;t heard about &lt;a href=&#34;https://exxosforum.co.uk/articles/DMA.html&#34;&gt;Bad DMA&lt;/a&gt;. A local Atari enthusiast meetup later and a solution was proposed; swap the 68000 chip for a newer, lower power and subsequently less noisy version.&lt;/p&gt;
+&lt;p&gt;It worked!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>TOS Is Rubbish</title>

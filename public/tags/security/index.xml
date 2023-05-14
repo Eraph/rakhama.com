@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Garcia&#39;s Guide to the Galaxy</title>
+    <link>https://rakhama.com/tags/security/</link>
+    <description>Recent content in security on Garcia&#39;s Guide to the Galaxy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 May 2023 14:32:11 +1000</lastBuildDate>
+    
+	<atom:link href="https://rakhama.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Auto Unlock Fedora Encrypted Drive</title>
+      <link>https://rakhama.com/posts/auto-unlock-fedora-drive/</link>
+      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/auto-unlock-fedora-drive/</guid>
+      <description>&lt;p&gt;I recently installed Fedora on my personal laptop to replace Manjaro as I found Manjaro to be a just a little too flaky for my liking and I know Fedora to be a solid alternative. During installation I was asked if I wanted to encrypt my drives. Now I&amp;rsquo;m not harbouring anything particularly sensitive but I thought it was worth doing, security first and all that; after all, we expect every website to support HTTPS these days so why not?&lt;/p&gt;
+&lt;p&gt;Well there is the matter of that mildly pesky login prompt on every boot&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Apr 2023 15:44:33 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 14 May 2023 14:32:11 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Computing</title>
+      <link>https://rakhama.com/categories/computing/</link>
+      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      
+      <guid>https://rakhama.com/categories/computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retro Computing</title>
+      <link>https://rakhama.com/categories/retro-computing/</link>
+      <pubDate>Wed, 10 May 2023 19:14:39 +1000</pubDate>
+      
+      <guid>https://rakhama.com/categories/retro-computing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Programming</title>
@@ -17,24 +35,6 @@
       <pubDate>Thu, 06 Apr 2023 15:44:33 +1000</pubDate>
       
       <guid>https://rakhama.com/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Retro Computing</title>
-      <link>https://rakhama.com/categories/retro-computing/</link>
-      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
-      
-      <guid>https://rakhama.com/categories/retro-computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computing</title>
-      <link>https://rakhama.com/categories/computing/</link>
-      <pubDate>Thu, 18 Aug 2022 21:11:26 +1000</pubDate>
-      
-      <guid>https://rakhama.com/categories/computing/</guid>
       <description></description>
     </item>
     

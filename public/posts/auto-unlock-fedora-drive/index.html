@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Garcia&#39;s Guide to the Galaxy :: Auto Unlock Fedora Encrypted Drive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Phil Watson" />
+    <meta name="description"
+        content="How to automatically unlock a LUKS encrypted drive with TPM2 in Fedora" />
+    <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
+        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.e8b44a8fcd47752bc949119007fe436f7b276eb6529a988b9a64499f2b2aeea9.css" integrity="sha256-6LRKj81HdSvJSRGQB/5Db3snbrZSmpiLmmRJnysq7qk="
+        crossorigin="anonymous" type="text/css" />
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://rakhama.com/posts/auto-unlock-fedora-drive/password.jpg"/>
+
+<meta name="twitter:title" content="Auto Unlock Fedora Encrypted Drive"/>
+<meta name="twitter:description" content="How to automatically unlock a LUKS encrypted drive with TPM2 in Fedora"/>
+
+    <meta property="og:title" content="Auto Unlock Fedora Encrypted Drive" />
+<meta property="og:description" content="How to automatically unlock a LUKS encrypted drive with TPM2 in Fedora" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rakhama.com/posts/auto-unlock-fedora-drive/" />
+<meta property="og:image" content="https://rakhama.com/posts/auto-unlock-fedora-drive/password.jpg" />
+<meta property="article:published_time" content="2023-05-14T14:32:11+10:00" />
+<meta property="article:modified_time" content="2023-05-14T14:32:11+10:00" />
+
+</head>
+
+<body>
+    <div id="menu" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+            <article class="uk-article">
+                <div class="uk-card-header">
+                    <p class="title uk-flex">
+                        <span class="title-icon" uk-icon="more" title="Navigation" uk-tooltip></span>
+                        <span class="title-text" title="Navigation" uk-tooltip>Navigation</span>
+                        <a class="title-icon" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
+                    </p>
+                </div>
+                <div class="uk-card-body uk-flex uk-flex-row">
+                    <a href="/" uk-icon="home"
+                        class="uk-icon-button uk-button-default uk-margin-small-left"></a>
+                    <a href="#menu" uk-toggle uk-icon="chevron-double-left"
+                        class="uk-icon-button uk-button-default uk-margin-small-left"></a>
+                </div>
+                <div class="uk-card-body uk-padding-remove-top">
+                    <ul class="uk-list uk-list-collapse uk-margin-remove-vertical">
+                        
+
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <a href="/">Garcia&#39;s Guide to the Galaxy</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <a href="/posts/">Posts</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <span>Auto Unlock Fedora Encrypted Drive</span>
+    
+</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='thumbnails'
+            title='Projects' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/projects/" title="Projects" uk-tooltip="pos: top-left">
+            Projects</a>
+        <a class="title-icon" uk-icon="link" href="/projects/" title="View Projects" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/projects/hugo-theme-mako/">
+						<span uk-icon="file-text"></span>
+						<span>Hugo Theme Mako</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='album'
+            title='Series' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/series/" title="Series" uk-tooltip="pos: top-left">
+            Series</a>
+        <a class="title-icon" uk-icon="link" href="/series/" title="View Series" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/series/atari/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Atari</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/professional-development/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/alternatives/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Alternatives</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/godot/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Godot</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='folder'
+            title='Categories' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/categories/" title="Categories" uk-tooltip="pos: top-left">
+            Categories</a>
+        <a class="title-icon" uk-icon="link" href="/categories/" title="View Categories" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/categories/programming/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Programming</span>
+						<span class="uk-badge uk-text-margin-small-left">6</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/retro-computing/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Retro computing</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/computing/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Computing</span>
+						<span class="uk-badge uk-text-margin-small-left">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/game-development/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Game development</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/software/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Software</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='tag'
+            title='Tags' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/tags/" title="Tags" uk-tooltip="pos: top-left">
+            Tags</a>
+        <a class="title-icon" uk-icon="link" href="/tags/" title="View Tags" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				<li class="tags uk-padding uk-padding-remove-vertical">
+					
+					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>future-reference</span>
+						<span class="uk-badge">10</span>
+					</a>
+					
+					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>tips</span>
+						<span class="uk-badge">10</span>
+					</a>
+					
+					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>programming</span>
+						<span class="uk-badge">7</span>
+					</a>
+					
+					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>.net</span>
+						<span class="uk-badge">4</span>
+					</a>
+					
+					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>atari-st</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/linux/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>linux</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/retro-computing/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>retro-computing</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/alternatives/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>alternatives</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/cheat-sheet/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>cheat-sheet</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/fedora/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>fedora</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/game-development/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>game-development</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/git/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>git</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/godot/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>godot</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/music/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>music</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/open-source/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>open-source</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/security/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>security</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/software/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>software</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/ssl/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>ssl</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom uk-flex-first@m">
+  <article class="uk-article">
+    <div class="uk-card-header">
+      <p class="title uk-flex">
+        <span class="title-icon" uk-icon='user' title='About' uk-tooltip></span>
+        <span class="uk-link-reset title-text" title="Phil Watson" uk-tooltip>Phil Watson
+        </span>
+        <a class="title-icon" uk-icon="link" href="https://rakhama.com/" title="Go home" uk-tooltip></a>
+      </p>
+    </div>
+    <div class="uk-card-body">
+      
+      <div class="image uk-margin-bottom">
+        <img src="/images/pw.jpg">
+      </div>
+      
+      
+      <ul class="uk-list uk-margin-remove-vertical nav-nolink">
+        <li class="uk-text-small">
+          <span>
+            <span uk-icon="quote-right"></span>
+            <span>He/Him</span>
+          </span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-remove-vertical nav-nolink">
+        <li class="uk-text-small">
+          <span>
+            <span uk-icon="location"></span>
+            <span>Brisbane, Australia</span>
+          </span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-nav uk-nav-default" uk-nav>
+        
+        <li class=''>
+          <a href="/pages/about/">
+            <span uk-icon="file-text"></span>
+            <span>About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small">
+        <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
+          Powered by tea
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+    </div>
+</div>
+    <div class="uk-container">
+        <nav uk-navbar class="uk-navbar-container uk-margin-medium-bottom uk-padding-remove uk-flex-column">
+  <div class="uk-navbar-left uk-padding-small">
+    <a class="uk-navbar-item uk-logo" href="/">Garcia&#39;s Guide to the Galaxy</a>
+  </div>
+  <div class="header-navigation uk-flex uk-flex-row uk-flex-middle">
+    <ul
+      class="uk-breadcrumb uk-margin-remove-vertical uk-margin-small-left uk-margin-small-right uk-flex-auto uk-visible@m">
+      
+
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <a href="/">Garcia&#39;s Guide to the Galaxy</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <a href="/posts/">Posts</a>
+    
+</li>
+
+<li class="uk-text-small">
+    <span uk-icon="triangle-right"></span>
+    
+    <span>Auto Unlock Fedora Encrypted Drive</span>
+    
+</li>
+    </ul>
+    <div class="uk-flex-none uk-hidden@m">
+      <a href="#menu" uk-toggle uk-icon="menu" class="uk-icon-button uk-button-default"></a>
+    </div>
+  </div>
+</nav>
+
+        
+
+        
+
+        <div uk-grid class="uk-flex-row">
+            <div class="uk-width-expand@m main">
+                
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+  <article class="uk-article">
+    <div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='file-text'
+            title='Page' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/posts/auto-unlock-fedora-drive/" title="Auto Unlock Fedora Encrypted Drive" uk-tooltip="pos: top-left">
+            Auto Unlock Fedora Encrypted Drive</a>
+        <a class="title-icon" uk-icon="link" href="/posts/auto-unlock-fedora-drive/" title="View Auto Unlock Fedora Encrypted Drive" uk-tooltip></a>
+    </p>
+</div>
+
+    <div class="uk-card-body">
+      
+      
+      <div class="uk-inline image uk-flex-none">
+	<img src="/posts/auto-unlock-fedora-drive/password.jpg" />
+</div>
+      
+      
+      <p>I recently installed Fedora on my personal laptop to replace Manjaro as I found Manjaro to be a just a little too flaky for my liking and I know Fedora to be a solid alternative. During installation I was asked if I wanted to encrypt my drives. Now I&rsquo;m not harbouring anything particularly sensitive but I thought it was worth doing, security first and all that; after all, we expect every website to support HTTPS these days so why not?</p>
+<p>Well there is the matter of that mildly pesky login prompt on every boot&hellip;</p>
+<p>Now, as any Linux user knows, for every problem there is a solution. It gets tricky when you try to find it and make it work for you! Fortunately Fedora Magazine already <a href="https://fedoramagazine.org/automatically-decrypt-your-disk-using-tpm2/">put up a guide</a> on how to do it, and I&rsquo;m going to basically distill what they&rsquo;ve put in there and demonstrate how I made it work for me. Check out that page for a more in-depth explanation of what everything does.</p>
+<h2 id="preparation">Preparation</h2>
+<ol>
+<li>
+<p>Ensure Secure Boot is enabled:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep secureboot
+</code></pre></div><p>You should see an entry with something like</p>
+<blockquote>
+<p><code>[    0.000000] secureboot: Secure boot enabled</code></p>
+</blockquote>
+<p>If it shows as disabled, you&rsquo;ll need to enable it. That&rsquo;s out of scope for this post but you should be able to find a solution easily on The Internets. Just be aware that secure boot has the potential to mess with other software you have running (DisplayLink springs to mind, article to follow)</p>
+</li>
+<li>
+<p>Ensure TMP2 chip is present:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep TPM2
+</code></pre></div><p>And again you&rsquo;ll see something like</p>
+<blockquote>
+<p><code>[    0.012155] ACPI: TPM2 0x0000000043BE1000 00004C (v04 INSYDE TGL-ULT  00000002 ACPI 00040000)</code></p>
+</blockquote>
+<p>If you don&rsquo;t&hellip; might as well stop reading!</p>
+</li>
+<li>
+<p>Install Clevis and necessary tools:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dnf install clevis clevis-luks clevis-dracut clevis-udisks2 clevis-systemd
+</code></pre></div></li>
+<li>
+<p>Prepare the system for binding the LUKS partition to TPM2 by regenerating initramfs:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv --regenerate-all
+</code></pre></div></li>
+<li>
+<p>Reboot to ensure the latest changes are picked up by the system.</p>
+</li>
+</ol>
+<h2 id="configuring-clevis">Configuring Clevis</h2>
+<ol>
+<li>
+<p>Execute the following command to bind the LUKS partition to the TPM2 module:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks bind -d /dev/nvme0n1p3 tpm2 <span style="color:#e6db74">&#39;{&#34;pcr_ids&#34;:&#34;1,4,5,7,9&#34;}&#39;</span>
+</code></pre></div></li>
+<li>
+<p>Automatic unlock may work at this point, try a restart and see. If not, the following trick should fix it as it did for me. It basically adds a delay before asking for a password to ensure that the required modules for unlocking are loaded.</p>
+<ol>
+<li>Edit the <code>systemd-ask-password-plymouth</code> service file:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ systemctl edit systemd-ask-password-plymouth.service
+</code></pre></div></li>
+<li>Add the following inside the file, taking note of where the comments say it should go:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Service]</span>
+<span style="color:#a6e22e">ExecStartPre</span><span style="color:#f92672">=</span><span style="color:#e6db74">/bin/sleep 10</span>
+</code></pre></div></li>
+<li>Open the file <code>/etc/dracut.conf.d/systemd-ask-password-plymouth.conf</code> for editing and add the following:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">install_items+</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; /etc/systemd/system/systemd-ask-password-plymouth.service.d/override.conf &#34;</span>
+</code></pre></div></li>
+<li>Regenerate initramfs:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv ‐‐regenerate-all
+</code></pre></div></li>
+<li>Reboot</li>
+<li>Regenerate the binding
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
+</code></pre></div></li>
+</ol>
+</li>
+</ol>
+<h2 id="reconfiguring-clevis-after-system-upgrade">Reconfiguring Clevis after system upgrade</h2>
+<p>When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there&rsquo;s a way to trigger this when initramfs is updated but I&rsquo;m not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zsht
+
+sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
+</code></pre></div>
+    </div>
+
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-column">
+        
+
+
+
+<ul class="uk-comment-meta uk-subnav uk-margin-remove-top">
+    <li>
+        <span>
+            <span uk-icon="calendar"></span>
+            <span class="uk-margin-small-left" title="Sunday, 14/May/2023 14:32 AEST" uk-tooltip>
+                Sunday, 14/May/2023 14:32 AEST
+            </span>
+        </span>
+    </li>
+    
+    
+    <li>
+        <span>
+            <span uk-icon="folder"></span>
+            <a href="/categories/computing"
+                class="uk-text-capitalize uk-link-muted uk-margin-small-left">
+                Computing
+            </a>
+        </span>
+    </li>
+    
+    
+    
+</ul>
+        
+
+<p class="tags uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-1">
+	
+	<span uk-icon="tag"></span>
+	
+	<a href="/tags/tips" class="uk-text-lowercase uk-margin-small-left">
+		tips
+	</a>
+	
+	<a href="/tags/linux" class="uk-text-lowercase uk-margin-small-left">
+		linux
+	</a>
+	
+	<a href="/tags/future-reference" class="uk-text-lowercase uk-margin-small-left">
+		future-reference
+	</a>
+	
+	<a href="/tags/security" class="uk-text-lowercase uk-margin-small-left">
+		security
+	</a>
+	
+	
+</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+
+            </div>
+            <div class="uk-width-1-4@m uk-visible@m uk-flex uk-flex-column">
+                
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='thumbnails'
+            title='Projects' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/projects/" title="Projects" uk-tooltip="pos: top-left">
+            Projects</a>
+        <a class="title-icon" uk-icon="link" href="/projects/" title="View Projects" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/projects/hugo-theme-mako/">
+						<span uk-icon="file-text"></span>
+						<span>Hugo Theme Mako</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='album'
+            title='Series' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/series/" title="Series" uk-tooltip="pos: top-left">
+            Series</a>
+        <a class="title-icon" uk-icon="link" href="/series/" title="View Series" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/series/atari/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Atari</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/professional-development/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/alternatives/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Alternatives</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/godot/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Godot</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='folder'
+            title='Categories' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/categories/" title="Categories" uk-tooltip="pos: top-left">
+            Categories</a>
+        <a class="title-icon" uk-icon="link" href="/categories/" title="View Categories" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/categories/programming/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Programming</span>
+						<span class="uk-badge uk-text-margin-small-left">6</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/retro-computing/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Retro computing</span>
+						<span class="uk-badge uk-text-margin-small-left">3</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/computing/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Computing</span>
+						<span class="uk-badge uk-text-margin-small-left">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/game-development/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Game development</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/software/">
+						<span uk-icon="copy"></span>
+						<span class="uk-text-capitalize">Software</span>
+						<span class="uk-badge uk-text-margin-small-left">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="title uk-flex">
+        <span class="title-icon" uk-icon='tag'
+            title='Tags' uk-tooltip></span>
+        <a class="uk-link-reset title-text" href="/tags/" title="Tags" uk-tooltip="pos: top-left">
+            Tags</a>
+        <a class="title-icon" uk-icon="link" href="/tags/" title="View Tags" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				<li class="tags uk-padding uk-padding-remove-vertical">
+					
+					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>future-reference</span>
+						<span class="uk-badge">10</span>
+					</a>
+					
+					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>tips</span>
+						<span class="uk-badge">10</span>
+					</a>
+					
+					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>programming</span>
+						<span class="uk-badge">7</span>
+					</a>
+					
+					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>.net</span>
+						<span class="uk-badge">4</span>
+					</a>
+					
+					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>atari-st</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/linux/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>linux</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/retro-computing/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>retro-computing</span>
+						<span class="uk-badge">3</span>
+					</a>
+					
+					<a href="/tags/alternatives/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>alternatives</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/cheat-sheet/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>cheat-sheet</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/fedora/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>fedora</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/game-development/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>game-development</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/git/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>git</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/godot/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>godot</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/music/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>music</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/open-source/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>open-source</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/security/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>security</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/software/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>software</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/ssl/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>ssl</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+				</li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom uk-flex-first@m">
+  <article class="uk-article">
+    <div class="uk-card-header">
+      <p class="title uk-flex">
+        <span class="title-icon" uk-icon='user' title='About' uk-tooltip></span>
+        <span class="uk-link-reset title-text" title="Phil Watson" uk-tooltip>Phil Watson
+        </span>
+        <a class="title-icon" uk-icon="link" href="https://rakhama.com/" title="Go home" uk-tooltip></a>
+      </p>
+    </div>
+    <div class="uk-card-body">
+      
+      <div class="image uk-margin-bottom">
+        <img src="/images/pw.jpg">
+      </div>
+      
+      
+      <ul class="uk-list uk-margin-remove-vertical nav-nolink">
+        <li class="uk-text-small">
+          <span>
+            <span uk-icon="quote-right"></span>
+            <span>He/Him</span>
+          </span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-remove-vertical nav-nolink">
+        <li class="uk-text-small">
+          <span>
+            <span uk-icon="location"></span>
+            <span>Brisbane, Australia</span>
+          </span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-nav uk-nav-default" uk-nav>
+        
+        <li class=''>
+          <a href="/pages/about/">
+            <span uk-icon="file-text"></span>
+            <span>About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+    </div>
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small">
+        <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
+          Not a geek
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+			<p class="title uk-flex">
+				<span class="title-icon" uk-icon="info" title="Etc." uk-tooltip></span>
+				<span class="title-text" title="Etc." uk-tooltip>Etc.</span>
+				<a class="title-icon" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
+			</p>
+		</div>
+		<div class="uk-card-body uk-flex">
+			<p class="uk-margin-remove">
+				<span uk-icon="info"></span> &copy; Copyright 2023
+				Phil Watson<br>
+				<span uk-icon="calendar"></span> Last updated
+				Sunday, 14/May/2023 14:32 AEST
+			</p>
+			<p class="uk-margin-remove uk-text-right@s uk-flex-auto"><a href="https://github.com/Eraph/hugo-theme-mako"
+					target="_blank"><span uk-icon="github-alt"></span> Hugo
+					Theme Mako</a> by <a href="https://rakhama.com/" target="_blank">Phil Watson</a></p>
+		</div>
+	</article>
+</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
