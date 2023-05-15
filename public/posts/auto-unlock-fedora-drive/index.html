@@ -403,7 +403,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Powered by tea
+          A skeleton in disguise
         </p>
       </div>
     </div>
@@ -491,7 +491,7 @@
 <p>If it shows as disabled, you&rsquo;ll need to enable it. That&rsquo;s out of scope for this post but you should be able to find a solution easily on The Internets. Just be aware that secure boot has the potential to mess with other software you have running (DisplayLink springs to mind, article to follow)</p>
 </li>
 <li>
-<p>Ensure TMP2 chip is present:</p>
+<p>Ensure TPM2 chip is present:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep TPM2
 </code></pre></div><p>And again you&rsquo;ll see something like</p>
 <blockquote>
@@ -542,7 +542,7 @@
 </ol>
 <h2 id="reconfiguring-clevis-after-system-upgrade">Reconfiguring Clevis after system upgrade</h2>
 <p>When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there&rsquo;s a way to trigger this when initramfs is updated but I&rsquo;m not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zsht
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zshs
 
 sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
 </code></pre></div>
@@ -938,7 +938,7 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Not a geek
+          A cool guy
         </p>
       </div>
     </div>

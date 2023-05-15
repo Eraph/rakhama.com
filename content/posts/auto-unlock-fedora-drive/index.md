@@ -31,7 +31,7 @@ Now, as any Linux user knows, for every problem there is a solution. It gets tri
 
     If it shows as disabled, you'll need to enable it. That's out of scope for this post but you should be able to find a solution easily on The Internets. Just be aware that secure boot has the potential to mess with other software you have running (DisplayLink springs to mind, article to follow)
 
-2. Ensure TMP2 chip is present:
+2. Ensure TPM2 chip is present:
     ~~~ bash
     $ dmesg | grep TPM2
     ~~~
@@ -87,7 +87,7 @@ Now, as any Linux user knows, for every problem there is a solution. It gets tri
 When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there's a way to trigger this when initramfs is updated but I'm not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.
 
 ``` bash
-!# /bin/zsht
+!# /bin/zshs
 
 sudo clevis luks regen -d /dev/nvme0n1p3 -s 1 tpm2
 ```
