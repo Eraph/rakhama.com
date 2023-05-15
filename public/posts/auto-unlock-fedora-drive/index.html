@@ -403,7 +403,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          A skeleton in disguise
+          Quite a gent
         </p>
       </div>
     </div>
@@ -542,7 +542,7 @@
 </ol>
 <h2 id="reconfiguring-clevis-after-system-upgrade">Reconfiguring Clevis after system upgrade</h2>
 <p>When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there&rsquo;s a way to trigger this when initramfs is updated but I&rsquo;m not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zshs
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zsh
 
 sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
 </code></pre></div>
@@ -938,7 +938,7 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          A cool guy
+          He&#39;s Phil Watson
         </p>
       </div>
     </div>

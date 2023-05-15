@@ -87,7 +87,7 @@ Now, as any Linux user knows, for every problem there is a solution. It gets tri
 When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there's a way to trigger this when initramfs is updated but I'm not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.
 
 ``` bash
-!# /bin/zshs
+!# /bin/zsh
 
 sudo clevis luks regen -d /dev/nvme0n1p3 -s 1 tpm2
 ```
