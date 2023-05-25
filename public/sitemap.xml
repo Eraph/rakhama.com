@@ -3,52 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://rakhama.com/posts/auto-unlock-fedora-drive/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <loc>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</loc>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/categories/computing/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/fedora/</loc>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/tags/linux/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/open-source/</loc>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/posts/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/tags/security/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/tags/ssl/</loc>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/tags/</loc>
-    <lastmod>2023-05-14T14:32:11+10:00</lastmod>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url>
   
   <url>
     <loc>https://rakhama.com/tags/tips/</loc>
+    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rakhama.com/posts/auto-unlock-fedora-drive/</loc>
     <lastmod>2023-05-14T14:32:11+10:00</lastmod>
   </url>
   
@@ -138,11 +158,6 @@
   </url>
   
   <url>
-    <loc>https://rakhama.com/tags/open-source/</loc>
-    <lastmod>2023-01-09T08:12:26+10:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rakhama.com/posts/tos-is-rubbish/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
   </url>
@@ -159,16 +174,6 @@
   
   <url>
     <loc>https://rakhama.com/posts/asp-net-self-signed-certs-fedora/</loc>
-    <lastmod>2022-11-02T16:12:24+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/fedora/</loc>
-    <lastmod>2022-11-02T16:12:24+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rakhama.com/tags/ssl/</loc>
     <lastmod>2022-11-02T16:12:24+10:00</lastmod>
   </url>
   

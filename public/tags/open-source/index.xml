@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>open source on Garcia&#39;s Guide to the Galaxy</title>
+    <title>open-source on Garcia&#39;s Guide to the Galaxy</title>
     <link>https://rakhama.com/tags/open-source/</link>
-    <description>Recent content in open source on Garcia&#39;s Guide to the Galaxy</description>
+    <description>Recent content in open-source on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2023 08:12:26 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 23 May 2023 15:59:26 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>All in One Guide to Setting Up Ssh</title>
+      <link>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</link>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</guid>
+      <description>&lt;p&gt;This guide is mostly a reference for myself as it&amp;rsquo;s a workflow that I find myself following whenever I set up a new Linux machine. I&amp;rsquo;m sharing it here as I&amp;rsquo;m sure many will find this useful, and it will save me from looking up each distinct step in the future.&lt;/p&gt;
+&lt;p&gt;I also took the opportunity to add some bonus network configuration tips to get the most out of the setup.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>TOS Is Rubbish</title>

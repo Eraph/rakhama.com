@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 May 2023 14:32:11 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 23 May 2023 15:59:26 +1000</lastBuildDate>
     
 	<atom:link href="https://rakhama.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>fedora</title>
+      <link>https://rakhama.com/tags/fedora/</link>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>future reference</title>
       <link>https://rakhama.com/tags/future-reference/</link>
-      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/future-reference/</guid>
       <description></description>
@@ -23,25 +32,43 @@
     <item>
       <title>linux</title>
       <link>https://rakhama.com/tags/linux/</link>
-      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>open-source</title>
+      <link>https://rakhama.com/tags/open-source/</link>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>security</title>
       <link>https://rakhama.com/tags/security/</link>
-      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/security/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>ssl</title>
+      <link>https://rakhama.com/tags/ssl/</link>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
+      
+      <guid>https://rakhama.com/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>tips</title>
       <link>https://rakhama.com/tags/tips/</link>
-      <pubDate>Sun, 14 May 2023 14:32:11 +1000</pubDate>
+      <pubDate>Tue, 23 May 2023 15:59:26 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/tips/</guid>
       <description></description>
@@ -102,38 +129,11 @@
     </item>
     
     <item>
-      <title>open source</title>
-      <link>https://rakhama.com/tags/open-source/</link>
-      <pubDate>Mon, 09 Jan 2023 08:12:26 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/open-source/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>cheat sheet</title>
       <link>https://rakhama.com/tags/cheat-sheet/</link>
       <pubDate>Thu, 08 Dec 2022 16:49:55 +1000</pubDate>
       
       <guid>https://rakhama.com/tags/cheat-sheet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fedora</title>
-      <link>https://rakhama.com/tags/fedora/</link>
-      <pubDate>Wed, 02 Nov 2022 16:12:24 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/fedora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssl</title>
-      <link>https://rakhama.com/tags/ssl/</link>
-      <pubDate>Wed, 02 Nov 2022 16:12:24 +1000</pubDate>
-      
-      <guid>https://rakhama.com/tags/ssl/</guid>
       <description></description>
     </item>
     
