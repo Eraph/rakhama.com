@@ -6,11 +6,7 @@
     <description>Recent content in security on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2023 15:59:26 +1000</lastBuildDate>
-    
-	<atom:link href="https://rakhama.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 May 2023 15:59:26 +1000</lastBuildDate><atom:link href="https://rakhama.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All in One Guide to Setting Up Ssh</title>
       <link>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</link>

@@ -9,7 +9,7 @@
     <meta name="description"
         content="How to automatically unlock a LUKS encrypted drive with TPM2 in Fedora" />
     <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
-        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.e8b44a8fcd47752bc949119007fe436f7b276eb6529a988b9a64499f2b2aeea9.css" integrity="sha256-6LRKj81HdSvJSRGQB/5Db3snbrZSmpiLmmRJnysq7qk="
+        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.b9bbd637bc021e00855d6fb8da98d7720b2cd7194b9a60e145b415b7f4899295.css" integrity="sha256-ubvWN7wCHgCFXW&#43;42pjXcgss1xlLmmDhRbQVt/SJkpU="
         crossorigin="anonymous" type="text/css" />
     
     <meta name="twitter:card" content="summary_large_image"/>
@@ -21,10 +21,10 @@
     <meta property="og:title" content="Auto Unlock Fedora Encrypted Drive" />
 <meta property="og:description" content="How to automatically unlock a LUKS encrypted drive with TPM2 in Fedora" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rakhama.com/posts/auto-unlock-fedora-drive/" />
-<meta property="og:image" content="https://rakhama.com/posts/auto-unlock-fedora-drive/password.jpg" />
+<meta property="og:url" content="https://rakhama.com/posts/auto-unlock-fedora-drive/" /><meta property="og:image" content="https://rakhama.com/posts/auto-unlock-fedora-drive/password.jpg" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-14T14:32:11+10:00" />
 <meta property="article:modified_time" content="2023-05-14T14:32:11+10:00" />
+
 
 </head>
 
@@ -124,17 +124,17 @@
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">3</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">4</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
@@ -180,7 +180,7 @@
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">6</span>
+						<span class="uk-badge uk-text-margin-small-left">7</span>
 					</a>
 				</li>
 				
@@ -243,21 +243,26 @@
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">7</span>
+						<span class="uk-badge">8</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">5</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">4</span>
 					</a>
 					
@@ -268,11 +273,6 @@
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">3</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
@@ -328,6 +328,11 @@
 					
 					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/maui/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>maui</span>
 						<span class="uk-badge">1</span>
 					</a>
 					
@@ -403,7 +408,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          He has thumbs
+          Mostly harmless
         </p>
       </div>
     </div>
@@ -483,7 +488,7 @@
 <ol>
 <li>
 <p>Ensure Secure Boot is enabled:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep secureboot
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep secureboot
 </code></pre></div><p>You should see an entry with something like</p>
 <blockquote>
 <p><code>[    0.000000] secureboot: Secure boot enabled</code></p>
@@ -492,7 +497,7 @@
 </li>
 <li>
 <p>Ensure TPM2 chip is present:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep TPM2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmesg | grep TPM2
 </code></pre></div><p>And again you&rsquo;ll see something like</p>
 <blockquote>
 <p><code>[    0.012155] ACPI: TPM2 0x0000000043BE1000 00004C (v04 INSYDE TGL-ULT  00000002 ACPI 00040000)</code></p>
@@ -501,11 +506,11 @@
 </li>
 <li>
 <p>Install Clevis and necessary tools:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dnf install clevis clevis-luks clevis-dracut clevis-udisks2 clevis-systemd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dnf install clevis clevis-luks clevis-dracut clevis-udisks2 clevis-systemd
 </code></pre></div></li>
 <li>
 <p>Prepare the system for binding the LUKS partition to TPM2 by regenerating initramfs:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv --regenerate-all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv --regenerate-all
 </code></pre></div></li>
 <li>
 <p>Reboot to ensure the latest changes are picked up by the system.</p>
@@ -515,34 +520,34 @@
 <ol>
 <li>
 <p>Execute the following command to bind the LUKS partition to the TPM2 module:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks bind -d /dev/nvme0n1p3 tpm2 <span style="color:#e6db74">&#39;{&#34;pcr_ids&#34;:&#34;1,4,5,7,9&#34;}&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks bind -d /dev/nvme0n1p3 tpm2 <span style="color:#e6db74">&#39;{&#34;pcr_ids&#34;:&#34;1,4,5,7,9&#34;}&#39;</span>
 </code></pre></div></li>
 <li>
 <p>Automatic unlock may work at this point, try a restart and see. If not, the following trick should fix it as it did for me. It basically adds a delay before asking for a password to ensure that the required modules for unlocking are loaded.</p>
 <ol>
 <li>Edit the <code>systemd-ask-password-plymouth</code> service file:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ systemctl edit systemd-ask-password-plymouth.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ systemctl edit systemd-ask-password-plymouth.service
 </code></pre></div></li>
 <li>Add the following inside the file, taking note of where the comments say it should go:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Service]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Service]</span>
 <span style="color:#a6e22e">ExecStartPre</span><span style="color:#f92672">=</span><span style="color:#e6db74">/bin/sleep 10</span>
 </code></pre></div></li>
 <li>Open the file <code>/etc/dracut.conf.d/systemd-ask-password-plymouth.conf</code> for editing and add the following:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">install_items+</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; /etc/systemd/system/systemd-ask-password-plymouth.service.d/override.conf &#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">install_items+</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34; /etc/systemd/system/systemd-ask-password-plymouth.service.d/override.conf &#34;</span>
 </code></pre></div></li>
 <li>Regenerate initramfs:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv ‐‐regenerate-all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dracut -fv ‐‐regenerate-all
 </code></pre></div></li>
 <li>Reboot</li>
 <li>Regenerate the binding
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
 </code></pre></div></li>
 </ol>
 </li>
 </ol>
 <h2 id="reconfiguring-clevis-after-system-upgrade">Reconfiguring Clevis after system upgrade</h2>
 <p>When upgrading the kernel for example, initramfs is regenerated and that requires an update to the binding. Perhaps there&rsquo;s a way to trigger this when initramfs is updated but I&rsquo;m not aware of one, so for now I have the following in a script to run when the password prompt makes an appearance again.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zsh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">!# /bin/zsh
 
 sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span> tpm2
 </code></pre></div>
@@ -659,17 +664,17 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">3</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">4</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
@@ -715,7 +720,7 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">6</span>
+						<span class="uk-badge uk-text-margin-small-left">7</span>
 					</a>
 				</li>
 				
@@ -778,21 +783,26 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">7</span>
+						<span class="uk-badge">8</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">5</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">4</span>
 					</a>
 					
@@ -803,11 +813,6 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">3</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
@@ -863,6 +868,11 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 					
 					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/maui/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>maui</span>
 						<span class="uk-badge">1</span>
 					</a>
 					
@@ -938,7 +948,7 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          A good sort
+          Definitely not a robot
         </p>
       </div>
     </div>
@@ -961,7 +971,7 @@ sudo clevis luks regen -d /dev/nvme0n1p3 -s <span style="color:#ae81ff">1</span>
 				<span uk-icon="info"></span> &copy; Copyright 2023
 				Phil Watson<br>
 				<span uk-icon="calendar"></span> Last updated
-				Tuesday, 23/May/2023 15:59 AEST
+				Thursday, 09/Nov/2023 14:20 AEST
 			</p>
 			<p class="uk-margin-remove uk-text-right@s uk-flex-auto"><a href="https://github.com/Eraph/hugo-theme-mako"
 					target="_blank"><span uk-icon="github-alt"></span> Hugo

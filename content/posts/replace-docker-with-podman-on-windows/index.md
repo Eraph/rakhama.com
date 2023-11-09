@@ -18,9 +18,25 @@ I'm sure many were caught out by the switch-and-bait carried out by Docker when 
 
 Full installation instructions can be found [here](https://github.com/containers/podman/blob/main/docs/tutorials/podman-for-windows.md), but I've described the important bits below.
 
+## Setting up Podman
 1. Remove Docker if you already have it installed. You don't need it any more.
-2. Go to the Podman Releases page on Github and find the latest installer, it's under the **Assets** section near the bottom of a release.
+2. Go to the Podman Releases page on Github and find the latest installer, it's under the **Assets** section near the bottom of a release. Download the `.msi` file.
     ![posts/replace-docker-with-podman-on-windows/assets.jpg]
+3. Run the MSI to install the Podman client.
+4. Open PowerShell and run the following to make sure it's installed properly:
+    ~~~ sh
+    > podman help
+    ~~~
+5. If you're all good, the next step is to initialise the WSL machine that runs the containers:
+    ~~~ sh
+    > podman machine init
+    ~~~
+6. Then you can start up the machine:
+    ~~~ sh
+    > podman machine start
+    ~~~
+
+
 2. Install [Podman Desktop](https://podman-desktop.io/downloads), you can find it on Chocolatey:
     ~~~ ps
     > choco install podman-desktop

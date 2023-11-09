@@ -6,18 +6,14 @@
     <description>Recent content in git on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Nov 2021 19:37:16 +1000</lastBuildDate>
-    
-	<atom:link href="https://rakhama.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Nov 2021 19:37:16 +1000</lastBuildDate><atom:link href="https://rakhama.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post #1: A Git Trick</title>
       <link>https://rakhama.com/posts/a-git-trick/</link>
       <pubDate>Tue, 02 Nov 2021 19:37:16 +1000</pubDate>
       
       <guid>https://rakhama.com/posts/a-git-trick/</guid>
-      <description>&lt;p&gt;Hello! I&amp;rsquo;ve started a new blog. For my first post I&amp;rsquo;m going to share a Git configuration trick that I often use to work around this dang ol&amp;rsquo; error message when trying to push a locally created branch to a remote repository:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;ve started a new blog. For my first post I&amp;rsquo;m going to share a Git configuration trick that I often use to work around this dang ol&#39; error message when trying to push a locally created branch to a remote repository:&lt;/p&gt;</description>
     </item>
     
   </channel>

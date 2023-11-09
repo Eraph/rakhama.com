@@ -9,7 +9,7 @@
     <meta name="description"
         content="A guide to setting up Blazor for MVVM" />
     <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
-        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.e8b44a8fcd47752bc949119007fe436f7b276eb6529a988b9a64499f2b2aeea9.css" integrity="sha256-6LRKj81HdSvJSRGQB/5Db3snbrZSmpiLmmRJnysq7qk="
+        rel="stylesheet"><link rel="stylesheet" href="/scss/mako.min.b9bbd637bc021e00855d6fb8da98d7720b2cd7194b9a60e145b415b7f4899295.css" integrity="sha256-ubvWN7wCHgCFXW&#43;42pjXcgss1xlLmmDhRbQVt/SJkpU="
         crossorigin="anonymous" type="text/css" />
     
     <meta name="twitter:card" content="summary"/>
@@ -19,9 +19,10 @@
     <meta property="og:title" content="Blazor With MVVM" />
 <meta property="og:description" content="A guide to setting up Blazor for MVVM" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rakhama.com/posts/blazor-with-mvvm/" />
+<meta property="og:url" content="https://rakhama.com/posts/blazor-with-mvvm/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-05T14:34:41+10:00" />
 <meta property="article:modified_time" content="2023-04-05T14:34:41+10:00" />
+<meta property="og:see_also" content="https://rakhama.com/posts/run-blazor-web-application-as-maui-mobile-app/" /><meta property="og:see_also" content="https://rakhama.com/posts/fluxor-for-dummies/" /><meta property="og:see_also" content="https://rakhama.com/posts/debug-server-hosted-blazor-wasm/" />
 
 
 </head>
@@ -122,17 +123,17 @@
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">3</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">4</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
@@ -178,7 +179,7 @@
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">6</span>
+						<span class="uk-badge uk-text-margin-small-left">7</span>
 					</a>
 				</li>
 				
@@ -241,21 +242,26 @@
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">7</span>
+						<span class="uk-badge">8</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">5</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">4</span>
 					</a>
 					
@@ -266,11 +272,6 @@
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">3</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
@@ -326,6 +327,11 @@
 					
 					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/maui/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>maui</span>
 						<span class="uk-badge">1</span>
 					</a>
 					
@@ -401,7 +407,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Quite a gent
+          Great bunch of lad
         </p>
       </div>
     </div>
@@ -493,46 +499,46 @@
 <p>This demonstration won&rsquo;t do anything particularly fancy but should serve as a good introduction to how MVVM can work effectively in a Blazor app.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>Start by creating a Blazor WASM project:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet new blazorwasm -n BlazorWithMvvm
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet new blazorwasm -n BlazorWithMvvm
 </code></pre></div><p>Go into the new directory and add the three packages mentioned previously:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet add package MvvmBlazor
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dotnet add package MvvmBlazor
 dotnet add package CommunityToolkit.Mvvm
 dotnet add package MudBlazor
 </code></pre></div><p>MvvmBlazor and MudBlazor both require additional setup.</p>
 <h3 id="setting-up-mvvmblazor">Setting up MvvmBlazor</h3>
 <p>MvvmBlazor&rsquo;s setup documentation can be found <a href="https://github.com/klemmchr/MvvmBlazor">here</a>.</p>
 <p>In <code>Program.cs</code>, register the MvvmBlazor service:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMvvm();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMvvm();
 </code></pre></div><p>Add the relevant MvvmBlazor namespaces to <code>_Imports.razor</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MvvmBlazor
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MvvmBlazor
 @using MvvmBlazor.Components
 </code></pre></div><h3 id="setting-up-mudblazor">Setting up MudBlazor</h3>
 <p>MudBlazor&rsquo;s setup documentation can be found <a href="https://www.mudblazor.com/getting-started/installation">here</a>.</p>
 <p>In <code>Program.cs</code>, register the MudBlazor service:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMudServices();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddMudServices();
 </code></pre></div><p>Add the MudBlazor namespace to <code>_Imports.razor</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MudBlazor
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@using MudBlazor
 </code></pre></div><p>Add font and stylesheet references inside the <code>&lt;head&gt;</code> tag in <code>index.html</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
 &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_content/MudBlazor/MudBlazor.min.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> /&gt;
 </code></pre></div><p>Add a script reference alongside the existing Blazor script reference near the bottom of <code>&lt;body&gt;</code> in <code>index.html</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_content/MudBlazor/MudBlazor.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_content/MudBlazor/MudBlazor.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><p>Add the components you need to <code>MainLayout.razor</code>; only <code>MudThemeProvider</code> is required. This can go underneath the <code>@inherits...</code> line.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MudThemeProvider</span>/&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MudThemeProvider</span>/&gt;
 &lt;<span style="color:#f92672">MudDialogProvider</span>/&gt;
 &lt;<span style="color:#f92672">MudSnackbarProvider</span>/&gt;
 </code></pre></div><h2 id="creating-an-mvvm-component">Creating an MVVM Component</h2>
 <h3 id="create-the-viewmodel">Create the ViewModel</h3>
 <p>MvvmBlazor relies on code generators to do a lot of the heavy lifting so VMs are pretty easy to put together. Here&rsquo;s an example (<code>using</code> statements and namespace removed for brevity):</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">partial</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyButtonViewModel</span> : ViewModelBase
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">partial</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyButtonViewModel</span> : ViewModelBase
 {
 <span style="color:#a6e22e">    [Notify]</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span> _myMessage = <span style="color:#66d9ef">default</span>!;
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">string</span> <span style="color:#ae81ff">_</span>myMessage = <span style="color:#66d9ef">default</span>!;
 <span style="color:#a6e22e">
 </span><span style="color:#a6e22e">    [Parameter]</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> CurrentCount { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> _canSetCount =&gt; CurrentCount &gt; <span style="color:#ae81ff">3</span>;
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">bool</span> <span style="color:#ae81ff">_</span>canSetCount =&gt; CurrentCount &gt; <span style="color:#ae81ff">3</span>;
 <span style="color:#a6e22e">
 </span><span style="color:#a6e22e">    [RelayCommand(CanExecute = nameof(_canSetCount))]</span>
     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> SetCount()
@@ -550,7 +556,7 @@ dotnet add package MudBlazor
 <li><code>SetCount</code> has a <code>RelayCommand</code> attribute from MVVM Toolkit which uses source generators to build an <code>IRelayCommand</code> object around the <code>SetCount()</code> method called <code>SetCountCommand</code>. It also references the <code>_canSetCount</code> variable to determine whether or not the command can be run with <code>CanExecute</code>. The method updates the source generated property <code>MyMessage</code> mentioned before, triggering notification updates automatically</li>
 </ul>
 <p>Add the ViewModel to the services registration in <code>Program.cs</code>. In this case I&rsquo;m using <code>AddTransient</code> so that it is disposed of when the component is destroyed; navigating away and back again will reset it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddTransient&lt;MyButtonViewModel&gt;();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">builder.Services.AddTransient&lt;MyButtonViewModel&gt;();
 </code></pre></div><div uk-alert class='uk-alert-primary'>
     
 You could set this up so that ViewModels can be picked up automatically by using reflection to find all classes with the suffix `ViewModel`, for example.
@@ -558,7 +564,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 </div>
 <h3 id="create-the-component">Create the Component</h3>
 <p>The following code demonstrates how to take advantage of the ViewModel for a component:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@inherits MvvmComponentBase&lt;<span style="color:#f92672">MyButtonViewModel</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">@inherits MvvmComponentBase&lt;<span style="color:#f92672">MyButtonViewModel</span>&gt;
 
 &lt;<span style="color:#f92672">MudButton</span> <span style="color:#a6e22e">Command</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@BindingContext.SetCountCommand&#34;</span> <span style="color:#a6e22e">Disabled</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;@(!BindingContext.SetCountCommand.CanExecute(null))&#34;</span>&gt;Is it cool?&lt;/<span style="color:#f92672">MudButton</span>&gt;
 
@@ -580,7 +586,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 </ul>
 <h3 id="using-the-component">Using the Component</h3>
 <p>To demonstrate how this component works I plugged it in to the <code>Counter.razor</code> page by adding the following just above the <code>@code</code> block:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MyButton</span> <span style="color:#a6e22e">CurrentCount</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentCount&#34;</span> /&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">MyButton</span> <span style="color:#a6e22e">CurrentCount</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentCount&#34;</span> /&gt;
 </code></pre></div><p><code>currentCount</code> is a property on that component already and we&rsquo;re passing it down. The idea is that the user can increment that count, but we&rsquo;ll only see our button enable when the count is higher than 3 (see the predicate in the ViewModel).</p>
 <h3 id="try-it-out">Try it out!</h3>
 <p>Run the app, go to the <code>Counter</code> page and the button should be disabled. Increment the counter a few times and the button should be enabled, clicking it should show a wee message.</p>
@@ -712,17 +718,17 @@ You could set this up so that ViewModels can be picked up automatically by using
 			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
 				
 				<li class=''>
-					<a href="/series/atari/">
+					<a href="/series/professional-development/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Atari</span>
-						<span class="uk-badge uk-text-margin-small-left">3</span>
+						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-badge uk-text-margin-small-left">4</span>
 					</a>
 				</li>
 				
 				<li class=''>
-					<a href="/series/professional-development/">
+					<a href="/series/atari/">
 						<span uk-icon="copy"></span>
-						<span class="uk-text-capitalize">Professional development</span>
+						<span class="uk-text-capitalize">Atari</span>
 						<span class="uk-badge uk-text-margin-small-left">3</span>
 					</a>
 				</li>
@@ -768,7 +774,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 					<a href="/categories/programming/">
 						<span uk-icon="copy"></span>
 						<span class="uk-text-capitalize">Programming</span>
-						<span class="uk-badge uk-text-margin-small-left">6</span>
+						<span class="uk-badge uk-text-margin-small-left">7</span>
 					</a>
 				</li>
 				
@@ -831,21 +837,26 @@ You could set this up so that ViewModels can be picked up automatically by using
 					
 					<a href="/tags/future-reference/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>future-reference</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/tips/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>tips</span>
-						<span class="uk-badge">11</span>
+						<span class="uk-badge">12</span>
 					</a>
 					
 					<a href="/tags/programming/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>programming</span>
-						<span class="uk-badge">7</span>
+						<span class="uk-badge">8</span>
 					</a>
 					
 					<a href="/tags/.net/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>.net</span>
+						<span class="uk-badge">5</span>
+					</a>
+					
+					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>blazor</span>
 						<span class="uk-badge">4</span>
 					</a>
 					
@@ -856,11 +867,6 @@ You could set this up so that ViewModels can be picked up automatically by using
 					
 					<a href="/tags/atari-st/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>atari-st</span>
-						<span class="uk-badge">3</span>
-					</a>
-					
-					<a href="/tags/blazor/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
-						<span>blazor</span>
 						<span class="uk-badge">3</span>
 					</a>
 					
@@ -916,6 +922,11 @@ You could set this up so that ViewModels can be picked up automatically by using
 					
 					<a href="/tags/linked-article/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
 						<span>linked-article</span>
+						<span class="uk-badge">1</span>
+					</a>
+					
+					<a href="/tags/maui/" class="uk-link-muted uk-text-nowrap uk-margin-small-right">
+						<span>maui</span>
 						<span class="uk-badge">1</span>
 					</a>
 					
@@ -991,7 +1002,7 @@ You could set this up so that ViewModels can be picked up automatically by using
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small">
         <p class="uk-comment-meta uk-subnav uk-margin-remove-top uk-padding-small uk-padding-remove-vertical">
-          Dapper from his napper to his feet
+          A sentient being
         </p>
       </div>
     </div>
@@ -1014,7 +1025,7 @@ You could set this up so that ViewModels can be picked up automatically by using
 				<span uk-icon="info"></span> &copy; Copyright 2023
 				Phil Watson<br>
 				<span uk-icon="calendar"></span> Last updated
-				Tuesday, 23/May/2023 15:59 AEST
+				Thursday, 09/Nov/2023 14:20 AEST
 			</p>
 			<p class="uk-margin-remove uk-text-right@s uk-flex-auto"><a href="https://github.com/Eraph/hugo-theme-mako"
 					target="_blank"><span uk-icon="github-alt"></span> Hugo
