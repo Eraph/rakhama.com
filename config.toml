@@ -4,106 +4,108 @@ title = "Garcia's Guide to the Galaxy"
 theme = "mako"
 
 [taxonomies]
-  category = 'categories'
-  series = 'series'
-  tag = 'tags'
+category = 'categories'
+series = 'series'
+tag = 'tags'
 
 [params]
-  author = "Phil Watson"
-  description = "A Cool Guy"
-  pronouns = "He/Him"
-  profilePicture = "images/pw.jpg"
-  dateFormat = "Monday, 02/Jan/2006 15:04 MST"
-  sections = ["Projects"]
-  navigationTaxonomies = [ "series", "categories" ]
-  location = "Brisbane, Australia"
-  twitter_cards = true
-  taglines = [
-    "A cool guy",
-    "Not wholly terrible",
-    "A good sort",
-    "Not a geek",
-    "Great bunch of lad",
-    "An employable human",
-    "A working man",
-    "Definitely not a robot",
-    "There are worse",
-    "An alright fellow",
-    "Certainly a person",
-    "They call him \"Garcia\"",
-    "Just this guy",
-    "He's alright",
-    "A swell neighbour",
-    "Quite a gent",
-    "He likes cheese",
-    "Mostly harmless",
-    "He's Phil Watson",
-    "He has thumbs",
-    "A computery type",
-    "My favourite customer",
-    "A fine bloke",
-    "A developer character",
-    "A sentient being",
-    "A respectable dude",
-    "so professionalism, wow",
-    "Packed with vitamin D",
-    "Wholesome",
-    "A braw loon",
-    "A skeleton in disguise",
-    "Slightly better than average",
-    "He's online!",
-    "Dapper from his napper to his feet",
-    "Doesn't know how he gets this reputation",
-    "Powered by tea",
-    "Fun's za cookin'"
-  ]
+author = "Phil Watson"
+description = "A Cool Guy"
+pronouns = "He/Him"
+profilePicture = "images/pw.jpg"
+dateFormat = "Monday, 02/Jan/2006 15:04 MST"
+sections = ["Projects"]
+navigationTaxonomies = ["series", "categories"]
+location = "Brisbane, Australia"
+twitter_cards = true
+taglines = [
+  "A cool guy",
+  "Not wholly terrible",
+  "A good sort",
+  "Not a geek",
+  "Great bunch of lad",
+  "An employable human",
+  "A working man",
+  "Definitely not a robot",
+  "There are worse",
+  "An alright fellow",
+  "Certainly a person",
+  "They call him \"Garcia\"",
+  "Just this guy",
+  "He's alright",
+  "A swell neighbour",
+  "Quite a gent",
+  "He likes cheese",
+  "Mostly harmless",
+  "He's Phil Watson",
+  "He has thumbs",
+  "A computery type",
+  "My favourite customer",
+  "A fine bloke",
+  "A developer character",
+  "A sentient being",
+  "A respectable dude",
+  "so professionalism, wow",
+  "Packed with vitamin D",
+  "Wholesome",
+  "A braw loon",
+  "A skeleton in disguise",
+  "Slightly better than average",
+  "He's online!",
+  "Dapper from his napper to his feet",
+  "Doesn't know how he gets this reputation",
+  "Powered by tea",
+  "Fun's za cookin'",
+  "He is a terrific athlete",
+  "He is an okay guy",
+]
 
-  [params.theme]
-  titleBackgroundImage = "images/saturn.jpg"
-  font = "Oxanium"
+[params.theme]
+titleBackgroundImage = "images/saturn.jpg"
+font = "Oxanium"
 
-  # Gold
-  # primary = "#fc0"
-  # secondary = "#960"
-  # background = "#090909"
+# Gold
+# primary = "#fc0"
+# secondary = "#960"
+# background = "#090909"
 
-  # Bronze
-  # primary = "#aa9e6b"
-  # background = "#111"
+# Bronze
+# primary = "#aa9e6b"
+# background = "#111"
 
-  # Nier
-  primary = "#4e4b42"
-  background = "#dad4bb"
+# Nier
+primary = "#4e4b42"
+background = "#dad4bb"
 
-  # Ragnarok
-  # primary = "#f90"
-  # secondary = "#c00"
-  # background = "#000"
+# Ragnarok
+# primary = "#f90"
+# secondary = "#c00"
+# background = "#000"
 
-  # Grey Light
-  # primary = "#000"
-  # background = "#fff"
+# Grey Light
+# primary = "#000"
+# background = "#fff"
 
-  # Grey Dark
-  # primary = "#fff"
-  # background = "#000"
+# Grey Dark
+# primary = "#fff"
+# background = "#000"
 
-  # Mako
-  # primary = "#0f9"
-  # secondary = "#099"
-  # background = "#090909"
+# Mako
+# primary = "#0f9"
+# secondary = "#099"
+# background = "#090909"
 
-  # Toothpaste
-  # primary = "#0fc"
-  # secondary = "#099"
-  # background = "#f7f7f7"
+# Toothpaste
+# primary = "#0fc"
+# secondary = "#099"
+# background = "#f7f7f7"
 
-  # Hacker
-  # primary = "#0f0"
-  # secondary = "#000"
-  # background = "#000"
+# Hacker
+# primary = "#0f0"
+# secondary = "#000"
+# background = "#000"
 
-  # Cyberpunk
-  # primary = "#f09"
-  # secondary = "#036"
-  # background = "#000"
+# Cyberpunk
+# primary = "#f09"
+# secondary = "#036"
+# background = "#000"
