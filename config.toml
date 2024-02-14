@@ -18,6 +18,7 @@ sections = ["Projects"]
 navigationTaxonomies = ["series", "categories"]
 location = "Brisbane, Australia"
 twitter_cards = true
+osFiles = false
 taglines = [
   "A cool guy",
   "Not wholly terrible",
