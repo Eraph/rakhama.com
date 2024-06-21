@@ -2,7 +2,7 @@
 title: "USB Floppy Emulator - Gotek"
 description: "How to install and configure a Gotek USB Floppy Emulator for the Atari ST."
 date: 2023-04-02T08:21:59+10:00
-draft: true
+draft: false
 categories:
   - Retro Computing
 tags:
@@ -25,7 +25,7 @@ The Gotek was the first accessory I got for my ST. It makes sense after all, the
 I purchased my Gotek through Ebay from a local seller, there doesn't seem to be an "official" place to purchase them from but searching for `Gotek USB` will give you several places to purchase them from. The Gotek I use does not have a rotary encoder which I don't believe will fit in the ST's case without modification.
 
 ## Installing the Gotek
-- Twisted cable?
+Be aware that the cable must be twisted 180° to fit; you may need a longer cable.
 
 ## Using the Gotek
 With only two buttons and a 3-digit numeric display, there's not much to it! The right button increments the counter through the assigned slots, and the the left button predictably decrements the counter. Pressing both resets the counter to slot 0, which is one of two reserved slots:
@@ -35,6 +35,8 @@ With only two buttons and a 3-digit numeric display, there's not much to it! The
 
 ## Setting up FlashFloppy
 [FlashFloppy](https://github.com/keirf/flashfloppy) is an open-source floppy disk emulator firmware for [Gotek drives](https://github.com/keirf/flashfloppy/wiki/Gotek-Models). It includes functionality to configure the Gotek and map floppy images to slots in the Gotek.
-- Intro to FlashFloppy
+<!-- - Intro to FlashFloppy
   - Setting up pages
-  - Keeping track with ExCeL mofo
+  - Keeping track with ExCeL mofo -->
+
+More tips coming soon...

@@ -18,7 +18,7 @@ sections = ["Projects"]
 navigationTaxonomies = ["series", "categories"]
 location = "Brisbane, Australia"
 twitter_cards = true
-osFiles = false
+osFiles = true
 taglines = [
   "A cool guy",
   "Not wholly terrible",
@@ -79,7 +79,7 @@ primary = "#4e4b42"
 background = "#dad4bb"
 
 # Ragnarok
-# primary = "#f90"
+# primary = "#fc0"
 # secondary = "#c00"
 # background = "#000"
 

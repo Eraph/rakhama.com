@@ -2,19 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rakhama.com/categories/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/gaming/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/categories/retro-computing/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/retro-computing/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/retro-gaming/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/</loc>
+    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/.net/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/deep-cell/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/categories/game-development/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/game-development/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/series/godot/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/godot/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/open-source/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/programming/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/series/</loc>
+    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
+  </url><url>
     <loc>https://rakhama.com/tags/alternatives/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/open-source/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/</loc>
@@ -26,17 +68,11 @@
     <loc>https://rakhama.com/categories/software/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/tips/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/windows/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/.net/</loc>
-    <lastmod>2023-11-09T14:20:14+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/blazor/</loc>
     <lastmod>2023-11-09T14:20:14+10:00</lastmod>
@@ -50,13 +86,7 @@
     <loc>https://rakhama.com/categories/programming/</loc>
     <lastmod>2023-11-09T14:20:14+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/programming/</loc>
-    <lastmod>2023-11-09T14:20:14+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/posts/run-blazor-web-application-as-maui-mobile-app/</loc>
-    <lastmod>2023-11-09T14:20:14+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/series/</loc>
     <lastmod>2023-11-09T14:20:14+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</loc>
@@ -89,12 +119,6 @@
     <loc>https://rakhama.com/tags/linked-article/</loc>
     <lastmod>2023-05-10T19:14:39+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/categories/retro-computing/</loc>
-    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/retro-computing/</loc>
-    <lastmod>2023-05-10T19:14:39+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/posts/atari-st-bad-dma-solved/</loc>
     <lastmod>2023-05-10T19:14:39+10:00</lastmod>
   </url><url>
@@ -107,6 +131,15 @@
     <loc>https://rakhama.com/posts/debug-server-hosted-blazor-wasm/</loc>
     <lastmod>2023-04-04T16:20:25+10:00</lastmod>
   </url><url>
+    <loc>https://rakhama.com/projects/atari-modernisation-project/bluetooth-peripherals/</loc>
+    <lastmod>2023-04-02T09:06:42+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/hardware/</loc>
+    <lastmod>2023-04-02T09:06:42+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/atari-modernisation-project/usb-floppy-emulator/</loc>
+    <lastmod>2023-04-02T08:21:59+10:00</lastmod>
+  </url><url>
     <loc>https://rakhama.com/pages/about/</loc>
     <lastmod>2023-01-22T09:24:56+10:00</lastmod>
   </url><url>
@@ -115,6 +148,9 @@
   </url><url>
     <loc>https://rakhama.com/posts/tos-is-rubbish/</loc>
     <lastmod>2023-01-09T08:12:26+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/atari-modernisation-project/cheat-sheet/</loc>
+    <lastmod>2022-12-28T11:13:55+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/cheat-sheet/</loc>
     <lastmod>2022-12-08T16:49:55+10:00</lastmod>
@@ -125,26 +161,17 @@
     <loc>https://rakhama.com/posts/asp-net-self-signed-certs-fedora/</loc>
     <lastmod>2022-11-02T16:12:24+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/projects/hugo-theme-mako/</loc>
-    <lastmod>2022-09-11T17:31:08+10:00</lastmod>
+    <loc>https://rakhama.com/projects/atari-modernisation-project/desktop/</loc>
+    <lastmod>2022-09-29T11:01:31+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/projects/</loc>
+    <loc>https://rakhama.com/projects/atari-modernisation-project/</loc>
+    <lastmod>2022-09-29T10:07:01+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/projects/hugo-theme-mako/</loc>
     <lastmod>2022-09-11T17:31:08+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/slight-delay-with-bluetooth-mouse-in-linux/</loc>
     <lastmod>2022-08-18T21:11:26+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/categories/game-development/</loc>
-    <lastmod>2022-07-26T20:02:53+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/game-development/</loc>
-    <lastmod>2022-07-26T20:02:53+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/series/godot/</loc>
-    <lastmod>2022-07-26T20:02:53+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/godot/</loc>
-    <lastmod>2022-07-26T20:02:53+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/sqlite-net-in-godot/</loc>
     <lastmod>2022-07-26T20:02:53+10:00</lastmod>

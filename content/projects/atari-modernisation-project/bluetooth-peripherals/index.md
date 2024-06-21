@@ -2,7 +2,7 @@
 title: "Bluetooth Peripherals - Unijoysticle"
 description: "How to use the Unijoysticle 2 to connect bluetooth mice and joypads to your ST."
 date: 2023-04-02T09:06:42+10:00
-draft: true
+draft: false
 categories:
   - Retro Computing
 tags:
@@ -29,8 +29,10 @@ I don't particularly mind using the ST mouse but cmopatible joysticks and contro
 The Unijoysticle is the work of Ricardo Quesada, check out [his page](https://retro.moe/unijoysticle2/) on the Unijoysticle 2 for information on how to get it. You can order it directly from him, or use his open source schematics and firmware to assemble one yourself. I'm pretty basic so I ordered the premade one.
 
 ## Installing the Unijoysticle
-- While it can run directly on the power from the DB9 ports, the power draw may interfere with ACSI2STM so external USB power is recommended.
+- While it can run directly on the power from the DB9 ports, I found that the power draw interfered with my ACSI2STM so I have to rely on external USB power.
 
 ## Using the Unijoysticle
+Coming soon...
 
 ## Configuring for ST mouse support
+Coming soon...

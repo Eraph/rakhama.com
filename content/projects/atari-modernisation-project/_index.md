@@ -2,7 +2,7 @@
 title: "Atari Modernisation Project"
 description: "How to bring your Atari ST into the 21st century."
 date: 2022-09-29T10:07:01+10:00
-draft: true
+draft: false
 categories:
   - Retro Computing
 tags:

@@ -2,7 +2,7 @@
 title: "Desktop"
 description: "How to modernise the Atari ST desktop environment, from upgrading to a more modern GEM environment to applying custom wallpapers."
 date: 2022-09-29T11:01:31+10:00
-draft: true
+draft: false
 categories:
   - Retro Computing
 tags:
@@ -38,19 +38,13 @@ Note that with larger files this can add a few seconds to the boot time, and of 
 Alt+Help
 
 ### Text Editor
-
+Coming soon...
 
 ### Essentials
-
+Coming soon...
+<!-- More folders and all that -->
 
 ### Superboot
+Coming soon...
 
-### ???
-
-
-- Wallpaper
-- Superboot
-- Accessories
-  - Screen capture
-  - Text editor
-  - Essentials (more folders and that)
+<!-- ### ??? -->
