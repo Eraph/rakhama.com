@@ -36,3 +36,9 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           recursive: 'true'
+
+      - name: Purge Cloudflare Cache
+        uses: jakejarvis/cloudflare-purge-action@master
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_PURGE_TOKEN }}
