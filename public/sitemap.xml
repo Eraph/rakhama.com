@@ -3,12 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/gaming/</loc>
-    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
+    <loc>https://rakhama.com/categories/computing/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/posts/essential-gnome-extensions/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/future-reference/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/gnome/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/linux/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/open-source/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/posts/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/</loc>
+    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/gaming/</loc>
     <lastmod>2024-06-21T10:18:01+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/projects/</loc>
@@ -21,9 +45,6 @@
     <lastmod>2024-06-21T10:18:01+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/projects/retro-gaming/</loc>
-    <lastmod>2024-06-21T10:18:01+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/</loc>
     <lastmod>2024-06-21T10:18:01+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/.net/</loc>
@@ -44,9 +65,6 @@
     <loc>https://rakhama.com/tags/godot/</loc>
     <lastmod>2024-06-21T10:15:01+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/open-source/</loc>
-    <lastmod>2024-06-21T10:15:01+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/programming/</loc>
     <lastmod>2024-06-21T10:15:01+10:00</lastmod>
   </url><url>
@@ -54,12 +72,6 @@
     <lastmod>2024-06-21T10:15:01+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/alternatives/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/future-reference/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/posts/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/scoop-upgrade/</loc>
@@ -92,13 +104,7 @@
     <loc>https://rakhama.com/posts/all-in-one-guide-to-setting-up-ssh/</loc>
     <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/categories/computing/</loc>
-    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/fedora/</loc>
-    <lastmod>2023-05-23T15:59:26+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/linux/</loc>
     <lastmod>2023-05-23T15:59:26+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/security/</loc>
