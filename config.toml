@@ -13,6 +13,7 @@ author = "Phil Watson"
 description = "A Cool Guy"
 pronouns = "He/Him"
 profilePicture = "images/pw.jpg"
+email = "rakhama.f1itl@simplelogin.com"
 dateFormat = "Monday, 02/Jan/2006 15:04 MST"
 sections = ["Projects"]
 navigationTaxonomies = ["series", "categories"]

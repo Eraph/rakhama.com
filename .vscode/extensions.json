@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "arthaud-proust.hugo-partials-defs",
+        "phoenisx.gohugo",
+        "budparr.language-hugo-vscode",
+        "tamasfe.even-better-toml"
+    ]
+}

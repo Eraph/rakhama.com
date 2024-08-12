@@ -4,19 +4,25 @@ description: "About this page"
 date: 2024-06-11T15:22:52+10:00
 draft: true
 categories:
-  - One
+  - Music
 tags:
-  - One
-series:
-  - One
+  - music
+  - bandcamp
+  - deezer
 images:
   - "path/to/something.jpg"
 ---
 Well I've been thinking I'm boxing myself into a corner with this website of mine focusing primarily on tech stuff. That's not all I do! So for a change I'm going to write about some of my favourite albums because why not.
 
+Now I'm no music journalist, this is totally subjective and personal. So go easy on me!
+
+A lot of these albums have links to Bandcamp by default as I reckon it's the best way to support the artists. For those not on Bandcamp, I have links to Deezer instead (see my post on [why Deezer?](/posts/alternatives-series-spotify))
+
 <!--more-->
 
 ## Rolo Tomassi - Where Myth Becomes Memory
+
+{{< bandcamp albumId="3549336443" >}}
 
 The most recent album in this list is easily one of my favourites. I got (really really) into Rolo Tomassi shortly after the release of their second album and have listened to them going from strength to strength.
 
@@ -24,8 +30,83 @@ While their earlier material leaned heavily into a jazz-infused, syncopated flav
 
 Every song on Where Myth Becomes Memory is eminently listenable, rich with technique and catchy hooks. I love it, and even more than two years after release I can't get enough of it.
 
+[Website](https://rolotomassiband.com/) | [Bandcamp](https://rolotomassi.bandcamp.com/album/where-myth-becomes-memory)
+
 ## Every Time I Die - Low Teens
 
-No, this isn't an album about depressed adolescents. The title comes from a weather report during a particularly tough time for lead singer Keith Buckley. The story behind aforementioned tough time sets the stage for this album, in my opinion the best material in their back catalogue. 
+{{< bandcamp albumId="3871421685" >}}
 
-Personal highlights include the crushing track Petal, a reflection on the fragility of life and how this could have gone wrong.
+No, this isn't an album about depressed adolescents. The title comes from a weather report during a particularly tough time for lead singer Keith Buckley. The story behind aforementioned tough time sets the stage for this album, in my opinion the best material in their back catalogue, and they have a strong back catalogue.
+
+Personal highlights include the crushing track Petal, a reflection on the fragility of life and how this could have gone wrong, and Awful Lot which shines with tremendous energy in an already highly energetic album.
+
+[Website]() | [Bandcamp](https://everytimeidie.bandcamp.com/album/low-teens)
+
+## Vessels - White Fields and Open Devices
+
+{{< bandcamp albumId="2151784614" >}}
+
+These days Vessels are more of a club electronica band, but in the beginning they were firmly in camp post-rock and this is easily one of the finest post-rock albums I know of. I don't like to throw the word "masterpiece" around too much but when every single track on an album is great in its own right, it's hard to say no to. With beautiful piano hooks and soaring guitar riffs, even two drum kits jamming in tandem (more of this please), this album is a spectacle from beginning to end.
+
+[Website]() | [Bandcamp](https://vesselsband.bandcamp.com/album/white-fields-and-open-devices)
+
+## Reuben - Racecar is Racecar Backwards
+
+{{< deezer albumId="169211192" >}}
+
+The first of three albums from Reuben may not have the consistency of latter instalments but it does have a banging selection of tracks. I was fortunate enough to see Reuben a number of times before they split, catching them first shortly before the release of Racecar when my mates supported them in a small venue in Aberdeen. As far as I was concerned, they were an instant hit and have cemented themselves as one of my all time favourite bands.
+
+Racecar has just turned twenty and sounds just as fresh as it did when I bought it way back in 2004. Reuben were a band that sounded like nothing else I'd heard at the time, and even now I only recognise a small handful of influences when I listen to them. Frontman Jamie Lenman was clearly the driving force behind the band's sound and there is no mistake, he is a musical genius.
+
+[???]
+
+## Hundred Reasons - Ideas Above Our Station
+
+{{< deezer albumId="241232" >}}
+
+There was a small window of time between about 2000 and 2005 where British alternative music was absolutely punching, and this is one of the most exemplary albums of that period. Stacked full of energy, soaring vocals and crushing screaming, most excellent guitar hooks and a sound you only hear from a band thoroughly enjoying what they're doing. This is an album that has the ability to lift me out of a funk no matter how deep I'm in.
+
+[???]
+
+## Biffy Clyro - The Vertigo of Bliss
+
+{{< deezer albumId="13635910" >}}
+
+
+[Website]() | [Bandcamp](https://beggarsarkive.bandcamp.com/album/the-vertigo-of-bliss)
+
+## 65daysofstatic - Wild Light
+
+{{< bandcamp albumId="2076016976" >}}
+
+[Website]() | [Bandcamp](https://birdsrobe.bandcamp.com/album/wild-light)
+
+## Finch - What It Is To Burn
+
+{{< deezer albumId="248134" >}}
+
+[???]
+
+## Foo Fighters - There Is Nothing Left To Lose
+
+{{< deezer albumId="1430528" >}}
+
+[???]
+
+## Converge - Jane Doe
+
+{{< bandcamp albumId="1636165549" >}}
+
+[Website]() | [Bandcamp](https://convergecult.bandcamp.com/album/jane-doe)
+
+## Cult of Luna - Salvation
+
+{{< bandcamp albumId="2041843314" >}}
+
+[Website]() | [Bandcamp](https://cultofluna.bandcamp.com/album/salvation)
+
+## At the Drive-In - Relationship of Command
+
+{{< deezer albumId="147329552" >}}
+
+[???]
