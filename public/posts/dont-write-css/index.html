@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en-us" class="uk-background-fixed">
+
+<head>
+    <title>Garcia&#39;s Guide to the Galaxy :: Don&#39;t Write CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Phil Watson" />
+    <meta name="description"
+        content="Clickbait title? Sure. Here are some thoughts on minimising the need to write custom CSS." />
+    <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
+        rel="stylesheet"><link rel="stylesheet" href="/mako.min.d5271e6fd7a7d6a5ca000a320dba2bc146b1237a17c69f7a5b46c7aaa3c5fd96.css" crossorigin="anonymous" integrity="sha256-1Sceb9en1qXKAAoyDborwUaxI3oXxp96W0bHqqPF/ZY=" type="text/css" />
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://rakhama.com/posts/dont-write-css/dont-write-css.png"/>
+
+<meta name="twitter:title" content="Don&#39;t Write CSS"/>
+<meta name="twitter:description" content="Clickbait title? Sure. Here are some thoughts on minimising the need to write custom CSS."/>
+
+    <meta property="og:title" content="Don&#39;t Write CSS" />
+<meta property="og:description" content="Clickbait title? Sure. Here are some thoughts on minimising the need to write custom CSS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rakhama.com/posts/dont-write-css/" /><meta property="og:image" content="https://rakhama.com/posts/dont-write-css/dont-write-css.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-09-10T12:07:39+10:00" />
+<meta property="article:modified_time" content="2024-09-10T12:07:39+10:00" />
+<meta property="og:see_also" content="https://rakhama.com/posts/run-blazor-web-application-as-maui-mobile-app/" /><meta property="og:see_also" content="https://rakhama.com/posts/fluxor-for-dummies/" /><meta property="og:see_also" content="https://rakhama.com/posts/blazor-with-mvvm/" /><meta property="og:see_also" content="https://rakhama.com/posts/debug-server-hosted-blazor-wasm/" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div id="menu" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+            <article class="uk-article">
+                <div class="uk-card-header">
+                    <p class="mako-title uk-flex">
+                        <span class="uk-flex-none" uk-icon="more" title="Navigation" uk-tooltip></span>
+                        <span class="mako-title-text uk-text-truncate uk-flex-1" title="Navigation" uk-tooltip>
+                            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Navigation</strong>
+                        </span>
+                        <a class="uk-flex-none" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
+                    </p>
+                </div>
+                <div class="uk-card-body uk-flex uk-flex-row">
+                    <a href="/" uk-icon="home"
+                        class="uk-icon-button uk-button-default uk-margin-small-left"></a>
+                    <a href="#menu" uk-toggle uk-icon="chevron-double-left"
+                        class="uk-icon-button uk-button-default uk-margin-small-left"></a>
+                </div>
+                <div class="uk-card-body uk-padding-remove-top">
+                    <ul class="uk-list uk-list-collapse uk-margin-remove-vertical">
+                        
+
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <a href="/" class="uk-text-truncate">Garcia&#39;s Guide to the Galaxy</a>
+    
+</li>
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <a href="/posts/" class="uk-text-truncate">Posts</a>
+    
+</li>
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <span class="uk-text-truncate">Don&#39;t Write CSS</span>
+    
+</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='thumbnails'
+            title='Projects' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/projects/" title="Projects" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Projects</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/projects/" title="View Projects" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/projects/retro-gaming/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Retro Gaming</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/deep-cell/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Deep Cell</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/atari-modernisation-project/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Atari Modernisation Project</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/hugo-theme-mako/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Hugo Theme Mako</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='album'
+            title='Series' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/series/" title="Series" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Series</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/series/" title="View Series" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/series/atari/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Atari</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/professional-development/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Professional development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/godot/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Godot</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/alternatives/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Alternatives</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='folder'
+            title='Categories' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/categories/" title="Categories" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Categories</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/categories/" title="View Categories" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/categories/retro-computing/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Retro computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">9</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/programming/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Programming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/computing/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">4</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/game-development/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Game development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/software/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Software</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='tag'
+            title='Tags' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/tags/" title="Tags" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Tags</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/tags/" title="View Tags" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li>
+					<a href="/tags/tips/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">tips</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">18</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/future-reference/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">future-reference</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">17</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/programming/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">programming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">10</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/retro-computing/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">retro-computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">9</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/atari-st/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">atari-st</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/.net/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">.net</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/linux/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">linux</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/open-source/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">open-source</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/blazor/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">blazor</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">4</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/alternatives/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">alternatives</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/fedora/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">fedora</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/game-development/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">game-development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/godot/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">godot</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/hardware/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">hardware</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/security/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">security</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/ssl/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">ssl</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/cheat-sheet/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">cheat-sheet</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/css/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">css</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/gaming/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">gaming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/git/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">git</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom uk-flex-first@m">
+  <article class="uk-article">
+    <div class="uk-card-header">
+      <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='user' title='About' uk-tooltip></span>
+        <span class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" title="Phil Watson" uk-tooltip>
+          <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Phil Watson</strong>
+        </span>
+        <a class="uk-flex-none" uk-icon="link" href="https://rakhama.com/" title="Go home" uk-tooltip></a>
+      </p>
+    </div>
+    <div class="uk-card-body">
+      
+      <div class="mako-image uk-margin-bottom">
+        <img src="/images/pw.jpg">
+      </div>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="quote-right" class="uk-flex-none"></span>
+          <span>He/Him</span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="location" class="uk-flex-none"></span>
+          <span>Brisbane, Australia</span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-nav uk-margin-small-top uk-margin-small-bottom uk-nav-default" uk-nav>
+        
+        <li class=''>
+          <a href="/pages/about/">
+            <span uk-icon="file-text" class="uk-flex-none"></span>
+            <span class="uk-text-truncate">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="mail" class="uk-flex-none"></span>
+          <span><a href="mailto:rakhama.f1itl@simplelogin.com">Contact</a></span>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
+        <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
+          A working man
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+    </div>
+</div>
+    <div class="uk-container">
+        <nav uk-navbar class="uk-navbar-container uk-margin-medium-bottom uk-padding-remove uk-flex-column">
+  <div class="uk-navbar-left uk-padding-small">
+    <a class="uk-navbar-item uk-logo" href="/">Garcia&#39;s Guide to the Galaxy</a>
+  </div>
+  <div class="mako-header-navigation uk-flex uk-flex-row uk-flex-middle">
+    <ul
+      class="uk-breadcrumb uk-margin-remove-vertical uk-margin-small-left uk-margin-small-right uk-flex-auto uk-visible@m">
+      
+
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <a href="/" class="uk-text-truncate">Garcia&#39;s Guide to the Galaxy</a>
+    
+</li>
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <a href="/posts/" class="uk-text-truncate">Posts</a>
+    
+</li>
+
+<li class="uk-text-small uk-flex-inline">
+    <span class="uk-flex-none" uk-icon="triangle-right"></span>
+    
+    <span class="uk-text-truncate">Don&#39;t Write CSS</span>
+    
+</li>
+    </ul>
+    <div class="uk-flex-none uk-hidden@m">
+      <a href="#menu" uk-toggle uk-icon="menu" class="uk-icon-button uk-button-default"></a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="uk-margin-medium-bottom uk-visible@m">
+  <div class="uk-card uk-card-default uk-card-small">
+    <article class="uk-article uk-flex uk-flex-column uk-flex-stretch uk-height-1-1">
+      <div class="uk-card-header">
+        <p class="mako-title uk-flex">
+          <span class="uk-flex-none" uk-icon='bookmark' title='Shortcuts' uk-tooltip></span>
+          <span class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" title="Shortcuts" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Shortcuts</strong></span>
+          <a class="uk-flex-none" uk-icon="home" href="https://rakhama.com/" title="Go home" uk-tooltip></a>
+        </p>
+      </div>
+
+      <div class="uk-flex uk-flex-1 uk-flex-top uk-flex-left uk-flex-wrap uk-card-body">
+        <a href="/" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: desktop; ratio: 2'></span>
+    <span>
+        
+            Home
+        
+    </span>
+</a>
+        
+        <a href="/projects/" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: thumbnails; ratio: 2'></span>
+    <span>
+        
+            Projects
+        
+    </span>
+</a>
+        
+        
+        
+        <a href="/series/" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: album; ratio: 2'></span>
+    <span>
+        
+            Series
+        
+    </span>
+</a>
+        
+        
+        
+        <a href="/categories/" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: folder; ratio: 2'></span>
+    <span>
+        
+            Categories
+        
+    </span>
+</a>
+        
+        
+        
+        <a href="/pages/about/" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: info; ratio: 2'></span>
+    <span>
+        
+            About
+        
+    </span>
+</a>
+        
+        
+        <a href="mailto:rakhama.f1itl@simplelogin.com" class="uk-flex uk-flex-column uk-flex-middle uk-margin-left uk-margin-right">
+    <span uk-icon='icon: mail; ratio: 2'></span>
+    <span>Contact</span>
+</a>
+        
+      </div>
+    </article>
+  </div>
+</div>
+
+
+        
+
+        
+
+        <div uk-grid class="uk-flex-row">
+            <div class="uk-width-expand@m main">
+                
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+  <article class="uk-article">
+    <div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='file-text'
+            title='Page' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/posts/dont-write-css/" title="Don&#39;t Write CSS" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Don&#39;t Write CSS</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/posts/dont-write-css/" title="View Don&#39;t Write CSS" uk-tooltip></a>
+    </p>
+</div>
+
+    <div class="uk-card-body">
+      
+      
+      <div class="uk-inline mako-image uk-flex-none">
+	<img src="/posts/dont-write-css/dont-write-css.png" />
+</div>
+      
+      
+      <p>As part of an upcoming piece of work, it was suggested to me that I spend some time getting familiar with <a href="https://tailwindcss.com/">Tailwind CSS</a>. I&rsquo;d heard good things from colleagues, one comment in particular suggesting it doesn&rsquo;t hold you back like other CSS frameworks. So I was quite keen to dig in and see what was so special about it.</p>
+<h2 id="whats-so-special-about-tailwind-anyway">What&rsquo;s so special about Tailwind anyway?</h2>
+<p>And the truth is, well, not a whole lot. Don&rsquo;t get me wrong, it&rsquo;s pretty clever how it does things but the most value I got out from it was this principle; <em>with a sufficient collection of standardised styles, there is little need to write custom CSS.</em></p>
+<p>So the goal of this article is to explore how we can lean on these style frameworks and minimize the amount of custom CSS we have to write.</p>
+<p>Well, how does Tailwind CSS do this? It&rsquo;s all about those Utility classes. So for example, to make a white card with rounded corners and a drop-shadow (inspired by <a href="https://tailwindcss.com/docs/utility-first">this example</a>), you could do something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bg-white rounded-xl shadow-lg&#34;</span>&gt;My Card Content&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>So far, nothing truly groundbreaking but like I say, the principle is sound; you can easily determine what the element will roughly look like just by taking a gander at the HTML code. Taking full advantage of these utility classes in any framework should be encouraged as it guarantees a level of consistency when used properly.</p>
+<p>And these utility classes are common in many CSS frameworks, including <a href="https://getbootstrap.com/docs/5.3/utilities/borders/#radius">Bootstrap</a>, <a href="https://www.mudblazor.com/utilities/border-radius#class-reference">MudBlazor</a> and <a href="https://getuikit.com/docs/utility#border-radius">UIKit</a>, the latter of which I use for this very site.</p>
+<p>Where the aforementioned CSS frameworks differ from Tailwind CSS is that vanilla Tailwind is a comprehensive collection of utility classes only, while the others are component libraries as well. But when I say comprehensive, I mean <em>comprehensive</em>. While the utility classes of the other frameworks are relatively limited and may necessitate some custom CSS depending on your desired style complexity, for the majority of styling cases I expect you could get away with using Tailwind without any custom CSS. Of course, not being a component library you&rsquo;d also be responsible for crafting components yourself. Probably not ideal if you want to get off to a quick start, although there are options for extending what Tailwind CSS does with <a href="https://tailwindui.com/">Tailwind UI</a> and <a href="https://headlessui.com/v1">Headless UI</a>, for example.</p>
+<h2 id="components">Components</h2>
+<p>Whether you&rsquo;re using a component library or a utility library, if you&rsquo;re building anything other than the most simple of sites you&rsquo;ll probably end up with a component library of your own. A component could be an elaborate article layout made up of other components from an imported library, or it could be a simple button that is styled with Tailwind utility classes. Most frameworks for building websites or web apps will have support for components/templates/partials, the only place this wouldn&rsquo;t really work is in plain ol' HTML.</p>
+<p>With Tailwind, custom components are pretty much essential for keeping a consistent style without repeating yourself.</p>
+<p>Take <a href="https://gohugo.io/">Hugo</a> for example, the static site generator I use for this very site. Its theming system supports components, so if I wanted to make a theme with a standardised link button, I could build one up like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;h-10 px-6 font-semibold rounded-full bg-violet-600 text-white leading-9 inline-block&#34;</span>
+  <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .link }}&#34;</span>&gt;{{ .text }}&lt;/<span style="color:#f92672">a</span>&gt;
+</code></pre></div><p>And use it like this to have a consistent button style across the site:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span>&gt;
+  {{ partial &#34;button&#34; (dict &#34;link&#34; &#34;posts/random&#34; &#34;text&#34; &#34;Random&#34;) }}
+&lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div><p>This means that you can easily reuse the link button&rsquo;s style all throughout the app without repeating the styling. Want to change the styling? Change the template, done.</p>
+<p>I suppose now is a good time to talk about CSS modules (sorry, Tim). I feel that they actually <em>encourage</em> style fragmentation and therefore inconsistency. Proper use of a CSS library&rsquo;s utility functions can completely eliminate the need for them.</p>
+<h2 id="theming">Theming</h2>
+<p>This is where things start to get really juicy. Historically I&rsquo;d have written my own CSS file to override any libraries I was using. That&rsquo;s pretty nasty, often relying on <code>!important</code> flags to get things to work. Many CSS frameworks offer their own theming helpers, or SCSS features like variables and mixins. Tailwind has support for <a href="https://tailwindcss.com/docs/adding-custom-styles">customizing your theme</a> in a config file, allowing you to specify fonts, colours, and other properties, all without having to add your own CSS classes.</p>
+<p>I had a think about how I can take advantage of something similar with UIKit for this site, and <a href="https://getuikit.com/docs/sass#create-a-uikit-theme">yes, you can theme UIKit</a>. It&rsquo;s a good deal more involved than Tailwind, relying on examining UIKit&rsquo;s <a href="https://github.com/uikit/uikit/blob/develop/src/scss/components/button.scss">own source code</a> to find the variable names for features you want to override. For properties that don&rsquo;t have variables, UIKit offers a comprehensive number of mixin hooks. For styles that aren&rsquo;t covered by those two features, yes, it may be necessary to write some custom CSS classes.</p>
+<h2 id="proposed-styling-strategy">Proposed Styling Strategy</h2>
+<p>Armed with a fresh perspective thanks to Tailwind&rsquo;s ideas and the CSS knowledge I&rsquo;ve developed over the past ~25 years, I had a go at applying what I&rsquo;d learned to the <a href="https://github.com/Eraph/hugo-theme-mako/">theme that I built</a> for this very blog. You can see the resulting SCSS file <a href="https://github.com/Eraph/hugo-theme-mako/blob/main/assets/scss/mako.scss">here</a>.</p>
+<p>By leaning on UIKit&rsquo;s utility classes and variable substitution, I was able to greatly reduce the amount of custom CSS I was working with, while avoiding the need for tricks such as <code>!important</code> or hyper-specific element selectors. In my case, UIKit didn&rsquo;t cover all my needs so I still had to write some custom CSS classes, but managed to confine the majority of these to mixins.</p>
+<p>So to summarise, here are the main techniques, by priority, that I would recommend to follow to effectively apply styling to a website or web application while keeping consistency and maintainability as simple as possible.</p>
+<h3 id="1-lean-on-your-frameworks-theming">1. Lean on your framework&rsquo;s theming</h3>
+<p>This should be the first port of call. With good theming, you should be able to set up the majority of your site&rsquo;s styles easily in one place. Some examples:</p>
+<h4 id="tailwind-css">Tailwind CSS</h4>
+<p>Tailwind provides a very straight-forward, logical approach to theming. I like it a lot! Set up a configuration file with the basic sizing/spacing/colours/etc and I reckon you&rsquo;d be &gt;90% the way to having a framework that works straight away.</p>
+<p><a href="https://tailwindcss.com/docs/theme">Tailwind CSS Theming</a></p>
+<h4 id="uikit">UIKit</h4>
+<p>Not the easiest, as mentioned before, but effective nonetheless. Some of the more common variables are defined at a global level and reused where appropriate to reduce the number of places you need to change it.</p>
+<p><a href="https://getuikit.com/docs/sass">UIKit SCSS Customization</a></p>
+<h4 id="mudblazor">MudBlazor</h4>
+<p>This Material style component library for Blazor does a lot out of the box, and has a pretty nice theming system as well. Simply spin up a new MudThemeProvider and set the new properties using good ol' C# code.</p>
+<p><a href="https://www.mudblazor.com/customization/overview">MudBlazor Theming</a></p>
+<h3 id="bootstrap">Bootstrap</h3>
+<p>Good ol' Bootstrap lets you use Sass in a way not too dissimilar to UIKit.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/customize/sass/">Bootstrap Theming</a></p>
+<h3 id="2-lean-on-your-frameworks-components-and-utility-classes">2. Lean on your framework&rsquo;s components and utility classes</h3>
+<p>With the absolute basics of your style set up through theming, the next step is to use those components and utility classes to take advantage of the theme.</p>
+<h4 id="tailwind-css-1">Tailwind CSS</h4>
+<p>Tailwind on its own doesn&rsquo;t provide any components, so it&rsquo;s up to you to make your own. As mentioned before, it does provide a comprehensive suite of utility classes (it even calls itself a &ldquo;utility-first framework&rdquo;), and by building up your own suite of components you can ensure consistency across your app.</p>
+<p><a href="https://tailwindcss.com/docs/reusing-styles#extracting-components-and-partials">Creating Components with Tailwind CSS</a></p>
+<h4 id="uikit-1">UIKit</h4>
+<p>UIKit has a great selection of components with basic styling out the box. In a way that&rsquo;s nice because it encourages you to style them your own way. There are also a number of utility classes to tweak elements to your needs, although not as comprehensively as Tailwind.</p>
+<p><a href="https://getuikit.com/docs/utility">UIKit Utility Classes</a></p>
+<h4 id="mudblazor-1">MudBlazor</h4>
+<p>The MudBlazor library has many components based on Material Design principles. Material Design is quite opinionated anyway, so you probably don&rsquo;t want to deviate from that too much. Regardless, there are a number of utility classes available to help get things just right.</p>
+<p><a href="https://www.mudblazor.com/utilities/display">MudBlazor Utility Classes</a></p>
+<h4 id="bootstrap-1">Bootstrap</h4>
+<p>And of course the daddy of CSS frameworks, Bootstrap. Certainly it was the first example I saw of a comprehensive suite of components. It also provides a number of utility classes to tweak your designs.</p>
+<p><a href="https://getbootstrap.com/docs/5.3/utilities/display/">Bootstrap Utility Classes</a></p>
+<h3 id="3-last-resort-write-some-css-styles">3. Last Resort: Write some CSS styles</h3>
+<p>Hopefully steps 1 and 2 have got you what you need, but in case they don&rsquo;t, well sometimes you do just have to get your hands dirty with a bit of manual CSS. The first thing to do would be to take advantage of mixins so that you&rsquo;re injecting the styles into existing classes without creating new classes.</p>
+<p>As a very last resort, and I will acknowledge that this is often unavoidable, you can of course create your own CSS classes.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Alright, so you&rsquo;ll probably still have to write CSS. But with the steps outlined above, hopefully you can get away with minimizing the amount of custom CSS you have to write. Lean on those framework features and the world will be a better place, guaranteed!</p>
+    </div>
+
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-column uk-flex-row@m">
+        
+
+
+
+<ul class="uk-comment-meta uk-subnav mako-margin-1">
+    <li class="uk-flex uk-flex-initial">
+        <span class="uk-flex-none" uk-icon="calendar"></span>
+        <span class="uk-margin-small-left uk-margin-small-right uk-text-truncate" title="Tuesday, 10/Sep/2024 12:07 AEST" uk-tooltip>
+            Tuesday, 10/Sep/2024 12:07 AEST
+        </span>
+    </li>
+    
+    
+    <li class="uk-flex uk-flex-initial">
+        <span class="uk-flex-none" uk-icon="folder"></span>
+        <a href="/categories/programming"
+            class="uk-text-capitalize uk-margin-small-left uk-margin-small-right uk-text-truncate">
+            Programming
+        </a>
+    </li>
+    
+    
+    
+    
+    <li class="uk-flex uk-flex-initial">
+        <span class="uk-flex-none" uk-icon="album"></span>
+        <a href="/series/professional-development" class="uk-text-capitalize uk-margin-small-left uk-margin-small-right uk-text-truncate">
+            Professional Development
+        </a>
+    </li>
+    
+    
+</ul>
+        
+
+<p class="uk-comment-meta uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-auto uk-margin-left mako-margin-1">
+	
+	<span class="uk-flex-none" uk-icon="tag"></span>
+	
+	<a href="/tags/programming" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		programming
+	</a>
+	
+	<a href="/tags/tips" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		tips
+	</a>
+	
+	<a href="/tags/css" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		css
+	</a>
+	
+	
+</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+
+            </div>
+            <div class="uk-width-1-4@m uk-visible@m uk-flex uk-flex-column">
+                
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='thumbnails'
+            title='Projects' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/projects/" title="Projects" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Projects</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/projects/" title="View Projects" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/projects/retro-gaming/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Retro Gaming</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/deep-cell/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Deep Cell</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/atari-modernisation-project/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Atari Modernisation Project</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/projects/hugo-theme-mako/">
+						<span uk-icon="file-text" class="uk-flex-none"></span>
+						<span class="uk-text-truncate">Hugo Theme Mako</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='album'
+            title='Series' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/series/" title="Series" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Series</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/series/" title="View Series" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/series/atari/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Atari</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/professional-development/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Professional development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/godot/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Godot</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/series/alternatives/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Alternatives</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='folder'
+            title='Categories' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/categories/" title="Categories" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Categories</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/categories/" title="View Categories" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li class=''>
+					<a href="/categories/retro-computing/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Retro computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">9</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/programming/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Programming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/computing/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">4</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/game-development/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Game development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li class=''>
+					<a href="/categories/software/">
+						<span uk-icon="copy" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">Software</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+    <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='tag'
+            title='Tags' uk-tooltip></span>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/tags/" title="Tags" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Tags</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/tags/" title="View Tags" uk-tooltip></a>
+    </p>
+</div>
+		<div class="uk-card-body">
+			<ul class="uk-nav uk-nav-default uk-margin-remove-vertical" uk-nav>
+				
+				<li>
+					<a href="/tags/tips/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">tips</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">18</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/future-reference/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">future-reference</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">17</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/programming/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">programming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">10</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/retro-computing/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">retro-computing</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">9</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/atari-st/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">atari-st</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">8</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/.net/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">.net</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/linux/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">linux</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/open-source/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">open-source</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">5</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/blazor/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">blazor</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">4</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/alternatives/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">alternatives</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/fedora/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">fedora</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/game-development/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">game-development</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/godot/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">godot</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/hardware/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">hardware</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/security/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">security</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/ssl/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">ssl</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">2</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/cheat-sheet/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">cheat-sheet</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/css/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">css</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/gaming/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">gaming</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="/tags/git/">
+						<span uk-icon="tag" class="uk-flex-none"></span>
+						<span class="uk-text-capitalize uk-text-truncate">git</span>
+						<span class="uk-text-right uk-flex-1 uk-margin-small-left uk-margin-remove-bottom">1</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom uk-flex-first@m">
+  <article class="uk-article">
+    <div class="uk-card-header">
+      <p class="mako-title uk-flex">
+        <span class="uk-flex-none" uk-icon='user' title='About' uk-tooltip></span>
+        <span class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" title="Phil Watson" uk-tooltip>
+          <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Phil Watson</strong>
+        </span>
+        <a class="uk-flex-none" uk-icon="link" href="https://rakhama.com/" title="Go home" uk-tooltip></a>
+      </p>
+    </div>
+    <div class="uk-card-body">
+      
+      <div class="mako-image uk-margin-bottom">
+        <img src="/images/pw.jpg">
+      </div>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="quote-right" class="uk-flex-none"></span>
+          <span>He/Him</span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="location" class="uk-flex-none"></span>
+          <span>Brisbane, Australia</span>
+        </li>
+      </ul>
+      
+      
+      <ul class="uk-nav uk-margin-small-top uk-margin-small-bottom uk-nav-default" uk-nav>
+        
+        <li class=''>
+          <a href="/pages/about/">
+            <span uk-icon="file-text" class="uk-flex-none"></span>
+            <span class="uk-text-truncate">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+      
+      <ul class="uk-list uk-margin-small-top uk-margin-small-bottom">
+        <li class="uk-text-small">
+          <span uk-icon="mail" class="uk-flex-none"></span>
+          <span><a href="mailto:rakhama.f1itl@simplelogin.com">Contact</a></span>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
+        <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
+          He is an okay guy
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+            </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+	<article class="uk-article">
+		<div class="uk-card-header">
+			<p class="mako-title uk-flex">
+				<span class="uk-flex-none" uk-icon="info" title="Etc." uk-tooltip></span>
+				<span class="mako-title-text uk-text-truncate uk-flex-1" title="Etc." uk-tooltip>
+					<strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Etc.</strong>
+				</span>
+				<a class="uk-flex-none" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
+			</p>
+		</div>
+		<div class="uk-card-body uk-flex uk-flex-column uk-flex-row@m">
+			<p class="uk-margin-remove">
+				<span uk-icon="info"></span> &copy; Copyright 2024
+				Phil Watson<br>
+				<span uk-icon="calendar"></span> Last updated
+				Tuesday, 10/Sep/2024 12:07 AEST
+			</p>
+			<p class="uk-margin-remove uk-text-right@s uk-flex-auto"><a href="https://github.com/Eraph/hugo-theme-mako"
+					target="_blank"><span uk-icon="github-alt"></span> Hugo
+					Theme Mako</a> by <a href="https://rakhama.com/" target="_blank">Phil Watson</a></p>
+		</div>
+	</article>
+</div>
+    </div>
+</body>
+
+</html>

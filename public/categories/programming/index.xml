@@ -6,7 +6,16 @@
     <description>Recent content in Programming on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Nov 2023 14:20:14 +1000</lastBuildDate><atom:link href="https://rakhama.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 12:07:39 +1000</lastBuildDate><atom:link href="https://rakhama.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t Write CSS</title>
+      <link>https://rakhama.com/posts/dont-write-css/</link>
+      <pubDate>Tue, 10 Sep 2024 12:07:39 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/dont-write-css/</guid>
+      <description>&lt;p&gt;As part of an upcoming piece of work, it was suggested to me that I spend some time getting familiar with &lt;a href=&#34;https://tailwindcss.com/&#34;&gt;Tailwind CSS&lt;/a&gt;. I&amp;rsquo;d heard good things from colleagues, one comment in particular suggesting it doesn&amp;rsquo;t hold you back like other CSS frameworks. So I was quite keen to dig in and see what was so special about it.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Run a Blazor Web Application as Maui Mobile App</title>
       <link>https://rakhama.com/posts/run-blazor-web-application-as-maui-mobile-app/</link>
