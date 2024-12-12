@@ -36,7 +36,7 @@ Every song on Where Myth Becomes Memory is eminently listenable, rich with techn
 
 {{< bandcamp albumId="3871421685" >}}
 
-No, this isn't an album about depressed adolescents. The title comes from a weather report during a particularly tough time for lead singer Keith Buckley. The story behind aforementioned tough time sets the stage for this album, in my opinion the best material in their back catalogue, and they have a strong back catalogue.
+No, this isn't an album about depressed adolescents. The title comes from a weather report during a particularly tough time for lead singer Keith Buckley. The story behind aforementioned tough time sets the stage for this album, in my opinion the best material in their back catalogue, and it is a a strong back catalogue.
 
 Personal highlights include the crushing track Petal, a reflection on the fragility of life and how this could have gone wrong, and Awful Lot which shines with tremendous energy in an already highly energetic album.
 
@@ -64,7 +64,7 @@ Racecar has just turned twenty and sounds just as fresh as it did when I bought 
 
 {{< deezer albumId="241232" >}}
 
-There was a small window of time between about 2000 and 2005 where British alternative music was absolutely punching, and this is one of the most exemplary albums of that period. Stacked full of energy, soaring vocals and crushing screaming, most excellent guitar hooks and a sound you only hear from a band thoroughly enjoying what they're doing. This is an album that has the ability to lift me out of a funk no matter how deep I'm in.
+There was a small window of time between about 2000 and 2005 where British alternative music was absolutely punching, and this is one of the most exemplary albums of that period. Stacked full of energy, soaring vocals and crushing screaming, most excellent guitar hooks and a sound you only hear from a band thoroughly enjoying what they're doing. This is an album that has the profound ability to lift me up from even the deepest of funks.
 
 [???]
 
@@ -72,6 +72,9 @@ There was a small window of time between about 2000 and 2005 where British alter
 
 {{< deezer albumId="13635910" >}}
 
+These guys were sold to me as "Scotland's answer to Hundred Reasons", but as much as I love Hundred Reasons, that is doing them a disservice. I was blown away when I discovered that there were only three members in the band, I did not get that impression at all while listening to their debut album, Blackened Sky. I was a little bit obsessed, so when they announced their second album, I was positively brimming with anticipation. 
+
+And it did not disappoint. In my opinion, The Vertigo of Bliss is Biffy Clyro at their finest. Outrageously experimental but perfectly accessible, it's a real treat for the senses from beginning to end. Of course I have a lot of love for All the Way Down, and perhaps my favourite Biffy track of all which didn't make the album but was relegated to a B-side (so, same era, good enough for me), the magnificently titled "...And With The Scissorkick Is Victorious"
 
 [Website]() | [Bandcamp](https://beggarsarkive.bandcamp.com/album/the-vertigo-of-bliss)
 

@@ -2,25 +2,28 @@
 <html lang="en-us" class="uk-background-fixed">
 
 <head>
-    <title>Garcia&#39;s Guide to the Galaxy :: music</title>
+    <title>Garcia&#39;s Guide to the Galaxy :: Await an Async GDScript Function From C#</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Phil Watson" />
     <meta name="description"
-        content="" />
+        content="How to await GDScript functions when called from C#... sometimes" />
     <link href='https://fonts.googleapis.com/css2?family=Oxanium&display=swap'
-        rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" href="https://rakhama.com/tags/music/index.xml" title="Garcia's Guide to the Galaxy" />
-    <link rel="stylesheet" href="/mako.min.429b88d9f8fbbfa7336c81c961bf7052e525386d843271c4382529fe5cb41c01.css" crossorigin="anonymous" integrity="sha256-QpuI2fj7v6czbIHJYb9wUuUlOG2EMnHEOCUp/ly0HAE=" type="text/css" />
+        rel="stylesheet"><link rel="stylesheet" href="/mako.min.429b88d9f8fbbfa7336c81c961bf7052e525386d843271c4382529fe5cb41c01.css" crossorigin="anonymous" integrity="sha256-QpuI2fj7v6czbIHJYb9wUuUlOG2EMnHEOCUp/ly0HAE=" type="text/css" />
     
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="music"/>
-<meta name="twitter:description" content="A Cool Guy"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://rakhama.com/path/to/something.jpg"/>
 
-    <meta property="og:title" content="music" />
-<meta property="og:description" content="A Cool Guy" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rakhama.com/tags/music/" />
+<meta name="twitter:title" content="Await an Async GDScript Function From C#"/>
+<meta name="twitter:description" content="How to await GDScript functions when called from C#... sometimes"/>
+
+    <meta property="og:title" content="Await an Async GDScript Function From C#" />
+<meta property="og:description" content="How to await GDScript functions when called from C#... sometimes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rakhama.com/posts/await-async-gdscript-function-from-sharp/" /><meta property="og:image" content="https://rakhama.com/path/to/something.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-12T18:04:32+10:00" />
+<meta property="article:modified_time" content="2024-12-12T18:04:32+10:00" />
+<meta property="og:see_also" content="https://rakhama.com/projects/deep-cell/" /><meta property="og:see_also" content="https://rakhama.com/posts/sqlite-net-in-godot/" />
 
 
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.12/dist/js/uikit.min.js"></script>
@@ -62,14 +65,14 @@
 <li class="uk-text-small uk-flex-inline">
     <span class="uk-flex-none" uk-icon="triangle-right"></span>
     
-    <a href="/tags/" class="uk-text-truncate">Tags</a>
+    <a href="/posts/" class="uk-text-truncate">Posts</a>
     
 </li>
 
 <li class="uk-text-small uk-flex-inline">
     <span class="uk-flex-none" uk-icon="triangle-right"></span>
     
-    <span class="uk-text-truncate">music</span>
+    <span class="uk-text-truncate">Await an Async GDScript Function From C#</span>
     
 </li>
                     </ul>
@@ -488,7 +491,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
         <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
-          Dapper from his napper to his feet
+          An employable human
         </p>
       </div>
     </div>
@@ -517,14 +520,14 @@
 <li class="uk-text-small uk-flex-inline">
     <span class="uk-flex-none" uk-icon="triangle-right"></span>
     
-    <a href="/tags/" class="uk-text-truncate">Tags</a>
+    <a href="/posts/" class="uk-text-truncate">Posts</a>
     
 </li>
 
 <li class="uk-text-small uk-flex-inline">
     <span class="uk-flex-none" uk-icon="triangle-right"></span>
     
-    <span class="uk-text-truncate">music</span>
+    <span class="uk-text-truncate">Await an Async GDScript Function From C#</span>
     
 </li>
     </ul>
@@ -618,51 +621,74 @@
         <div uk-grid class="uk-flex-row">
             <div class="uk-width-expand@m main">
                 
-
-
-
-
-    
-    <div class="uk-margin-medium-bottom">
-	<div class="uk-card uk-card-default uk-card-small">
-		<article class="uk-article uk-flex uk-flex-column uk-flex-stretch uk-height-1-1">
-			<div class="uk-card-header">
+<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
+  <article class="uk-article">
+    <div class="uk-card-header">
     <p class="mako-title uk-flex">
         <span class="uk-flex-none" uk-icon='file-text'
             title='Page' uk-tooltip></span>
-        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/posts/alternatives-series-spotify/" title="Alternatives Series: Spotify" uk-tooltip="pos: top-left">
-            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Alternatives Series: Spotify</strong></a>
-        <a class="uk-flex-none" uk-icon="link" href="/posts/alternatives-series-spotify/" title="View Alternatives Series: Spotify" uk-tooltip></a>
+        <a class="uk-link-reset mako-title-text uk-text-truncate uk-flex-1" href="/posts/await-async-gdscript-function-from-sharp/" title="Await an Async GDScript Function From C#" uk-tooltip="pos: top-left">
+            <strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Await an Async GDScript Function From C#</strong></a>
+        <a class="uk-flex-none" uk-icon="link" href="/posts/await-async-gdscript-function-from-sharp/" title="View Await an Async GDScript Function From C#" uk-tooltip></a>
     </p>
 </div>
 
-			<div class="uk-card-body uk-flex uk-flex-1 uk-flex-top uk-flex-wrap uk-flex-row@m uk-flex-column">
-				
-				<div class="uk-flex uk-flex-1 uk-flex-column">
-					There are a lot of questionable ethical behaviours going on with big technology companies these days. Hearing horror stories from Meta (formerly Facebook,) Alphabet (Google,) Amazon, Microsoft and Apple has left me with a rather sour taste in my mouth. I&rsquo;ve personally been stung by bait-and-switch campaigns like when OneDrive revoked large amounts of free storage and LastPass nerfed their free tier subscription. The former was ultimately reversed with a workaround but I was shook; these big companies can make drastic changes to these services I rely on at a whim.
-				</div>
-			</div>
+    <div class="uk-card-body">
+      
+      
+      
+      <p>I like that Godot has its own, simple scripting language in GDScript, but I&rsquo;m a .NET tragic so it&rsquo;s C# for me. Interoperability between the two is possible, but not always obvious. Case in point, how do you await an async GDScript method? Well, it depends&hellip;</p>
+<p>I&rsquo;m going to use the <a href="https://github.com/KoBeWi/Godot-Universal-Fade">Universal Fade</a> addon as an example. Awaiting a fade-in with GDScript could hardly be simpler.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-gdscript" data-lang="gdscript">await Fade<span style="color:#f92672">.</span>fade_in()<span style="color:#f92672">.</span>finished
+</code></pre></div><p>Calling GDScript from C# is a lot more involved and suffers from inflexibility.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Script fadeScript = ResourceLoader.Load(<span style="color:#e6db74">&#34;res://addons/UniversalFade/Fade.gd&#34;</span>) <span style="color:#66d9ef">as</span> Script;
+fadeScript.Call(<span style="color:#e6db74">&#34;fade_in&#34;</span>);
+</code></pre></div><p>It works, but it&rsquo;s not async. If you want to continue from the point the fade has finished, you need to latch on to the <code>finished</code> signal that is thankfully provided by the addon. This is the &ldquo;it depends&rdquo; part, it depends on how the developer has configured the script.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Script fadeScript = ResourceLoader.Load(<span style="color:#e6db74">&#34;res://addons/UniversalFade/Fade.gd&#34;</span>) <span style="color:#66d9ef">as</span> Script;
+<span style="color:#66d9ef">var</span> fader = fadeScript.Call(<span style="color:#e6db74">&#34;fade_in&#34;</span>);
+<span style="color:#66d9ef">await</span> fadeScript.ToSignal(fader.AsGodotObject(), <span style="color:#e6db74">&#34;finished&#34;</span>);
+</code></pre></div><p>Wonderful! And with this knowledge I put together a static helper class to fade in and out, asynchronously with awaiters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FaderHelpers</span>
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">async</span> Task FadeOut(<span style="color:#66d9ef">float</span> duration)
+    {
+        Script fadeScript = ResourceLoader.Load(<span style="color:#e6db74">&#34;res://addons/UniversalFade/Fade.gd&#34;</span>) <span style="color:#66d9ef">as</span> Script;
+        <span style="color:#66d9ef">var</span> fader = fadeScript.Call(<span style="color:#e6db74">&#34;fade_out&#34;</span>, duration);
+        <span style="color:#66d9ef">await</span> fadeScript.ToSignal(fader.AsGodotObject(), <span style="color:#e6db74">&#34;finished&#34;</span>);
+    }
 
-			<div class="uk-card-footer">
-				<div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-column uk-flex-row@m uk-flex-wrap">
-					
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">async</span> Task FadeIn(<span style="color:#66d9ef">float</span> duration)
+    {
+        Script fadeScript = ResourceLoader.Load(<span style="color:#e6db74">&#34;res://addons/UniversalFade/Fade.gd&#34;</span>) <span style="color:#66d9ef">as</span> Script;
+        <span style="color:#66d9ef">var</span> fader = fadeScript.Call(<span style="color:#e6db74">&#34;fade_in&#34;</span>, duration);
+        <span style="color:#66d9ef">await</span> fadeScript.ToSignal(fader.AsGodotObject(), <span style="color:#e6db74">&#34;finished&#34;</span>);
+    }
+}
+</code></pre></div><p>Et voila! Simply call with the duration of the fade.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">await</span> FaderHelpers.FadeOut(<span style="color:#ae81ff">5</span>);
+</code></pre></div>
+    </div>
+
+    <div class="uk-card-footer">
+      <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-column uk-flex-row@m">
+        
 
 
 
 <ul class="uk-comment-meta uk-subnav mako-margin-1">
     <li class="uk-flex uk-flex-initial">
         <span class="uk-flex-none" uk-icon="calendar"></span>
-        <span class="uk-margin-small-left uk-margin-small-right uk-text-truncate" title="Sunday, 03/Jul/2022 15:07 AEST" uk-tooltip>
-            Sunday, 03/Jul/2022 15:07 AEST
+        <span class="uk-margin-small-left uk-margin-small-right uk-text-truncate" title="Thursday, 12/Dec/2024 18:04 AEST" uk-tooltip>
+            Thursday, 12/Dec/2024 18:04 AEST
         </span>
     </li>
     
     
     <li class="uk-flex uk-flex-initial">
         <span class="uk-flex-none" uk-icon="folder"></span>
-        <a href="/categories/software"
+        <a href="/categories/game-development"
             class="uk-text-capitalize uk-margin-small-left uk-margin-small-right uk-text-truncate">
-            Software
+            Game Development
         </a>
     </li>
     
@@ -671,53 +697,44 @@
     
     <li class="uk-flex uk-flex-initial">
         <span class="uk-flex-none" uk-icon="album"></span>
-        <a href="/series/alternatives" class="uk-text-capitalize uk-margin-small-left uk-margin-small-right uk-text-truncate">
-            Alternatives
+        <a href="/series/godot" class="uk-text-capitalize uk-margin-small-left uk-margin-small-right uk-text-truncate">
+            Godot
         </a>
     </li>
     
     
 </ul>
-					<div class="mako-margin-1 uk-flex-auto uk-flex uk-flex-right">
-	<a href="/posts/alternatives-series-spotify/" class="uk-button uk-button-default uk-button-small uk-width-1-1 uk-width-auto@m">Read
-		more &raquo;</a>
-</div>
-				</div>
-			</div>
-		</article>
-	</div>
-</div>
-    
+        
 
-    
-
-<div class="uk-card uk-card-default uk-card-small uk-margin-medium-bottom">
-	<article class="uk-article">
-		<div class="uk-card-header">
-			<p class="mako-title uk-flex">
-				<span class="uk-flex-none" uk-icon="code" title="Pagination" uk-tooltip></span>
-				<span class="mako-title-text uk-text-truncate uk-flex-1">
-					<strong class="uk-text-middle uk-margin-small-left uk-margin-small-right">Pagination</strong>
-				</span>
-				<a class="uk-flex-none" href="" uk-totop uk-scroll title="Go to top" uk-tooltip></a>
-			</p>
-		</div>
-		<div class="uk-card-body">
-			<ul class="uk-pagination uk-flex-center" uk-margin>
-				
-				<li class="uk-disabled">
-					<span>
-						<span uk-pagination-previous></span>
-					</span>
-				</li>
-				
-				<li class="uk-active"><span>1 / 1</span></li>
-				
-				<li class="uk-disabled"><span><span uk-pagination-next></span></span></li>
-				
-			</ul>
-		</div>
-	</article>
+<p class="uk-comment-meta uk-flex uk-flex-wrap uk-flex-wrap-around uk-flex-auto uk-margin-left mako-margin-1">
+	
+	<span class="uk-flex-none" uk-icon="tag"></span>
+	
+	<a href="/tags/programming" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		programming
+	</a>
+	
+	<a href="/tags/game-development" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		game-development
+	</a>
+	
+	<a href="/tags/godot" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		godot
+	</a>
+	
+	<a href="/tags/tips" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		tips
+	</a>
+	
+	<a href="/tags/future-reference" class="uk-text-lowercase uk-margin-small-left uk-text-nowrap">
+		future-reference
+	</a>
+	
+	
+</p>
+      </div>
+    </div>
+  </article>
 </div>
 
 
@@ -1135,7 +1152,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
         <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
-          They call him &#34;Garcia&#34;
+          Quite a gent
         </p>
       </div>
     </div>

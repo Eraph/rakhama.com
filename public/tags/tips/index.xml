@@ -6,7 +6,16 @@
     <description>Recent content in tips on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2024 12:07:39 +1000</lastBuildDate><atom:link href="https://rakhama.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Dec 2024 18:04:32 +1000</lastBuildDate><atom:link href="https://rakhama.com/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Await an Async GDScript Function From C#</title>
+      <link>https://rakhama.com/posts/await-async-gdscript-function-from-sharp/</link>
+      <pubDate>Thu, 12 Dec 2024 18:04:32 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/await-async-gdscript-function-from-sharp/</guid>
+      <description>&lt;p&gt;I like that Godot has its own, simple scripting language in GDScript, but I&amp;rsquo;m a .NET tragic so it&amp;rsquo;s C# for me. Interoperability between the two is possible, but not always obvious. Case in point, how do you await an async GDScript method? Well, it depends&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Don&#39;t Write CSS</title>
       <link>https://rakhama.com/posts/dont-write-css/</link>
