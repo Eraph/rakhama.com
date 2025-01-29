@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Fresh",
+            "type": "shell",
+            "command": "hugo --cleanDestinationDir",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build with Drafts",
+            "type": "shell",
+            "command": "hugo -D"
+        },
+        {
+            "label": "Watch with Drafts",
+            "type": "shell",
+            "command": "hugo -wD",
+            "problemMatcher": []
+        },
+        {
+            "label": "New Post",
+            "type": "shell",
+            "command": "hugo new posts/${input:new-post-name}/index.md",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "new-post-name",
+            "type": "promptString",
+            "description": "New Post Name",
+            "default": "my-new-post"
+        }
+    ]
+}
