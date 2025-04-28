@@ -2,28 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rakhama.com/series/alternatives/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/alternatives/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/categories/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/future-reference/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/posts/hosting-podman-containers-on-systemd-with-quadlets/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/linux/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/open-source/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/podman/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/posts/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/programming/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/categories/software/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/software/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/tags/</loc>
+    <lastmod>2025-04-28T13:08:55+10:00</lastmod>
+  </url><url>
+    <loc>https://rakhama.com/series/alternatives/</loc>
     <lastmod>2025-01-29T14:38:02+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/alternatives-series-social-media/</loc>
     <lastmod>2025-01-29T14:38:02+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/categories/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/categories/life/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/open-source/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/posts/</loc>
     <lastmod>2025-01-29T14:38:02+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/series/</loc>
@@ -32,13 +56,7 @@
     <loc>https://rakhama.com/tags/social-media/</loc>
     <lastmod>2025-01-29T14:38:02+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/</loc>
-    <lastmod>2025-01-29T14:38:02+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/posts/await-async-gdscript-function-from-sharp/</loc>
-    <lastmod>2024-12-12T18:04:32+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/future-reference/</loc>
     <lastmod>2024-12-12T18:04:32+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/categories/game-development/</loc>
@@ -51,9 +69,6 @@
     <lastmod>2024-12-12T18:04:32+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/godot/</loc>
-    <lastmod>2024-12-12T18:04:32+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/programming/</loc>
     <lastmod>2024-12-12T18:04:32+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/tips/</loc>
@@ -80,9 +95,6 @@
     <loc>https://rakhama.com/tags/gnome/</loc>
     <lastmod>2024-07-23T20:07:50+10:00</lastmod>
   </url><url>
-    <loc>https://rakhama.com/tags/linux/</loc>
-    <lastmod>2024-07-23T20:07:50+10:00</lastmod>
-  </url><url>
     <loc>https://rakhama.com/tags/gaming/</loc>
     <lastmod>2024-06-21T10:18:01+10:00</lastmod>
   </url><url>
@@ -105,9 +117,6 @@
     <lastmod>2024-06-21T10:15:01+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/scoop-upgrade/</loc>
-    <lastmod>2024-02-14T13:29:17+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/categories/software/</loc>
     <lastmod>2024-02-14T13:29:17+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/windows/</loc>
@@ -207,9 +216,6 @@
     <lastmod>2022-07-03T15:07:33+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/tags/music/</loc>
-    <lastmod>2022-07-03T15:07:33+10:00</lastmod>
-  </url><url>
-    <loc>https://rakhama.com/tags/software/</loc>
     <lastmod>2022-07-03T15:07:33+10:00</lastmod>
   </url><url>
     <loc>https://rakhama.com/posts/i-finally-got-an-st-again/</loc>

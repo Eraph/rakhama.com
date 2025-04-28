@@ -46,6 +46,9 @@ Signal was co-founded by one the lads who started WhatsApp and builds upon the s
 ## Email
 It's still there! And it's [the best way to stay in touch with one another.](https://www.youtube.com/watch?v=vEHo8mEdLlI)
 
+## LinkedIn
+Just delete it. Live free. Be happy.
+
 ## Final Words
 
 Okay, it's not exactly a comprehensive list. Many of the alternatives to the big social media sites take a bit of effort but hopefully you'll see that the options I've outlined above are easy enough to pick up and run with. I hope you'll join me in giving the ol' middle finger to toxic tech!

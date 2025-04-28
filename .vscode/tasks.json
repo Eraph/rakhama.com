@@ -12,7 +12,8 @@
         {
             "label": "Build with Drafts",
             "type": "shell",
-            "command": "hugo -D"
+            "command": "hugo -D",
+            "problemMatcher": []
         },
         {
             "label": "Watch with Drafts",
@@ -24,6 +25,12 @@
             "label": "New Post",
             "type": "shell",
             "command": "hugo new posts/${input:new-post-name}/index.md",
+            "problemMatcher": []
+        },
+        {
+            "label": "Stage Public",
+            "type": "shell",
+            "command": "git add public/*",
             "problemMatcher": []
         }
     ],

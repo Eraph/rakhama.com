@@ -6,7 +6,16 @@
     <description>Recent content on Garcia&#39;s Guide to the Galaxy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2025 14:38:02 +1000</lastBuildDate><atom:link href="https://rakhama.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Apr 2025 13:08:55 +1000</lastBuildDate><atom:link href="https://rakhama.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting Podman Containers on Systemd with Quadlets</title>
+      <link>https://rakhama.com/posts/hosting-podman-containers-on-systemd-with-quadlets/</link>
+      <pubDate>Mon, 28 Apr 2025 13:08:55 +1000</pubDate>
+      
+      <guid>https://rakhama.com/posts/hosting-podman-containers-on-systemd-with-quadlets/</guid>
+      <description>&lt;p&gt;I was looking into alternatives to Docker Compose for Podman (yes, there is a &lt;a href=&#34;https://docs.podman.io/en/latest/markdown/podman-compose.1.html&#34;&gt;podman-compose&lt;/a&gt; wrapper that brings similar functionality to Podman), and stumbled across the concept of &lt;a href=&#34;https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html&#34;&gt;Quadlets&lt;/a&gt;. Well, turns out they&amp;rsquo;re nothing like Docker Compose, perhaps more like Kubernetes or one of them fellas. Indeed, the name Quadlet was supposedly named after a squashed Kubelet. Geddit? Squashed kube? A quad? Ah, never mind.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Alternatives Series: Social Media</title>
       <link>https://rakhama.com/posts/alternatives-series-social-media/</link>
