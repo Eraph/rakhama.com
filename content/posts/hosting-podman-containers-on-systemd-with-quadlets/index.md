@@ -101,7 +101,7 @@ ContainerName=myproject-web # Give the container a name
 Image=docker.io/nginx # The image to use for the container - don't use the short name!
 Volume=/home/myusername/dev/myproject/nginx.conf:/etc/nginx/nginx.conf:z,ro # Volume map a single file
 Volume=/home/myusername/dev/myproject/html:/usr/share/nginx/html:z,ro # Volume map a directory
-Pod=myproject # The name of the pod as defined in the `myproject.pod` file
+Pod=myproject.pod # The filename of the pod defined previously
 ```
 
 Again, note that the ports are exposed in the pod, not the container. Also note that the `Volume` key is defined twice to map two different volumes.

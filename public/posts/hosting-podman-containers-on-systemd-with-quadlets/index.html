@@ -506,7 +506,7 @@
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
         <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
-          My favourite customer
+          A good sort
         </p>
       </div>
     </div>
@@ -725,7 +725,7 @@
 <span style="color:#a6e22e">Image</span><span style="color:#f92672">=</span><span style="color:#e6db74">docker.io/nginx # The image to use for the container - don&#39;t use the short name!</span>
 <span style="color:#a6e22e">Volume</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/myusername/dev/myproject/nginx.conf:/etc/nginx/nginx.conf:z,ro # Volume map a single file</span>
 <span style="color:#a6e22e">Volume</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/myusername/dev/myproject/html:/usr/share/nginx/html:z,ro # Volume map a directory</span>
-<span style="color:#a6e22e">Pod</span><span style="color:#f92672">=</span><span style="color:#e6db74">myproject # The name of the pod as defined in the `myproject.pod` file</span>
+<span style="color:#a6e22e">Pod</span><span style="color:#f92672">=</span><span style="color:#e6db74">myproject.pod # The filename of the pod defined previously</span>
 </code></pre></div><p>Again, note that the ports are exposed in the pod, not the container. Also note that the <code>Volume</code> key is defined twice to map two different volumes.</p>
 <p>The volume definitions are suffixed with <code>:z,ro</code>. if you&rsquo;re not using SELinux, you can leave it as simply <code>:ro</code> (readonly).</p>
 <p>For more information on other Container settings, check the documentation <a href="https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html#container-units-container">here</a>.</p>
@@ -1257,7 +1257,7 @@ systemctl --user status myproject-pod
     <div class="uk-card-footer">
       <div class="uk-article-meta uk-text-small uk-flex uk-flex-between uk-flex-wrap uk-flex-column uk-flex-row@m">
         <p class="uk-comment-meta uk-padding-small uk-padding-small uk-padding-remove-vertical mako-margin-1">
-          A skeleton in disguise
+          Slightly better than average
         </p>
       </div>
     </div>
