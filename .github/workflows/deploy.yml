@@ -1,21 +1,69 @@
-name: Deploy Hugo Site
+name: Deploy to rakhama.com
 
 on:
   push:
-    branches: [main]
+    branches: ["main"]
 
+  pull_request:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Batching
+concurrency:
+  group: "makodev-prod"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.128.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      # - name: Install Dart Sass
+      #   run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.MAKO_THEME_PAT }}
+      # - name: Install Node.js dependencies
+      #   run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo \
+            --minify \
+            --baseURL "https://rakhama.com"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rakhama
+          path: ./public
+          if-no-files-found: error
+
   deploy-prod:
+    if: github.event_name != 'pull_request'
     name: "Deploy to Rakhama.com"
     runs-on: ubuntu-latest
-    environment:
-      name: Rakhama.com
-      url: https://rakhama.com
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: rakhama
 
       - name: Clear destination directory
         uses: fifsky/ssh-action@v0.0.6
@@ -27,15 +75,14 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           
       - name: SCP Files
-        uses: betanzos/scp-upload@v1
+        uses: appleboy/scp-action@v1
         with:
-          source: "./public"
           host: ${{ secrets.DEPLOY_HOST }}
-          remote_dir: ${{ secrets.DEPLOY_DIRECTORY }}/
-          port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          recursive: 'true'
+          port: ${{ secrets.DEPLOY_PORT }}
+          source: ./*
+          target: ${{ secrets.DEPLOY_DIRECTORY }}
 
       - name: Purge Cloudflare Cache
         uses: jakejarvis/cloudflare-purge-action@master
