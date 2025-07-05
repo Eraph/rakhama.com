@@ -10,7 +10,7 @@ tags:
   - future reference
   - open source
 images:
-  - "posts/replace-docker-with-podman-on-windows/podman.jpg"
+  - "podman.jpg"
 ---
 I'm sure many were caught out by the switch-and-bait carried out by Docker when they started charging users for Docker Desktop. Well there is an alternative in [Podman](https://podman.io/), an open source Docker alternative that adheres to the same OCI (Open Container Initiative) standards, meaning it's pretty much a drop-in replacement. 
 

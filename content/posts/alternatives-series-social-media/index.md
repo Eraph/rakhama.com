@@ -12,7 +12,7 @@ tags:
 series:
   - Alternatives
 images:
-  - "posts/alternatives-series-social-media/nometa.png"
+  - "nometa.png"
 ---
 The world is always changing, there's no denying that. But the latest haps have many of us quite worried. Society at large seems to be hurtling towards fascism, a vocal minority of affluent and angry men propped up by big tech dragging us all deeper into the ugliest depths of humanity.
 

@@ -18,7 +18,6 @@ socials = [
 ]
 email = "rakhama.f1itl@simplelogin.com"
 dateFormat = "Monday, 02/Jan/2006 15:04 MST"
-sections = ["Projects"]
 navigationTaxonomies = ["series", "categories"]
 location = "Brisbane, Australia"
 twitter_cards = true
@@ -107,7 +106,6 @@ background = "#dad4bb"
 
 # Hacker
 # primary = "#0f0"
-# secondary = "#000"
 # background = "#000"
 
 # Cyberpunk

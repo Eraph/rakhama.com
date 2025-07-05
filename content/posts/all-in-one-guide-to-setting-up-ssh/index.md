@@ -14,7 +14,7 @@ tags:
   - open-source
   - fedora
 images:
-  - "posts/all-in-one-guide-to-setting-up-ssh/LockAndKey.jpg"
+  - "LockAndKey.jpg"
 ---
 This guide is mostly a reference for myself as it's a workflow that I find myself following whenever I set up a new Linux machine. I'm sharing it here as I'm sure many will find this useful, and it will save me from looking up each distinct step in the future.
 

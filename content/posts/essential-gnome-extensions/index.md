@@ -11,7 +11,7 @@ tags:
   - Linux
   - Future-Reference
 images:
-  - "posts/essential-gnome-extensions/extensions.png"
+  - "extensions.png"
 ---
 
 Gnome is a great, low-distraction desktop environment but it's certainly not perfect out of the box. Fortunately it's easy to spruce up. Here are some of my favourite extensions!

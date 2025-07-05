@@ -12,7 +12,7 @@ tags:
 series:
   - Professional Development
 images:
-  - "posts/dont-write-css/dont-write-css.png"
+  - "dont-write-css.png"
 ---
 
 As part of an upcoming piece of work, it was suggested to me that I spend some time getting familiar with [Tailwind CSS](https://tailwindcss.com/). I'd heard good things from colleagues, one comment in particular suggesting it doesn't hold you back like other CSS frameworks. So I was quite keen to dig in and see what was so special about it.

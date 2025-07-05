@@ -13,7 +13,7 @@ tags:
   - podman
   - opensuse
 images:
-  - "posts/so-youve-had-enough-of-docker-desktop/podman.png"
+  - "podman.png"
 ---
 Ah, the ol' Switch n' Bait. Please, use our free product, enjoy, have fun, okay now give us all your dollaridoos if you want to keep using it.
 Easily one of my least favourite of all the terrible corporate money-making strategies.

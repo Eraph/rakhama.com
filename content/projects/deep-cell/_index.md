@@ -14,7 +14,7 @@ tags:
 series:
   - Godot
 images:
-  - "path/to/something.jpg"
+  - "DeepCell.png"
 ---
 Go big or go home! I've been working on and off this project for nearly ten years. Originally developed in Unity, I've moved to [Godot](/series/godot) because I'm an Open Source shill.
 

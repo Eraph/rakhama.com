@@ -11,7 +11,7 @@ tags:
   - tips
   - programming
 images:
-  - "posts/solid-principles-cheat-sheet/SOLID.png"
+  - "SOLID.png"
 ---
 I couldn't find a single-page cheat sheet that summarised SOLID software development principles, so I made one. For each of the letters in SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) there are a couple of bullet points explaining the benefits of adopting them and the smells that betray their violation.
 

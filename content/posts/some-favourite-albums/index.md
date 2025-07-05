@@ -12,13 +12,13 @@ tags:
   - deezer
   - favourites
 images:
-  - "posts/some-favourite-albums/albums.png"
+  - "albums.png"
 ---
 Well I've been thinking I'm boxing myself into a corner with this website of mine focusing primarily on tech stuff. That's not all I do! So for a change I'm going to write about some of my favourite albums because why not.
 
 Now I'm no music journalist, this is totally subjective and personal. So go easy on me!
 
-A lot of these albums have links to Bandcamp by default as I reckon it's the best way to support the artists. For those not on Bandcamp, I have links to Deezer instead (see my post on [why Deezer?]({{% relref "posts/alternatives-series-spotify" %}}))
+A lot of these albums have links to Bandcamp by default as I reckon it's the best way to support the artists. For those not on Bandcamp, I have links to Deezer instead (see my post on [why Deezer?](/posts/alternatives-series-spotify "Alternatives Series: Spotify"))
 
 <!--more-->
 

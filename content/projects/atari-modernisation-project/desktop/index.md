@@ -13,7 +13,7 @@ tags:
 series:
   - Atari
 images:
-  - "projects/atari-modernisation-project/desktop/st-desktop.gif"
+  - "st-desktop.gif"
 ---
 How to modernise the Atari ST desktop environment, from upgrading to a more modern GEM environment to applying custom wallpapers.
 

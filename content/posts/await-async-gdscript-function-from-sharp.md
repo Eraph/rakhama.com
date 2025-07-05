@@ -13,8 +13,6 @@ tags:
   - future-reference
 series:
   - Godot
-images:
-  - "path/to/something.jpg"
 ---
 I like that Godot has its own, simple scripting language in GDScript, but I'm a .NET tragic so it's C# for me. Interoperability between the two is possible, but not always obvious. Case in point, how do you await an async GDScript method? Well, it depends...
 <!--more-->
