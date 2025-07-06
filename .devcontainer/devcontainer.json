@@ -24,8 +24,7 @@
 				"phoenisx.gohugo",
 				"budparr.language-hugo-vscode",
 				"tamasfe.even-better-toml",
-				"kaellarkin.hugo-shortcode-syntax",
-				"ms-vscode-remote.remote-containers"
+				"kaellarkin.hugo-shortcode-syntax"
 			]
 		}
 	}
