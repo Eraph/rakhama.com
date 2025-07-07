@@ -14,7 +14,7 @@
 		1313
 	],
 
-	"postCreateCommand": "git submodule init && git submodule update",
+	"postCreateCommand": "git submodule init && git submodule update && cd themes/mako && git checkout main",
 
 	// Configure tool-specific properties.
 	"customizations": {
