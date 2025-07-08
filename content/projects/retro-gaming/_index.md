@@ -1,6 +1,6 @@
 ---
 title: "Retro Gaming"
-description: "Keeping the feeling alive"
+description: "Nostalgia is a potent drug"
 date: 2024-06-21T10:18:01+10:00
 draft: false
 categories:
