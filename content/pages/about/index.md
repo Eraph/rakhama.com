@@ -5,7 +5,7 @@ date: 2023-01-22T09:24:56+10:00
 draft: false
 order: 0
 images:
-  - "pages/about/tea.jpg"
+  - "tea.jpg"
 ---
 Tea. Early Grey. Hot.
 

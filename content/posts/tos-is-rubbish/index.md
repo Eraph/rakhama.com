@@ -14,7 +14,7 @@ tags:
 series:
   - Atari
 images:
-  - "posts/tos-is-rubbish/emutos.gif"
+  - "emutos.gif"
 ---
 
 I never noticed it growing up but I see it now, TOS is profoundly flakey. My ST has a TOS 1.62 ROM built in and it does not play nice with hard drives.

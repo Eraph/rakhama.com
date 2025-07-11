@@ -1,6 +1,6 @@
 ---
 title: "Retro Gaming"
-description: "All console are good."
+description: "Nostalgia is a potent drug"
 date: 2024-06-21T10:18:01+10:00
 draft: false
 categories:
@@ -9,7 +9,7 @@ tags:
   - gaming
   - retro computing
 images:
-  - "path/to/something.jpg"
+  - "CarrierCommand.png"
 ---
 I have learned the hard way that you should never let go of old consoles. In this project I will share in my quest to collect old gaming systems, and some tips if I have any.
 

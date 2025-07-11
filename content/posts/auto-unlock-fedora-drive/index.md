@@ -11,7 +11,7 @@ tags:
   - future-reference
   - security
 images:
-  - "posts/auto-unlock-fedora-drive/password.jpg"
+  - "password.jpg"
 ---
 I recently installed Fedora on my personal laptop to replace Manjaro as I found Manjaro to be a just a little too flaky for my liking and I know Fedora to be a solid alternative. During installation I was asked if I wanted to encrypt my drives. Now I'm not harbouring anything particularly sensitive but I thought it was worth doing, security first and all that; after all, we expect every website to support HTTPS these days so why not?
 

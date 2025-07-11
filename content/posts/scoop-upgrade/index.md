@@ -12,7 +12,7 @@ tags:
   - open-source
   - alternatives
 images:
-  - "posts/scoop-upgrade/scoopupgrade.jpg"
+  - "scoopupgrade.jpg"
 ---
 Are you still downloading `.exe` files like some kinda chump? Check out [Scoop](https://scoop.sh), a package manager for Windows not too dissimilar to [Chocolatey](https://chocolatey.org) which ought to be very familiar to any Linux enthusiast. It's fast, it's easy to use, and it's open source. Yes, Scoop is great but this article is not about extolling the virtues of the package management tool.
 

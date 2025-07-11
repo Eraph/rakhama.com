@@ -4,33 +4,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Fresh",
+            "label": "Hugo Server",
             "type": "shell",
-            "command": "hugo --cleanDestinationDir",
-            "problemMatcher": []
-        },
-        {
-            "label": "Build with Drafts",
-            "type": "shell",
-            "command": "hugo -D",
-            "problemMatcher": []
-        },
-        {
-            "label": "Watch with Drafts",
-            "type": "shell",
-            "command": "hugo -wD",
+            "command": "hugo server",
             "problemMatcher": []
         },
         {
             "label": "New Post",
             "type": "shell",
-            "command": "hugo new posts/${input:new-post-name}/index.md",
-            "problemMatcher": []
-        },
-        {
-            "label": "Stage Public",
-            "type": "shell",
-            "command": "git add public/*",
+            "command": "hugo new posts/${input:new-post-name}",
             "problemMatcher": []
         }
     ],

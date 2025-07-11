@@ -10,7 +10,7 @@ tags:
 series:
   - One
 images:
-  - "path/to/something.jpg"
+  - "mainImage.jpg"
 ---
 
 <!--more-->

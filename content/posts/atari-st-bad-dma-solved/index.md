@@ -12,7 +12,7 @@ tags:
 series:
   - Atari
 images:
-  - "posts/atari-st-bad-dma-solved/68000.jpg"
+  - "68000.jpg"
 ---
 
 When I set up my own SD-HDD solution based on the wonderful [ACSI2STM](https://github.com/retro16/acsi2stm) project, I found the hard drive was becoming corrupted pretty soon after setting it up. I thought it might have been my dodgy soldering or something funny about the way I had everything set up. Turns out I simply hadn't heard about [Bad DMA](https://exxosforum.co.uk/articles/DMA.html). A local Atari enthusiast meetup later and a solution was proposed; swap the 68000 chip for a newer, lower power and subsequently less noisy version.

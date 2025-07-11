@@ -14,7 +14,7 @@ tags:
   - alternatives
   - linux
 images:
-  - "posts/hosting-podman-containers-on-systemd-with-quadlets/banner.png"
+  - "banner.png"
 ---
 I was looking into alternatives to Docker Compose for Podman (yes, there is a [podman-compose](https://docs.podman.io/en/latest/markdown/podman-compose.1.html) wrapper that brings similar functionality to Podman), and stumbled across the concept of [Quadlets](https://docs.podman.io/en/latest/markdown/podman-systemd.unit.5.html). Well, turns out they're nothing like Docker Compose, perhaps more like Kubernetes or one of them fellas. Indeed, the name Quadlet was supposedly named after a squashed Kubelet. Geddit? Squashed kube? A quad? Ah, never mind.
 <!--more-->

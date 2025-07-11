@@ -15,7 +15,7 @@ tags:
 series:
   - Professional Development
 images:
-  - "posts/run-blazor-web-application-as-maui-mobile-app/BlazorMauiOnAndroid.jpg"
+  - "BlazorMauiOnAndroid.jpg"
 ---
 I took some time to investigate developing a MAUI mobile app that shares business logic with a Blazor web app by way of ViewModels and the like. What I discovered was that MAUI and XAML is a pretty cumbersome framework. My colleague Kael [gave me some insight](https://www.kaels-kabbage.com/posts/cross-platform-options-a-very-shallow-exploration/#maui-blazor-hybrid) on the possibility of building a Blazor app and running that as a MAUI app. After looking into it in more detail I came to the conclusion that having a single application with multiple deployment targets is a more practical approach to cross-platform development. This article serves as a guide to developing a single application that can be deployed as both a website and an Android app. Of course there are a few platform specific things to look out for but they're easily handled as I will demonstrate in this post.
 
