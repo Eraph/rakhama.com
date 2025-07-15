@@ -22,6 +22,8 @@ navigationTaxonomies = ["series", "categories"]
 location = "Brisbane, Australia"
 twitter_cards = true
 osFiles = true
+favicon = "img/RakhamaSwirl.png"
+faviconMsTileColor = "#000000"
 taglines = [
   "A cool guy",
   "Not wholly terrible",
