@@ -6,8 +6,8 @@ draft: false
 categories:
   - Programming
 tags:
-  - cheat sheet
-  - future reference
+  - cheat-sheet
+  - future-reference
   - tips
   - programming
 images:

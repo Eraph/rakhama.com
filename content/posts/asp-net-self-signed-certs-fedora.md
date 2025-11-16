@@ -12,7 +12,7 @@ tags:
   - linux
   - fedora
   - tips
-  - future reference
+  - future-reference
 ---
 Today I spent a bit of time fighting with certificates in an ASP.NET application I'm working on. The scenario is we have Blazor Server communicating with a Minimal API. Debugging locally I was struggling to get the two to communicate, with errors like:
 

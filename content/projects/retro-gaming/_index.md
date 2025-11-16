@@ -7,7 +7,7 @@ categories:
   - Retro Computing
 tags:
   - gaming
-  - retro computing
+  - retro-computing
 images:
   - "CarrierCommand.png"
 ---
@@ -21,6 +21,7 @@ I have learned the hard way that you should never let go of old consoles. In thi
 - Sony PlayStation3
 - Sony PlayStation4
 - Sony PlayStation5
+- Sony PlayStation Vita
 - Nintendo Switch
 - Game Boy Pocket
 - Atari STE
