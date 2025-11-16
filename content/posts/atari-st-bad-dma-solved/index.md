@@ -6,9 +6,9 @@ draft: false
 categories:
   - Retro Computing
 tags:
-  - atari st
-  - retro computing
-  - linked article
+  - atari-st
+  - retro-computing
+  - linked-article
 series:
   - Atari
 images:

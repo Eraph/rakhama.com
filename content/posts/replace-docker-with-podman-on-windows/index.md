@@ -7,8 +7,8 @@ categories:
   - Computing
 tags:
   - tips
-  - future reference
-  - open source
+  - future-reference
+  - open-source
 images:
   - "podman.jpg"
 ---

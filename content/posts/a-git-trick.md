@@ -9,7 +9,7 @@ tags:
   - programming
   - git
   - tips
-  - future reference
+  - future-reference
 ---
 Hello! I've started a new blog. For my first post I'm going to share a Git configuration trick that I often use to work around this dang ol' error message when trying to push a locally created branch to a remote repository:
 

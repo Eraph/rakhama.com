@@ -6,11 +6,11 @@ draft: false
 categories:
   - Retro Computing
 tags:
-  - future reference
-  - atari st
+  - future-reference
+  - atari-st
   - tips
-  - retro computing
-  - open source
+  - retro-computing
+  - open-source
 series:
   - Atari
 images:
