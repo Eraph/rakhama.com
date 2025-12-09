@@ -1,6 +1,5 @@
 ---
 title: Projects
-icon: nut
 desktopIcon: True
 frontPageFeature: True
 ---

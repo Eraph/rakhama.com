@@ -3,6 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 description: "About this page"
 date: {{ .Date }}
 draft: true
+layout: project
 categories:
   - One
 tags:
@@ -11,6 +12,8 @@ series:
   - One
 images:
   - "path/to/something.jpg"
+relatedTags:
+  - related-posts
 ---
 
 <!--more-->
