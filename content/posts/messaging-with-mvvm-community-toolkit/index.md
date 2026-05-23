@@ -1,7 +1,7 @@
 ---
 title: "Messaging With the MVVM Community Toolkit"
 description: "How to effectively use the MVVM Community Toolkit's Messenger feature to decouple your app"
-date: 2026-05-23T04:43:39Z
+date: 2026-05-23T14:43:39+10:00
 draft: false
 categories:
   - Programming

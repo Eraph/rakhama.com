@@ -1,7 +1,7 @@
 ---
 title: "How Not to Migrate a MicroSD OS"
 description: "or How To Fix The Silly Problems You Make For Yourself."
-date: 2025-11-16T10:17:20Z
+date: 2025-11-16T20:17:20+10:00
 draft: false
 categories:
   - Computing
