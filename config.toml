@@ -8,11 +8,9 @@ category = 'categories'
 series = 'series'
 tag = 'tags'
 
-[params.author]
-name = "Phil Watson"
-email = "rakhama.f1itl@simplelogin.com"
-
 [params]
+author = "Phil Watson"
+email = "rakhama.f1itl@simplelogin.com"
 description = "A Cool Guy"
 pronouns = "He/Him"
 profilePicture = "images/pw.jpg"
