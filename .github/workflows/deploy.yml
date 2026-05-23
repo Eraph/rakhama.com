@@ -59,6 +59,9 @@ jobs:
     name: "Deploy to Rakhama.com"
     runs-on: ubuntu-latest
     needs: build
+    environment:
+      name: Rakhama.com
+      url: https://rakhama.com
 
     steps:
       - name: Download artifact

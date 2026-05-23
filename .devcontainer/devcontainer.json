@@ -23,8 +23,13 @@
 				"phoenisx.gohugo",
 				"budparr.language-hugo-vscode",
 				"tamasfe.even-better-toml",
-				"kaellarkin.hugo-shortcode-syntax"
+				"kaellarkin.hugo-shortcode-syntax",
+				"maattdd.gitless"
 			]
 		}
+	},
+
+	"containerEnv": {
+		"TZ": "Australia/Brisbane"
 	}
 }
