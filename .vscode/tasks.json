@@ -16,7 +16,7 @@
         {
             "label": "New Post",
             "type": "shell",
-            "command": "hugo new posts/${input:new-post-name}",
+            "command": "hugo new posts/${input:new-post-name};code -r ${workspaceFolder}/content/posts/${input:new-post-name}/index.md",
             "problemMatcher": []
         }
     ],
