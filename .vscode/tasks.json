@@ -9,7 +9,8 @@
             "command": "hugo",
             "args": [
                 "server",
-                "-D"
+                "-D",
+                "--cleanDestinationDir"
             ],
             "problemMatcher": []
         },
