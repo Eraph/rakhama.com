@@ -6,8 +6,13 @@
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
 	"features": {
 		"ghcr.io/devcontainers/features/hugo:1": {},
-		"ghcr.io/prplecake/devcontainer-features/dart-sass:1": {}
+		"ghcr.io/Eraph/devcontainer-features/dart-sass:1": {}
 	},
+
+	// Workaround for /tmp permission issues
+	"runArgs": [
+		"--tmpfs=/tmp:rw,exec,nosuid,nodev,mode=1777"
+	],
 
 	"forwardPorts": [
 		1313

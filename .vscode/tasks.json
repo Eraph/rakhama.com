@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Hugo Server",
+            "label": "Run Hugo Server",
             "type": "shell",
             "command": "hugo",
             "args": [
@@ -12,7 +12,29 @@
                 "-D",
                 "--cleanDestinationDir"
             ],
-            "problemMatcher": []
+            "options": {
+                "cwd": "${workspaceFolder}/"
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "hugo",
+                "source": "hugo",
+                "fileLocation": ["absolute"],
+                "background": {
+                    "beginsPattern": "^Start building sites",
+                    "endsPattern": "^Web Server is available at"
+                },
+                "pattern": [
+                    {
+                        "regexp": "^(\\w+) .* : \"(.*):(\\d+):(\\d+)\": \\[\\d+:\\d+\\] (.+)$",
+                        "severity": 1,
+                        "file": 2,
+                        "line": 3,
+                        "column": 4,
+                        "message": 5
+                    }
+                ]
+            }
         },
         {
             "label": "New Post",
